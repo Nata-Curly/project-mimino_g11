@@ -1,2 +1,32 @@
+// видалити зайве
+
 @import './common';
 @import './example';
+
+@import './base/base';
+@import './base/reset';
+
+@import './utels/fonts';
+@import './utels/mixins';
+@import './utels/placeholders';
+@import './utels/variables';
+
+@import './layouts/conteiner';
+@import './layouts/footer';
+@import './layouts/forms';
+@import './layouts/header';
+@import './layouts/modals';
+@import './layouts/section';
+
+@import './components/about-hotel';
+@import './components/about-kitchen';
+@import './components/about-restaurant';
+@import './components/amenities';
+@import './components/buttons';
+@import './components/contacts';
+@import './components/details-hotel';
+@import './components/details-restaurant';
+@import './components/luxe-for-two';
+@import './components/menu';
+@import './components/room-for-three';
+@import './components/room-for-two';

@@ -1,0 +1,32 @@
+// need to change breakpoints!!!
+
+// Верстка адаптивна,
+// окрім мобільних пристроїв. Точки перелому: - mobile: верстка гумова, стає адаптивною на 414px;
+// - tablet: 1024px;
+// - desktop: 1280px
+
+@mixin mobile {
+    @media screen and (min-width:414px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media screen and (min-width:1280px) {
+        @content;
+    }
+}
+
+// check this: max-width: 768px;
+
+// @include pc {
+//     max-width: 1023px;
+//     display: flex;
+//     justify-content: center;
+// }
