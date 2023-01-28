@@ -2,8 +2,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
   font-family: "Montserrat";
-  color: var(--color-secondary);
-  background-color: var(--color-primery);
+  color: #000;
+  background-color: #fff;
 }
 
 .visually-hidden {
@@ -99,25 +99,6 @@ p {
   font-weight: 700;
   src: local(""), url("/src/fonts/FilmP3Bold.woff2") format("woff2"), url("/src/fonts/FilmP3Bold.woff") format("woff");
 }
-:root {
-  --color-primery: #fff;
-  --color-secondary: #000;
-  --color-tertiary: #F3C653;
-  --color-text-primery: #7A7A7A;
-  --color-text-secondary: #C79002;
-  --color-social-nonactive-icon: rgba(243, 198, 83, 0.7);
-  --color-background-primery: #FFFDEE;
-  --color-background-secondary: #F0ECD6;
-  --color-background-tertiary: #DADADA;
-  --color-background-footer: #0E0C07;
-  --color-background-image: rgba(0, 0, 0, 0.76);
-  --box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  --nav-frames-border: 1px solid rgba(243, 198, 83, 0.7);
-  --color-button-disabled: rgba(0, 0, 0, 0.4);
-  --action-duration: 250ms;
-  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .container {
   margin: 0 auto;
   padding: 0 15px;
