@@ -23,6 +23,6 @@ function inputMask() {
             var mask = IMask(input, maskOptions);
         })
     }
-
+    
 }
 inputMask();
