@@ -1,5 +1,25 @@
 @charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: "Montserrat";
+  color: var(--color-secondary);
+  background-color: var(--color-primery);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 .link {
   text-decoration: none;
   cursor: pointer;
@@ -96,6 +116,49 @@ p {
   --color-button-disabled: rgba(0, 0, 0, 0.4);
   --action-duration: 250ms;
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 414px) {
+  .container {
+    width: 414px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+.section {
+  background-color: inherit;
+}
+@media (min-width: 1024px) {
+  .section {
+    padding: 0px 32px;
+  }
+}
+@media (min-width: 1280px) {
+  .section {
+    padding: 0px 60px;
+  }
+}
+.section__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  font-size: 36px;
+  margin-bottom: 8px;
 }
 
 .button {

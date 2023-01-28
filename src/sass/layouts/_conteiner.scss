@@ -1,0 +1,25 @@
+.container {
+    // мені ці стилі (закоментовані) заважали чомусь, без них все працювало норм та дз прийняли:) 
+    // width: auto;
+    // max-width: 414px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (min-width: 414px) {
+        width: 414px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 1024px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 1280px;
+    }
+}
+
+// Верстка адаптивна,
+// окрім мобільних пристроїв. Точки перелому: - mobile: верстка гумова,
+// стає адаптивною на 414px;
+// - tablet: 1024px;
+// - desktop: 1280px

@@ -1,0 +1,24 @@
+// подумайте, може тут є теж якісь глобальні стилі саме для секцій. В мене було щось накшталт цього (юзала для 2-3 секцій, де одинакові стилі були, бокові падінги перерахувала за мінусом 15рх, що вже є у контейнері): 
+
+.section {
+    background-color: inherit;
+    
+    @media (min-width: 1024px) {
+        padding: 0px 32px;
+    }
+
+    @media (min-width: 1280px) {
+        padding: 0px 60px;
+    }
+
+    &__title {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.21;
+            letter-spacing: 0.02em;
+            font-size: 36px;
+            
+            margin-bottom: 8px;
+        }
+}
