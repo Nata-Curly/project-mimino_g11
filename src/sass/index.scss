@@ -1,11 +1,8 @@
-// видалити зайве
-
-@import './common';
-@import './example';
 
 @import './base/base';
 @import './base/reset';
 
+@import './utels/common';
 @import './utels/fonts';
 @import './utels/mixins';
 @import './utels/placeholders';
@@ -28,5 +25,7 @@
 @import './components/details-restaurant';
 @import './components/luxe-for-two';
 @import './components/menu';
+@import './components/mobile-menu';
 @import './components/room-for-three';
 @import './components/room-for-two';
+@import './components/socials';
