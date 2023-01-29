@@ -1,12 +1,10 @@
 .header {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 50;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 16px 15px 0 15px;
   border: transparent;
 
@@ -16,6 +14,11 @@
 
   @include pc {
     padding: 24px 85px 0 85px;
+  }
+  
+  &__logo {
+    margin-right: auto;
+    color: $color-primary;
   }
 
   &__list {
@@ -68,9 +71,10 @@
     color: $color-primary;
   }
 
-  &__social {
-    @media screen and (max-width: 1279px) {
-      display: none;
-    }
+  
+}
+.social.header__social {
+  @media screen and (max-width: 1279px) {
+    display: none;
   }
 }
