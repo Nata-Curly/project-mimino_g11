@@ -70,43 +70,39 @@
     margin-bottom: 16px;
 
     @media screen and (max-width: 1023px) {
-            margin-right: auto;
-            margin-left: auto;
-        }
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__box {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-        &__box {
-            @include tablet {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-    
-            @media screen and (min-width: 1024px) and (max-width: 1279px) {
-                margin-bottom: 25px;
-            }
-        }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      margin-bottom: 25px;
+    }
+  }
 
-                &__box__button {
-                    @media screen and (max-width: 1023px) {
-                            margin-bottom: 58px;
-                        }
-                    
-                        @media screen and (min-width: 1024px) {
-                            display: flex;
-                            gap: 40px;
-                        }
-                    }
+  &__box__button {
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 58px;
+    }
 
-                                        &__social {
-                                            display: flex;
-                                                align-items: flex-end;
-                                        }
-                }
-  
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      gap: 40px;
+    }
+  }
 
-  
-
+  &__social {
+    display: flex;
+    align-items: flex-end;
+  }
+}
 
 .bg-image {
   background-image: linear-gradient(
@@ -134,24 +130,20 @@
   }
 }
 
-
-
-
 .noshow-mobile {
-    @media screen and (max-width: 1023px) {
-        display: none;
-    }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .noshow-tablet {
-    @media screen and (min-width: 1024px) {
-        display: none;
-    }
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .noshow-desktop {
-    @media screen and (min-width: 1280px) {
-        display: none;
-    }
-
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
