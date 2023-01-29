@@ -3,38 +3,33 @@
   color: $color-tertiary;
 
   justify-content: space-between;
-  padding: 40px 30px 40px 59px;
+  padding: 40px 0;
   align-items: center;
 
-  @include tablet {
-    padding: 80px 122px 80px 154px;
-  }
+//   @include tablet {
+//     // padding: 80px 122px 80px 154px;
+//   }
 
-  @include pc {
-    padding: 80px 186px 80px 216px;
-  }
+//   @include pc {
+//     // padding: 80px 186px 80px 216px;
+//   }
 
   &__container {
     display: flex;
   }
 
   &__logo {
-    display: block;
-    font-family: 'FilmP3', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.08;
-    letter-spacing: 0.3em;
+    
 
     margin-bottom: 60px;
     margin-top: 60px;
-    margin-right: 85px;
+    margin-right: auto;
     @include tablet {
       font-size: 64px;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-top: 80px;
+    
       margin-right: 163px;
+      margin-left: 154px;
     }
     @include pc {
       margin-right: 231px;
@@ -50,20 +45,28 @@
 
   &__item {
     margin-bottom: 16px;
+    font-family: sans-serif;
   }
 
   &__social {
     display: flex;
+
+    
 
     margin-top: 17px;
 
     @include tablet {
       margin-top: 0;
       display: block;
+
     }
 
     &__link {
       padding: 10px 12px;
+      color: $color-tertiary;
+      fill: $color-social-nonactive-icon;
+      
+      
     }
 
     &--item {
@@ -97,6 +100,7 @@
 
     @include tablet {
       flex-direction: row;
+      margin-top: 40px;
     }
   }
 
@@ -119,6 +123,16 @@
   @include tablet {
     display: block;
   }
+}
+
+
+.sm-footer-svg {
+   fill: currentColor;
+}
+
+.footer__social--link {
+    display: flex;
+    justify-content: space-between;
 }
 
 // outline: solid 2px tomato;
