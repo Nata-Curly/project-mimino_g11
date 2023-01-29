@@ -11,6 +11,10 @@ font-size: 32px;
 line-height: 37px;
 
 margin-bottom: 32px;
+
+@include pc {
+    margin-left: 85px;
+   }
     }
 
     @include tablet {
@@ -18,6 +22,7 @@ margin-bottom: 32px;
             // margin-left: 47px;
             background-color: $color-background-secondary;
     }
+   
 }
 
 .food-type {
@@ -33,6 +38,7 @@ margin-bottom: 32px;
         @include tablet {
             margin-bottom: 20px;
            }
+           
     }
 
     
@@ -41,8 +47,12 @@ margin-bottom: 32px;
 .our-menu {
     @include tablet {
         display: flex;
-        flex-wrap: wrap;
+        
         // justify-content: space-between;
+       }
+       @include pc {
+        margin-right: 85px;
+        margin-left: 85px;
        }
 
 }
@@ -143,9 +153,15 @@ letter-spacing: 0.02em;
     @include tablet {
         margin-top: 41px;
        
-        margin-right: 47;
+        margin-right: 47px;
         // margin-left: 0;
 
+       }
+       @include pc {
+        margin-top: 51px;
        
+        margin-right: 85px;
+        // margin-left: 0;
+
        }
 }
