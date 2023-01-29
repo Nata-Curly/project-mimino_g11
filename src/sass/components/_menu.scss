@@ -1,0 +1,200 @@
+.modal-menu__title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+  padding-top: 60px;
+  margin-bottom: 40px;
+  margin-top: 0;
+
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+.modal-discription {
+  margin-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    padding-left: 60px;
+  }
+}
+
+.modal-menu__second-title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+
+  color: #808080;
+
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.modal-menu__input {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+
+  width: 100%;
+  height: 54px;
+
+  border: 1px solid #c79002;
+  border-radius: 2px;
+
+  font-size: 24px;
+  line-height: 28px;
+
+  letter-spacing: 0.05em;
+
+  color: #808080;
+
+  background: #fffdee;
+
+  padding-left: 12px;
+  cursor: pointer;
+
+  @media screen and (min-width: 414px) {
+    width: 384px;
+    height: 54px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 288px;
+    height: 64px;
+  }
+}
+.modal-menu__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 0.02em;
+
+  color: #c79002;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 12px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 28px;
+  }
+}
+.modal-margin-reset {
+  margin-bottom: 0;
+}
+
+.modal-padding-reset {
+  padding: 0;
+}
+
+.modal-menu__submit {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background: #000000;
+  border: 1px solid #f3c653;
+  border-radius: 2px;
+
+  display: block;
+  margin: 0 auto;
+
+  padding: 20px 43px 20px 43px;
+
+  cursor: pointer;
+
+  @media screen and (min-width: 414px) {
+    padding: 20px 43px 20px 43px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 18px 117px 18px 117px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+.modal-menu-box__submit {
+  padding-bottom: 60px;
+  margin-top: 40px;
+}
+
+//стилізуємо селект
+.nice-select {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+
+  padding-left: 12px;
+  padding-top: 16px;
+
+  color: #808080;
+
+  border: 1px solid #c79002;
+  border-radius: 2px;
+
+  background: #fffdee;
+
+  width: 100%;
+  height: 54px;
+
+  @media screen and (min-width: 414px) {
+    width: 384px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 288px;
+    height: 64px;
+
+    padding-top: 18px;
+  }
+
+  &-dropdown {
+    width: 100%;
+  }
+  &:hover {
+    border: 1px solid #c79002;
+  }
+  &:active,
+  &:focus {
+    border: 1px solid black;
+  }
+}
+
+.nice-select:after {
+  height: 16px;
+  width: 16px;
+
+  border-bottom: 3.5px solid #c79002;
+  border-right: 3.5px solid #c79002;
+
+  margin-right: 25px;
+
+  border-radius: 2px;
+  top: 45%;
+}
+
+// приховуємо тег селекту
+select.js-select {
+  @extend .visually-hidden;
+}

@@ -1,0 +1,76 @@
+<div data-popup-target="test-modal" class="popup">
+  <div class="popup__content">
+    <button type="button" class="popup__close close-popup">X</button>
+
+    <h2 class="modal-menu__title">ЗАБРОНЮВАТИ НОМЕР</h2>
+
+    <form class="modal-flex-box">
+      <div class="flex-column-modal2">
+        <div class="modal-menu__item modal-flex-column">
+          <input
+            class="modal-menu__input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ваше ім’я"
+            pattern="[a-z]"
+          />
+          <label for="name" class="modal-menu__text"
+            >На кого забронювати столик?</label
+          >
+        </div>
+
+        <div class="modal-menu__item modal-flex-column">
+          <select id="date" name="testselect" class="js-select">
+            <option value="1">Сьогодні</option>
+            <option value="11">Завтра</option>
+            <option value="111">Післязавтра</option>
+          </select>
+
+          <label class="modal-menu__text margin-reset" for="date"
+            >Дата заїзду</label
+          >
+        </div>
+      </div>
+
+      <div>
+        <div class="modal-flex-column">
+          <input
+            class="js-inputmask modal-menu__input"
+            type="tel"
+            name="tel"
+            id="tel"
+            pattern="[0-9]"
+          />
+          <label id="tel" class="modal-menu__text">Номер телефону </label>
+        </div>
+
+        <div class="modal-flex-column">
+          <select name="testselect" class="js-select">
+            <option value="2">Двомісний люкс</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <label class="modal-menu__text">Категорія номеру</label>
+        </div>
+
+        <div class="modal-flex-column">
+          <select name="testselect" class="js-select">
+            <option value="2">Сьогодні</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label class="modal-menu__text modal-argin-reset">Дата виїзду</label>
+        </div>
+      </div>
+    </form>
+    <div class="modal-menu-box__submit">
+      <button class="modal-menu__submit close-popup" type="submit">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </div>
+  </div>
+</div>
