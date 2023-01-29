@@ -1,0 +1,110 @@
+.menu {
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: $color-background-primary;
+    &__title{
+        font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 37px;
+
+margin-bottom: 32px;
+    }
+}
+
+.food-type {
+    &__title {
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+
+        margin-bottom: 16px;
+    }
+
+    @include tablet {
+        
+       }
+}
+
+.meal-list {
+    margin-bottom: 16px;
+}
+
+.meal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    @include tablet {
+       justify-content: flex-start;
+       }
+    
+}
+
+.about-meal{
+    margin-right: auto;
+    width: 220px;
+
+    @include tablet {
+       margin-right: 45px;
+      }
+      @include pc {
+        margin-right: 231px;
+        margin-bottom: 35px;
+      }
+}
+
+.meal-name {
+    font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.02em;
+
+margin-bottom: 4px;
+}
+
+.meal-components {
+    font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 0.02em;
+}
+
+.meal-amount {
+display: flex;
+flex-direction: row;
+
+    font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.02em;
+
+// margin-right: 32px;
+margin-right: auto;
+
+@include tablet {
+    margin-right: 47px;
+   }
+}
+
+.meal-price {
+    font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+
+
+letter-spacing: 0.02em;
+}
+
+.reserve-table-button {
+    margin-right: auto;
+    margin-left: auto;
+    
+    background-color: $color-secondary;
+    color: $color-tertiary;
+    margin-top: 32px;
+}
