@@ -71,7 +71,6 @@ margin-left: auto;
 
   &__button {
     margin-bottom: 16px;
-
     @media screen and (max-width: 1023px) {
       margin-right: auto;
       margin-left: auto;
@@ -107,6 +106,18 @@ margin-left: auto;
   }
 }
 
+.hero__address.noshow-tablet {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.hero__social.noshow-desktop {
+  @media screen and (min-width: 1280px) {
+      display: none;
+    }
+}
+
 .bg-image {
   background-image: linear-gradient(
       to right,
@@ -133,20 +144,3 @@ margin-left: auto;
   }
 }
 
-.noshow-mobile {
-  @media screen and (max-width: 1023px) {
-    display: none;
-  }
-}
-
-.noshow-tablet {
-  @media screen and (min-width: 1024px) {
-    display: none;
-  }
-}
-
-.noshow-desktop {
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
-}
