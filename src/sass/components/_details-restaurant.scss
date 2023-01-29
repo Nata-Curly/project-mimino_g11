@@ -1,9 +1,9 @@
 .details-restaurant {
-    
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.76)
-      ),
-      url("#");
+    background-color:rgba(0, 0, 0, 0.76);
+    // background-image: linear-gradient(
+    //     rgba(0, 0, 0, 0.76)
+    //   ),
+    //   url("#");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -49,4 +49,52 @@
 //         url("_../images/homepage/hp-rest-bkg-PC_2x.jpg_");
 //     }
 //   }
+}
+.details-restaurant__container {
+    height: 100%;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    @media screen and (min-width:1024px) {
+        padding-top: 48px;
+        padding-bottom: 40px;
+    }
+}
+.details-restaurant__logo {
+    font-size: 40px;
+    line-height: 1.08;
+    margin-bottom: 12px;
+    color: $color-primary;
+    @media screen and (min-width: 1024px){
+        font-size: 64px;
+        margin-bottom: 16px;
+    }
+}
+.details-restaurant__title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: 0.02em;
+    color: $color-primary;
+}
+.details-restaurant__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $color-text-tertiary;
+}
+.restaurant-img {
+    color: $color-text-secondary;
+}
+
+.details-restaurant__wrapper {
+    width: 100%;
+    @extend %flex-centred;
+    flex-direction: column;
+    gap: 16px;
+}
+.details-restaurant__button {
+    width: 236px;
+    height: 48px;
+    text-decoration: none;
 }

@@ -65,6 +65,12 @@
   font-weight: 700;
   src: local(""), url("/src/fonts/FilmP3Bold.woff2") format("woff2"), url("/src/fonts/FilmP3Bold.woff") format("woff");
 }
+.details-restaurant__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: "Montserrat";
   color: #000;
@@ -379,7 +385,7 @@ p {
 }
 
 .details-restaurant {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.76)), url("#");
+  background-color: rgba(0, 0, 0, 0.76);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -387,19 +393,68 @@ p {
   margin: 0 auto;
 }
 
+.details-restaurant__container {
+  height: 100%;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__container {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+}
+
+.details-restaurant__logo {
+  font-size: 40px;
+  line-height: 1.08;
+  margin-bottom: 12px;
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__logo {
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
+}
+
+.details-restaurant__title {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.details-restaurant__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #BABABA;
+}
+
+.restaurant-img {
+  color: #C79002;
+}
+
+.details-restaurant__wrapper {
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.details-restaurant__button {
+  width: 236px;
+  height: 48px;
+  text-decoration: none;
+}
+
 .logo {
   display: block;
   font-family: "FilmP3", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3em;
-}
-.logo-footer {
-  color: #F3C653;
-}
-@media screen and (min-width: 1024px) {
-  .logo-footer {
-    font-size: 64px;
-  }
 }
 
 .hero {
