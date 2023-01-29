@@ -1,21 +1,19 @@
 .hero {
-
   &__container {
     min-height: 740px;
-      padding: 64px 0 20px 0;
-      text-align: center;
-      color: $color-primary;
-    
-      @include tablet {
-        min-height: 720px;
-        padding: 188px 47px 15px 47px;
-      }
-    
-      @include pc {
-        padding: 164px 85px 64px 85px;
-      }
+    padding: 64px 15px 20px 15px;
+    text-align: center;
+    color: $color-primary;
+
+    @include tablet {
+      min-height: 720px;
+      padding: 188px 47px 15px 47px;
+    }
+
+    @include pc {
+      padding: 164px 85px 64px 85px;
+    }
   }
-  
 
   &__logo {
     font-size: 96px;
@@ -45,6 +43,18 @@
 
     @include pc {
       margin-bottom: 64px;
+    }
+
+    &--hotel {
+      margin-bottom: 178px;
+
+      @include tablet {
+        margin-bottom: 218px;
+      }
+
+      @include pc {
+        margin-bottom: 242px;
+      }
     }
   }
 
@@ -114,7 +124,11 @@
     display: none;
   }
 }
-
+.hero__address.noshow-mobile {
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
 .hero__social.noshow-desktop {
   @media screen and (min-width: 1280px) {
     display: none;
@@ -171,25 +185,185 @@
     }
   }
 
-     @include pc {
-       background-image: linear-gradient(to right,
-           rgba(0, 0, 0, 0.65),
-           rgba(0, 0, 0, 0.65)),
-         url(../images/hero_images/pc/hp-hero-pc_1x.jpg);
-       background-repeat: no-repeat;
-       background-position: center;
-       background-size: cover;
-  
-       @media (min-device-pixel-ratio: 2),
-       (-webkit-min-device-pixel-ratio: 2),
-       (min-resolution: 192dpi),
-       (min-resolution: 2dppx) {
-         & {
-           background-image: linear-gradient(to right,
-               rgba(0, 0, 0, 0.65),
-               rgba(0, 0, 0, 0.65)),
-             url(../images/hero_images/pc/hp-hero-pc_2x.jpg);
-         }
-       }
-     }
+  @include pc {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero_images/pc/hp-hero-pc_1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero_images/pc/hp-hero-pc_2x.jpg);
+      }
+    }
+  }
+}
+
+.bg-image__rest {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/hero_images/mobile/rest-hero-mobile_1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero_images/mobile/rest-hero-mobile_2x.jpg);
+    }
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero_images/tablet/rest-hero-tabl_1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero_images/tablet/rest-hero-tabl_2x.jpg);
+      }
+    }
+  }
+
+  @include pc {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero_images/pc/rest-hero-pc_1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero_images/pc/rest-hero-pc_2x.jpg);
+      }
+    }
+  }
+}
+
+.bg-image__hotel {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/hero_images/mobile/hotel-hero-mobile_1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero_images/mobile/hotel-hero-mobile_2x.jpg);
+    }
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero_images/tablet/hotel-hero-tabl_1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero_images/tablet/hotel-hero-tabl_2x.jpg);
+      }
+    }
+  }
+
+  @include pc {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero_images/pc/hotel-hero-pc_1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero_images/pc/hotel-hero-pc_2x.jpg);
+      }
+    }
+  }
 }
