@@ -1,0 +1,124 @@
+.footer {
+  background-color: $color-background-footer;
+  color: $color-tertiary;
+
+  justify-content: space-between;
+  padding: 40px 30px 40px 59px;
+  align-items: center;
+
+  @include tablet {
+    padding: 80px 122px 80px 154px;
+  }
+
+  @include pc {
+    padding: 80px 186px 80px 216px;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo {
+    display: block;
+    font-family: 'FilmP3', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+
+    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-right: 85px;
+    @include tablet {
+      font-size: 64px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-right: 163px;
+    }
+    @include pc {
+      margin-right: 231px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &__item {
+    margin-bottom: 16px;
+  }
+
+  &__social {
+    display: flex;
+
+    margin-top: 17px;
+
+    @include tablet {
+      margin-top: 0;
+      display: block;
+    }
+
+    &__link {
+      padding: 10px 12px;
+    }
+
+    &--item {
+      // background-color: tomato;
+      // width: 20px;
+      // height: 20px;
+
+      &:not(:last-child) {
+        margin-right: 23px;
+      }
+
+      @include tablet {
+        border: 0.5px solid $color-tertiary;
+        border-radius: 2px;
+
+        padding: 10px 12px;
+
+        width: 144px;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__list {
+    @include tablet {
+      margin-right: 140px;
+    }
+    @include pc {
+      margin-right: 200px;
+    }
+  }
+}
+
+.sm-text {
+  display: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  @include tablet {
+    display: block;
+  }
+}
+
+// outline: solid 2px tomato;
