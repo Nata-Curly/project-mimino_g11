@@ -7,4 +7,12 @@
         line-height: 1.08;
         letter-spacing: 0.3em;
         color: $color-primary;
+
+        &-footer {
+            color: $color-tertiary;
+            @include tablet {
+                font-size: 64px;
+               
+              }
+        }
 }

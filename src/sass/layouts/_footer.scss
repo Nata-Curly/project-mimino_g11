@@ -19,13 +19,7 @@
   }
 
   &__logo {
-    display: block;
-    font-family: 'FilmP3', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.08;
-    letter-spacing: 0.3em;
+    
 
     margin-bottom: 60px;
     margin-top: 60px;
@@ -57,16 +51,22 @@
   &__social {
     display: flex;
 
+    
+
     margin-top: 17px;
 
     @include tablet {
       margin-top: 0;
       display: block;
+
     }
 
     &__link {
       padding: 10px 12px;
       color: $color-tertiary;
+      fill: $color-social-nonactive-icon;
+      
+      
     }
 
     &--item {
@@ -125,8 +125,14 @@
   }
 }
 
+
 .sm-footer-svg {
-    color: currentColor;
+   fill: currentColor;
+}
+
+.footer__social--link {
+    display: flex;
+    justify-content: space-between;
 }
 
 // outline: solid 2px tomato;
