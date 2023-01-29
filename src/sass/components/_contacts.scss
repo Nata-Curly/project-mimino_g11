@@ -1,0 +1,80 @@
+.contacts {
+  background-color: $color-background-primary;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    @include tablet {
+      gap: 25px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__link {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $color-tertiary;
+    fill: $color-tertiary;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+
+  &__phone {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 8px;
+      border: $nav-frames-border;
+      border-radius: 2px;
+      margin-top: 8px;
+      background-color: $color-primary;
+    }
+  }
+
+  &__contact {
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+    font-size: 14px;
+    line-height: 1.214;
+    color: #494848;
+  }
+
+  &__social {
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
+  }
+}
+
+.map--header {
+  font-family: 'FilmP3', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #494848;
+}
+.map--tittle {
+  color: $color-text-primary;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
