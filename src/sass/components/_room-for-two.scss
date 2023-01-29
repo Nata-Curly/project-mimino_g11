@@ -23,7 +23,7 @@
 
 
 .room-for-two {
-    background-color: #FFFDEE;
+    background-color: $color-background-primary;
 }
 
 
@@ -49,6 +49,8 @@
         letter-spacing: 0.3em;
         color: #494848;
         text-transform: uppercase;
+
+        margin-bottom: 32px;
     }
 
     &__title {
@@ -59,7 +61,9 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
 
-        color: #000000;
+        color: $color-secondary;
+
+        margin-bottom: 12px;
     }
 
     &__text {
@@ -69,17 +73,20 @@
         line-height: 15px;
         letter-spacing: 0.02em;
 
-        color: #7A7A7A;
+        color:$color-text-primary;
+
+        margin-bottom: 32px;
     }
 
     &__img {
         width: 244px;
-        background: #DADADA;
-
+        background: $color-background-tertiary;
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
 
-       margin-left: auto;
+        margin-left: auto;
+
+        margin-bottom: 32px;
     }
 }
 
@@ -87,6 +94,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+   
 }
 
 
@@ -107,23 +116,28 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
 
-    border: 2px solid var(--white-color);
+    border: 2px solid $color-primary;
     border-radius: 25px;
 
     &:hover,
     &:focus {
-        background: var(--white-color);
-        border: 2px solid var(--accent-color);
+        background: $color-primary;
+        border: 2px solid $color-tertiary;
     }
+
+         &:not(:last-child) {
+             margin-bottom: 12px;
+         }
 }
 
 .arrows {
     display: flex;
     justify-content: space-between;
     width: 98px;
+                margin-bottom: 20px;
 
     &__icon {
-        fill: #000000;
+        fill: $color-secondary;
         width: 32px;
         height: 32px;
     }

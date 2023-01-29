@@ -300,6 +300,7 @@ p {
   letter-spacing: 0.3em;
   color: #494848;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 .description__title {
   font-family: "Times New Roman";
@@ -308,7 +309,8 @@ p {
   line-height: 1.16;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
+  margin-bottom: 12px;
 }
 .description__text {
   max-width: 258px;
@@ -317,6 +319,7 @@ p {
   line-height: 15px;
   letter-spacing: 0.02em;
   color: #7A7A7A;
+  margin-bottom: 32px;
 }
 .description__img {
   width: 244px;
@@ -324,6 +327,7 @@ p {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   margin-left: auto;
+  margin-bottom: 32px;
 }
 
 .buttons-thumb {
@@ -347,21 +351,25 @@ p {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  border: 2px solid var(--white-color);
+  border: 2px solid #fff;
   border-radius: 25px;
 }
 .button-hotel:hover, .button-hotel:focus {
-  background: var(--white-color);
-  border: 2px solid var(--accent-color);
+  background: #fff;
+  border: 2px solid #F3C653;
+}
+.button-hotel:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .arrows {
   display: flex;
   justify-content: space-between;
   width: 98px;
+  margin-bottom: 20px;
 }
 .arrows__icon {
-  fill: #000000;
+  fill: #000;
   width: 32px;
   height: 32px;
 }/*# sourceMappingURL=index.css.map */
