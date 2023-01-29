@@ -1,3 +1,52 @@
 .details-restaurant {
-    background: rgba(0, 0, 0, 0.76);
+    
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.76)
+      ),
+      url("#");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
+
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: linear-gradient(
+//         rgba(0, 0, 0, 0.76)
+//       ),
+//       url("#");
+//   }
+
+//   @media screen and (min-width: 481px) {
+//     background-image: linear-gradient(
+//         rgba(0, 0, 0, 0.76)
+//       ),
+//       url("#");
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: linear-gradient(
+//         rgba(0, 0, 0, 0.76)
+//         ),
+//         url("#");
+//     }
+//   }
+
+//   @media screen and (min-width: 769px) {
+//     background-image: linear-gradient(
+//         rgba(0, 0, 0, 0.76)
+//       ),
+//       url("_../images/homepage/hp-rest-bkg-PC_1x.jpg_");
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: linear-gradient(
+//         rgba(0, 0, 0, 0.76)
+//         ),
+//         url("_../images/homepage/hp-rest-bkg-PC_2x.jpg_");
+//     }
+//   }
 }

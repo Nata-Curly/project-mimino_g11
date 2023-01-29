@@ -128,40 +128,23 @@ p {
   background-color: #0E0C07;
   color: #F3C653;
   justify-content: space-between;
-  padding: 40px 30px 40px 59px;
+  padding: 40px 0;
   align-items: center;
-}
-@media screen and (min-width: 1024px) {
-  .footer {
-    padding: 80px 122px 80px 154px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer {
-    padding: 80px 186px 80px 216px;
-  }
 }
 .footer__container {
   display: flex;
 }
 .footer__logo {
-  display: block;
-  font-family: "FilmP3", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.08;
-  letter-spacing: 0.3em;
   margin-bottom: 60px;
   margin-top: 60px;
-  margin-right: 85px;
+  margin-right: auto;
 }
 @media screen and (min-width: 1024px) {
   .footer__logo {
     font-size: 64px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 80px;
     margin-right: 163px;
+    margin-left: 154px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -177,6 +160,7 @@ p {
 }
 .footer__item {
   margin-bottom: 16px;
+  font-family: sans-serif;
 }
 .footer__social {
   display: flex;
@@ -190,6 +174,8 @@ p {
 }
 .footer__social__link {
   padding: 10px 12px;
+  color: #F3C653;
+  fill: rgba(243, 198, 83, 0.7);
 }
 .footer__social--item:not(:last-child) {
   margin-right: 23px;
@@ -213,6 +199,7 @@ p {
 @media screen and (min-width: 1024px) {
   .footer__box {
     flex-direction: row;
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -238,6 +225,14 @@ p {
   }
 }
 
+.sm-footer-svg {
+  fill: currentColor;
+}
+
+.footer__social--link {
+  display: flex;
+  justify-content: space-between;
+}
 
 .header {
   position: absolute;
@@ -355,11 +350,6 @@ p {
   display: block;
   font-family: inherit;
   cursor: pointer;
-  border: none;
-}
-
-.details-restaurant {
-  background: rgba(0, 0, 0, 0.76);
   padding: 14px 24px;
   min-width: 236px;
   font-weight: 700;
@@ -374,6 +364,15 @@ p {
   border-color: #F3C653;
 }
 
+.details-restaurant {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.76)), url("#");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .logo {
   display: block;
   font-family: "FilmP3", sans-serif;
@@ -383,6 +382,14 @@ p {
   line-height: 1.08;
   letter-spacing: 0.3em;
   color: #fff;
+}
+.logo-footer {
+  color: #F3C653;
+}
+@media screen and (min-width: 1024px) {
+  .logo-footer {
+    font-size: 64px;
+  }
 }
 
 .hero {
