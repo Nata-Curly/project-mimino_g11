@@ -66,6 +66,7 @@
 
     &__link {
       padding: 10px 12px;
+      color: $color-tertiary;
     }
 
     &--item {
@@ -122,6 +123,10 @@
   @include tablet {
     display: block;
   }
+}
+
+.sm-footer-svg {
+    color: currentColor;
 }
 
 // outline: solid 2px tomato;
