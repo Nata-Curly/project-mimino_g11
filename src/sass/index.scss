@@ -1,14 +1,9 @@
 
-@import './utels/variables';
-@import './base/base';
-@import './base/reset';
-
-
-@import './utels/common';
-@import './utels/fonts';
-@import './utels/mixins';
-@import './utels/placeholders';
-
+@import './utils/common';
+@import './utils/fonts';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/variables';
 
 @import './base/base';
 @import './base/reset';

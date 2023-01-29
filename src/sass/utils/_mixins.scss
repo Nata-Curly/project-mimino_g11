@@ -8,6 +8,18 @@
 
 // для інфо: Міксін відрізняється від плейсхолдера тим, що властивості дублюються в кожен селектор. Все тому, що значення властивостей міксіна можуть бути різними, залежно від переданих аргументів під час виклику @include міксін(аргументи). У той час як властивості та їх значення в плейсхолдері завжди однакові.
 
+@mixin visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 @mixin mobile {
     @media screen and (min-width:414px) {
