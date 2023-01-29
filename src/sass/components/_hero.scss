@@ -6,12 +6,11 @@
 
   @include tablet {
     min-height: 720px;
-    padding: 188px 47px 15px;
+    padding: 188px 0 15px 0;
   }
 
   @include pc {
-    min-height: 720px;
-    padding: 164px 85px 64px;
+    padding: 164px 0 64px 0;
   }
 
   &__logo {
@@ -62,8 +61,12 @@
   }
 
   &__address {
-    margin-left: auto;
-    margin-bottom: 70px;
+    @media screen and (max-width: 1023px) {
+margin-left: auto;
+  margin-bottom: 70px;
+  color: $address-color;
+    }
+    
   }
 
   &__button {
@@ -75,7 +78,7 @@
     }
   }
 
-  &__box {
+  &__container--first {
     @include tablet {
       display: flex;
       align-items: center;
@@ -87,7 +90,7 @@
     }
   }
 
-  &__box__button {
+    &__container--second {
     @media screen and (max-width: 1023px) {
       margin-bottom: 58px;
     }
