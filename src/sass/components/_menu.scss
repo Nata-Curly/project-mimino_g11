@@ -16,6 +16,7 @@ margin-bottom: 32px;
     @include tablet {
             // margin-right: 47px;
             // margin-left: 47px;
+            background-color: $color-background-secondary;
     }
 }
 
@@ -48,6 +49,9 @@ margin-bottom: 32px;
     @include tablet {
         margin-right: 88px;
        }
+       @include pc {
+        margin-right: 140px;
+       }
 }
 
 .meal-list {
@@ -77,8 +81,8 @@ margin-bottom: 32px;
        margin-right: 45px;
       }
       @include pc {
-        margin-right: 231px;
-        margin-bottom: 35px;
+        margin-right: 60px;
+        width: 252px;
       }
 }
 
