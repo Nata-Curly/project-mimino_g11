@@ -106,6 +106,120 @@ p {
   }
 }
 
+.footer {
+  background-color: #0E0C07;
+  color: #F3C653;
+  justify-content: space-between;
+  padding: 40px 30px 40px 59px;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 80px 122px 80px 154px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 80px 186px 80px 216px;
+  }
+}
+.footer__container {
+  display: flex;
+}
+.footer__logo {
+  display: block;
+  font-family: "FilmP3", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-right: 85px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__logo {
+    font-size: 64px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 163px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__logo {
+    margin-right: 231px;
+    margin-bottom: 35px;
+  }
+}
+.footer__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.footer__item {
+  margin-bottom: 16px;
+}
+.footer__social {
+  display: flex;
+  margin-top: 17px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__social {
+    margin-top: 0;
+    display: block;
+  }
+}
+.footer__social__link {
+  padding: 10px 12px;
+}
+.footer__social--item:not(:last-child) {
+  margin-right: 23px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__social--item {
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    padding: 10px 12px;
+    width: 144px;
+  }
+  .footer__social--item:not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .footer__box {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__list {
+    margin-right: 140px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__list {
+    margin-right: 200px;
+  }
+}
+
+.sm-text {
+  display: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .sm-text {
+    display: block;
+  }
+}
+
 .section {
   background-color: inherit;
 }
@@ -133,4 +247,8 @@ p {
   font-family: inherit;
   cursor: pointer;
   border: none;
+}
+
+.details-restaurant {
+  background: rgba(0, 0, 0, 0.76);
 }/*# sourceMappingURL=index.css.map */
