@@ -1,1 +1,20 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+
+.noshow-mobile {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+}
+
+.noshow-tablet {
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.noshow-desktop {
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
