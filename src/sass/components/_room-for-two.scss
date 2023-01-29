@@ -1,0 +1,130 @@
+.container {
+    max-width: 414px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: solid 2px tomato;
+
+    @media screen and (max-width: 1023px) {
+        max-width: 414px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        max-width: 1024px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+    }
+}
+.container-room-for-two {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+.room-for-two {
+    background-color: #FFFDEE;
+}
+
+
+.description {
+    list-style: none;
+    padding-left: 0;
+
+    &__subtitle {
+        font-family: 'Times New Roman';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+        margin-bottom: 8px;
+
+        color: #B4B4B4;
+    }
+
+    &__logo {
+    font-family: FilmP3, sans-serif; 
+           font-weight: 700;
+        font-size: 40px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        color: #494848;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+
+    &__text {
+        max-width: 258px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.02em;
+
+        color: #7A7A7A;
+    }
+
+    &__img {
+        width: 244px;
+        background: #DADADA;
+
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+
+       margin-left: auto;
+    }
+}
+
+.buttons-thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button-hotel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 236px;
+    height: 48px;
+
+    color: $color-tertiary;
+    background: rgba(0, 0, 0);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    border: 2px solid var(--white-color);
+    border-radius: 25px;
+
+    &:hover,
+    &:focus {
+        background: var(--white-color);
+        border: 2px solid var(--accent-color);
+    }
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 98px;
+
+    &__icon {
+        fill: #000000;
+        width: 32px;
+        height: 32px;
+    }
+}
