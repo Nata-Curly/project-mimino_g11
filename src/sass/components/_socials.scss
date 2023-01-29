@@ -1,0 +1,8 @@
+.social {
+    display: flex;
+    gap: 20px;
+
+    &__link {
+        fill: $color-social-nonactive-icon;
+    }
+}
