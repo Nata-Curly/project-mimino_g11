@@ -1,0 +1,117 @@
+.content__hotel {
+	margin-right: 48px;
+}
+
+.section__hotel-lux {
+	background-color: #FFFDEE;
+}
+
+.content__paragrahp {
+	margin-bottom: 4px;
+
+	font-family: 'Times New Roman';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 1.16;
+
+	color: #B4B4B4;
+}
+
+.content__title {
+	margin-bottom: 72px;
+
+	font-family: 'FilmP3';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 1.08;
+
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+
+	color: #494848;
+}
+
+.content__lux-title {
+	margin-bottom: 24px;
+
+	font-family: 'Times New Roman';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.14;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: #000000;
+}
+
+.lux {
+	text-transform: lowercase;
+}
+
+.content__lux-paragraph {
+	width: 400px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.02em;
+
+	color: #7A7A7A;
+}
+
+.content {
+	display: flex;
+}
+
+.content__hotel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.image {
+	margin-top: -33px;
+
+	box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+	border-radius: 2px;
+}
+
+.button {
+	display: block;
+	padding: 14px 37px;
+	min-width: 236px;
+	background-color: #000000;
+	border: 2px solid #FFFFFF;
+	border-radius: 25px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.25;
+
+	text-align: center;
+	letter-spacing: 0.02em;
+
+	color: #F3C653;
+
+	cursor: pointer;
+}
+
+.link-lux {
+	margin-top: 121px;
+	margin-bottom: 16px;
+	display: block;
+	width: 236px;
+	text-decoration: none;
+}
+
+.content-slider {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
