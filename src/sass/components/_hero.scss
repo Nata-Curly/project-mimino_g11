@@ -61,27 +61,52 @@
     }
   }
 
-  &__hero {
+  &__address {
     margin-left: auto;
     margin-bottom: 70px;
   }
 
   &__button {
     margin-bottom: 16px;
-  }
 
-  &__box {
-    @include tablet {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    @media screen and (max-width: 1023px) {
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
 
-    @media screen and (min-width: 1024px) and (max-width: 1279px) {
-      margin-bottom: 25px;
-    }
-  }
-}
+        &__box {
+            @include tablet {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+    
+            @media screen and (min-width: 1024px) and (max-width: 1279px) {
+                margin-bottom: 25px;
+            }
+        }
+
+                &__box__button {
+                    @media screen and (max-width: 1023px) {
+                            margin-bottom: 58px;
+                        }
+                    
+                        @media screen and (min-width: 1024px) {
+                            display: flex;
+                            gap: 40px;
+                        }
+                    }
+
+                                        &__social {
+                                            display: flex;
+                                                align-items: flex-end;
+                                        }
+                }
+  
+
+  
+
 
 .bg-image {
   background-image: linear-gradient(
@@ -107,4 +132,26 @@
         url(../images/hero_images/mobile/hp-hero-mobile_2x.jpg);
     }
   }
+}
+
+
+
+
+.noshow-mobile {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+}
+
+.noshow-tablet {
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.noshow-desktop {
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+
 }

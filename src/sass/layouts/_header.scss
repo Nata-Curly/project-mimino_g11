@@ -1,13 +1,13 @@
 .header {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 50;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 15px 0 15px;
+  // padding: 16px 15px 0 15px;
   border: transparent;
 
   @include tablet {
@@ -49,24 +49,28 @@
 
   &__phone {
     @include tablet {
-        display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 8px;
-            border: 1px solid rgba(243, 198, 83, 0.7);
-            border-radius: 2px;
-            margin-left: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px;
+      border: $nav-frames-border;
+      border-radius: 2px;
+      margin-left: 46px;
     }
   }
 
   &__contact {
     @media screen and (max-width: 1023px) {
-            display: none;
-        }
+      display: none;
+    }
+    font-size: 14px;
+    line-height: 1.214;
+    color: $color-primary;
+  }
 
-                font-size: 14px;
-                line-height: 1.214;
-                color: $color-primary;
-                
+  &__social {
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
   }
 }

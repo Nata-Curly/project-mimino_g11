@@ -1,0 +1,12 @@
+.address {
+    display: flex;
+        align-items: center;
+        text-align: left;
+        max-width: 210px;
+        width: 100%;
+        padding: 8px;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+        fill: $color-tertiary;
+}
