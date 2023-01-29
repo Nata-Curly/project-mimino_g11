@@ -42,15 +42,17 @@ margin-bottom: 32px;
     @include tablet {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
        }
+
 }
 
 .main-menu {
     @include tablet {
-        margin-right: 88px;
+        // margin-right: 88px;
        }
        @include pc {
-        margin-right: 140px;
+        // margin-right: 140px;
        }
 }
 
