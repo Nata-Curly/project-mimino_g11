@@ -1,17 +1,21 @@
 .hero {
-  min-height: 740px;
-  padding: 64px 0 20px 0;
-  text-align: center;
-  color: $color-primary;
 
-  @include tablet {
-    min-height: 720px;
-    padding: 188px 0 15px 0;
+  &__container {
+    min-height: 740px;
+      padding: 64px 0 20px 0;
+      text-align: center;
+      color: $color-primary;
+    
+      @include tablet {
+        min-height: 720px;
+        padding: 188px 47px 15px 47px;
+      }
+    
+      @include pc {
+        padding: 164px 85px 64px 85px;
+      }
   }
-
-  @include pc {
-    padding: 164px 0 64px 0;
-  }
+  
 
   &__logo {
     font-size: 96px;
