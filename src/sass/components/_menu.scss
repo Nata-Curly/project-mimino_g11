@@ -149,9 +149,16 @@
   margin-right: auto;
   margin-left: auto;
 
+//   background-color: $color-button-disabled;
   background-color: $color-secondary;
   color: $color-tertiary;
   margin-top: 32px;
+
+  &:hover, 
+  :focus {
+    background-color: $color-background-primary;
+    color: $color-tertiary;
+  }
 
   @include tablet {
     margin-top: 41px;
