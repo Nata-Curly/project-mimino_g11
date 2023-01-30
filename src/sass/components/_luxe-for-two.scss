@@ -16,8 +16,9 @@
   }
 }
 
-.section__hotel-lux {
+.section__lux-for-two {
   background-color: $color-background-primary;
+  padding-bottom: 40px;
 }
 
 .content {
@@ -216,11 +217,11 @@
     display: flex;
     align-items: center;
     margin-top: 49px;
-    margin-bottom: 112px;
+	margin-bottom: 40px;
   }
 }
 
-.slider {
+.slider-lux {
   margin-top: 32px;
   margin-bottom: 72px;
 
@@ -237,4 +238,13 @@
   .slider__img:not(:last-child) {
     margin-bottom: 16px;
   }
+}
+
+.arrow-lux-button {
+	background-color: transparent;
+	border: none;
+}
+
+.arrow-lux-button:not(:last-child) {
+	margin-right: 32px;
 }
