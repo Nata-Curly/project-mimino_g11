@@ -6,7 +6,7 @@ $('.responsive').slick({
     speed: 300,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
   
     responsive: [
       {
