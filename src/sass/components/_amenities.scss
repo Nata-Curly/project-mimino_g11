@@ -1,7 +1,14 @@
 .amenities {
+    position: relative;
     background-color: $color-background-primary;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    &__text {
+        @include tablet {
+            max-width: 757px;
+        }
+    }
 
     
     &__room-list {
@@ -20,6 +27,26 @@
         line-height: 1.17;
         margin-bottom: 16px;
         text-transform: uppercase;        
+    }
+
+    &__room-text {
+        @include tablet {
+            max-width: 400px;
+        }
+    }
+
+    &__room-box {
+        @extend %flex-centred;
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+            gap: 80px;
+        }
+        
+        @include pc {
+            gap: 160px;
+        }
     }
 
 }

@@ -21,3 +21,30 @@
     border-color: $color-tertiary;
   }
 }
+
+// конпка в Amenities
+
+.button-amenities {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  max-width: 384px;
+  color: $color-primary;
+  background-color: $color-secondary;
+  border: 1px solid $color-tertiary;
+  border-radius: 25px;
+  padding: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.2;
+    width: 434px;
+    position: absolute;
+    right: 47px;
+    bottom: 96px;
+    }
+}
