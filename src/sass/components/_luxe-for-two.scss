@@ -20,7 +20,11 @@
 
 .section__lux-for-two {
   background-color: $color-background-primary;
-  padding-bottom: 40px;
+  padding-bottom: 32px;
+
+  	@include tablet {
+		padding-bottom: 40px;
+	}
 }
 
 .content {
@@ -178,12 +182,15 @@
 	flex-direction: column;
 	align-items: flex-end;
 	margin-top: 20px;*/
+
+	padding-bottom: 40px;
 	
 
 	@media (max-width: 1023px) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding-bottom: 0;
 	}
 
 	/*@include tablet {
@@ -208,6 +215,12 @@
   background-color: $color-secondary;
 
   cursor: pointer;
+
+	&:hover, 
+	&:focus {
+		background-color: $color-primary;
+		color: $color-tertiary;
+	}
 }
 
 .link-lux {
@@ -221,14 +234,14 @@
     align-items: center;
 	justify-content:space-between;
     margin-top: 49px;
-	margin-bottom: 72px;
+	//margin-bottom: 72px;
   }
 }
 
 .slider-img {
   	margin-top: 32px;
 	display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     margin-top: 32px;
     gap: 16px;
   	//margin-bottom: 72px;
@@ -255,11 +268,13 @@
 }*/
 
 .arrow-button {
+	margin-left: 430px;
 	@media (max-width: 1023px) {
 		position: static;
+		margin-left: 0;
 	}
-	position: absolute;
-	right: -5px;
+	/*position: absolute;
+	right: -5px;*/
 
 }
 
