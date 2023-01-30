@@ -6,33 +6,35 @@
   padding: 40px 0;
   align-items: center;
 
-//   @include tablet {
-//     // padding: 80px 122px 80px 154px;
-//   }
+  //   @include tablet {
+  //     // padding: 80px 122px 80px 154px;
+  //   }
 
-//   @include pc {
-//     // padding: 80px 186px 80px 216px;
-//   }
+  //   @include pc {
+  //     // padding: 80px 186px 80px 216px;
+  //   }
 
   &__container {
     display: flex;
+    @include pc {
+      padding-right: 85px;
+      padding-left: 85px;
+    }
   }
 
   &__logo {
-    
+    font-size: 36px;
 
     margin-bottom: 60px;
     margin-top: 60px;
-    margin-right: auto;
+    margin-right: -0.3em;
     @include tablet {
       font-size: 64px;
       margin-top: 80px;
-    
-      margin-right: 163px;
+
       margin-left: 154px;
     }
     @include pc {
-      margin-right: 231px;
       margin-bottom: 35px;
     }
   }
@@ -51,22 +53,17 @@
   &__social {
     display: flex;
 
-    
-
     margin-top: 17px;
 
     @include tablet {
       margin-top: 0;
       display: block;
-
     }
 
     &__link {
       padding: 10px 12px;
       color: $color-tertiary;
       fill: $color-social-nonactive-icon;
-      
-      
     }
 
     &--item {
@@ -97,10 +94,16 @@
   &__box {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
 
     @include tablet {
       flex-direction: row;
       margin-top: 40px;
+
+      margin-right: 163px;
+    }
+    @include pc {
+      margin-right: 231px;
     }
   }
 
@@ -125,14 +128,14 @@
   }
 }
 
-
 .sm-footer-svg {
-   fill: currentColor;
+  fill: currentColor;
 }
 
 .footer__social--link {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 // outline: solid 2px tomato;
