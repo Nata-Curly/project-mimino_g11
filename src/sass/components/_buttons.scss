@@ -21,3 +21,78 @@
     border-color: $color-tertiary;
   }
 }
+
+// конпка в Amenities
+
+.button-amenities {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  max-width: 384px;
+  color: $color-primary;
+  background-color: $color-secondary;
+  border: 1px solid $color-tertiary;
+  border-radius: 25px;
+  padding: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.2;
+    max-width: 434px;
+    width: 434px;
+    position: absolute;
+    padding: auto;
+    right: 47px;
+    bottom: 96px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-secondary;
+      background-color: $color-tertiary;
+    }
+        
+}
+
+.button-back-rooms {
+  // display: flex;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $color-text-secondary;
+  border: none;
+  background-color: transparent;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet {    
+    font-size: 20px;
+    line-height: 1.2;
+    // max-width: 434px;
+    // width: 434px;
+    position: absolute;
+    right: 47px;
+    bottom: 32px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-tertiary;
+    }
+
+    &__icon {
+      position: absolute;
+      fill: $color-text-secondary;
+      margin-left: 12px;
+
+      &:hover,
+        &:focus {
+          fill: $color-tertiary;
+    }
+  }
+}
+
