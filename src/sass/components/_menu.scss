@@ -2,6 +2,14 @@
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: $color-background-primary;
+
+  @include tablet {
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+  @include pc {
+    padding-bottom: 60px;
+  }
   &__title {
     font-family: 'Times New Roman';
     font-style: normal;
