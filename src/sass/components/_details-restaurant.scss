@@ -75,13 +75,22 @@
     margin-bottom: 20px;
     letter-spacing: 0.02em;
     color: $color-primary;
+    @media screen and (min-width: 1024px){
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
 }
 .details-restaurant__text {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
+    margin-bottom: 48px;
     letter-spacing: 0.02em;
     color: $color-text-tertiary;
+    @media screen and (min-width: 1024px){
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
 }
 .restaurant-img {
     color: $color-text-secondary;
