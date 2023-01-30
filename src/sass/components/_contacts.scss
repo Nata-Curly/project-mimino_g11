@@ -1,97 +1,110 @@
 .contacts {
+  &__section {
+    background-color: $color-background-primary;
+    padding: 36px 0px 32px 0px;
+    @include tablet {
+      padding: 56px 0px 40px 0px;
+    }
+    @include pc {
+      padding: 56px 0px 74px 0px;
+    }
+  }
   &__list {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     flex-direction: column;
 
     @include tablet {
-      gap: 25px;
+      gap: 24px;
     }
   }
 
   &__item {
     display: flex;
     align-items: baseline;
+    flex-direction: row;
     justify-content: space-between;
-    flex-direction: column;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
-  &__link {
-    display: flex;
+  &__nav--link {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration: none;
     color: $color-tertiary;
     fill: $color-tertiary;
-
     @include tablet {
-      font-size: 20px;
-      line-height: 1.2;
+      margin-bottom: 8px;
     }
   }
 
-  &__phone {
-    @include tablet {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 15px;
-      padding: 8px;
-      border: $nav-frames-border;
-      border-radius: 2px;
-      margin-top: 8px;
-      background-color: $color-primary;
-    }
-  }
-
-  &__contact {
-    @media screen and (max-width: 1023px) {
-      display: none;
-    }
+  &__phone--link {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     font-size: 14px;
     line-height: 1.214;
+    letter-spacing: 0.02em;
+    padding: 8px;
+    background-color: $color-primary;
     color: #494848;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $color-tertiary;
+      transition: $action-duration;
+    }
   }
 
-  &__social {
-    @media screen and (max-width: 1279px) {
-      display: none;
+  &__icon {
+    fill: $color-text-secondary;
+    margin-right: 8px;
+  }
+  &__header {
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: $color-logo-secondary;
+    @include tablet {
+      font-size: 64px;
+      line-height: 1.08;
+    }
+  }
+  &__tittle {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    color: $color-text-primary;
+    @include tablet {
+      margin-bottom: 35px;
+    }
+    @include pc {
+      font-size: 20px;
+    }
+  }
+  &__map {
+    width: 100%;
+    height: 220px;
+    @include tablet {
+      width: 54%;
+      height: 412px;
     }
   }
 }
 
-.map--header {
-  font-family: 'FilmP3', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 1.08;
-  letter-spacing: 0.3em;
-  color: #494848;
-}
-.map--tittle {
-  color: $color-text-primary;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-}
-.contacts__box {
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: $color-background-primary;
-}
-.contacts__map {
-  min-width: 100%;
-  min-height: 100%;
-}
-.contacts__map--box {
-  margin-left: auto;
-}
-.contacts__section {
-  background-color: $color-background-primary;
-}
+// .contacts__map--box {
+//   @include tablet {
+//     width: 54%;
+//     height: none;
+//     min-height: 100%;
+//   }
+// }
 .contacts__adress {
   display: flex;
   align-items: center;
@@ -100,14 +113,47 @@
   border: $nav-frames-border;
   border-radius: 2px;
   background-color: $color-primary;
+  &:hover,
+  &:focus {
+    color: aqua;
+  }
 }
 .contacts__adress--link {
   text-decoration: none;
+  text-align: left;
   fill: $color-tertiary;
   padding: 8px;
   display: flex;
-  gap: 15px;
   align-items: center;
   font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
   color: $color-logo-secondary;
+  &:hover,
+  &:focus {
+    color: $color-tertiary;
+    transition: $action-duration;
+  }
+}
+.contacts__content--box {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.contacts__border--box {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: 0.02em;
+  border: $nav-frames-border;
+  border-radius: 2px;
+  background-color: $color-primary;
+  color: #494848;
+  text-decoration: none;
 }
