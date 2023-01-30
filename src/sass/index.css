@@ -65,7 +65,7 @@
   font-weight: 700;
   src: local(""), url("/src/fonts/FilmP3Bold.woff2") format("woff2"), url("/src/fonts/FilmP3Bold.woff") format("woff");
 }
-.details-restaurant__wrapper, .amenities__room-list {
+.amenities__room-box, .amenities__room-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -445,9 +445,24 @@ p {
 }
 
 .amenities {
+  position: relative;
   background-color: #FFFDEE;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
+}
+@media screen and (min-width: 1024px) {
+  .amenities {
+    padding: 32px 32px 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .amenities {
+    padding: 49px 60px 208px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .amenities__text {
+    max-width: 757px;
+  }
 }
 .amenities__room-list {
   flex-direction: column;
@@ -462,6 +477,25 @@ p {
   line-height: 1.17;
   margin-bottom: 16px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .amenities__room-text {
+    max-width: 400px;
+  }
+}
+.amenities__room-box {
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .amenities__room-box {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .amenities__room-box {
+    gap: 160px;
+  }
 }
 
 .button {
@@ -681,6 +715,68 @@ p {
   width: 236px;
   height: 48px;
   text-decoration: none;
+}
+.button-amenities {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  max-width: 384px;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #F3C653;
+  border-radius: 25px;
+  padding: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .button-amenities {
+    font-size: 24px;
+    line-height: 1.2;
+    max-width: 434px;
+    width: 434px;
+    position: absolute;
+    padding: auto;
+    right: 47px;
+    bottom: 96px;
+  }
+}
+.button-amenities:hover, .button-amenities:focus {
+  color: #000;
+  background-color: #F3C653;
+}
+
+.button-back-rooms {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #C79002;
+  border: none;
+  background-color: transparent;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 1024px) {
+  .button-back-rooms {
+    font-size: 20px;
+    line-height: 1.2;
+    position: absolute;
+    right: 47px;
+    bottom: 32px;
+  }
+}
+.button-back-rooms:hover, .button-back-rooms:focus {
+  color: #F3C653;
+}
+.button-back-rooms__icon {
+  position: absolute;
+  fill: #C79002;
+  margin-left: 12px;
+}
+.button-back-rooms__icon:hover, .button-back-rooms__icon:focus {
+  fill: #F3C653;
 }
 
 .logo {
@@ -1483,6 +1579,7 @@ p {
   }
 }
 .description-r42__logo {
+  display: block;
   font-family: FilmP3, sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -1657,12 +1754,12 @@ p {
   }
 }
 
-.swiper-wrapper {
+.swiper-wrapper-r42 {
   display: flex;
   margin-left: -120px;
 }
 @media screen and (min-width: 1024px) {
-  .swiper-wrapper {
+  .swiper-wrapper-r42 {
     margin-left: 0;
   }
 }
