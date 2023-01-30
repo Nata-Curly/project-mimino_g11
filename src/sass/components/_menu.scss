@@ -149,6 +149,8 @@
   margin-right: auto;
   margin-left: auto;
 
+  @extend %cubic;
+
 //   background-color: $color-button-disabled;
   background-color: $color-secondary;
   color: $color-tertiary;
