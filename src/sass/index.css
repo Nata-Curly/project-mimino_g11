@@ -1168,12 +1168,12 @@ p {
   }
 }
 
-.swiper-wrapper {
+.swiper-wrapper-r42 {
   display: flex;
   margin-left: -120px;
 }
 @media screen and (min-width: 1024px) {
-  .swiper-wrapper {
+  .swiper-wrapper-r42 {
     margin-left: 0;
   }
 }
