@@ -170,10 +170,10 @@
 }
 
 .buttons {
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	margin-top: 20px;
+	margin-top: 20px;*/
 	
 
 	@media (max-width: 1023px) {
@@ -182,14 +182,14 @@
 		align-items: center;
 	}
 
-	@include tablet {
+	/*@include tablet {
      margin-top: 89px;
 	 margin-bottom: 145px;
     }
 
 	@include tablet {
      margin-top: 103px;
-    }
+    }*/
 }
 
 .button--lux {
@@ -211,7 +211,7 @@
   text-decoration: none;
 }
 
-/*.content-slider {
+.content-slider {
   @include tablet {
     display: flex;
     align-items: center;
@@ -237,4 +237,4 @@
   .slider__img:not(:last-child) {
     margin-bottom: 16px;
   }
-}*/
+}
