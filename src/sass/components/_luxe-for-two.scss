@@ -245,6 +245,7 @@
     margin-top: 32px;
     gap: 16px;
   	//margin-bottom: 72px;
+	margin-left: -120px;
 
   @include tablet {
     display: flex;
@@ -254,7 +255,13 @@
     //margin-right: 326px;
     margin-top: 0;
     margin-bottom: 40px;
+	margin-left: 0;
   }
+}
+
+.slider-lux__img {
+	box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 2px;
 }
 
 .slider-lux {
@@ -268,7 +275,7 @@
 }*/
 
 .arrow-button {
-	margin-left: 430px;
+	margin-left: 310px;
 	@media (max-width: 1023px) {
 		position: static;
 		margin-left: 0;
