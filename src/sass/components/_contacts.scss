@@ -1,6 +1,4 @@
 .contacts {
-  background-color: $color-background-primary;
-
   &__list {
     display: flex;
     gap: 20px;
@@ -77,4 +75,39 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+}
+.contacts__box {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $color-background-primary;
+}
+.contacts__map {
+  min-width: 100%;
+  min-height: 100%;
+}
+.contacts__map--box {
+  margin-left: auto;
+}
+.contacts__section {
+  background-color: $color-background-primary;
+}
+.contacts__adress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+  border: $nav-frames-border;
+  border-radius: 2px;
+  background-color: $color-primary;
+}
+.contacts__adress--link {
+  text-decoration: none;
+  fill: $color-tertiary;
+  padding: 8px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-style: normal;
+  color: $color-logo-secondary;
 }
