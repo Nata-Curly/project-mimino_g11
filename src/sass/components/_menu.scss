@@ -12,6 +12,10 @@ line-height: 37px;
 
 margin-bottom: 32px;
 
+@include tablet {
+    margin-left: 47px;
+   }
+
 @include pc {
     margin-left: 85px;
    }
@@ -47,10 +51,12 @@ margin-bottom: 32px;
 .our-menu {
     @include tablet {
         display: flex;
-        
+        margin-right: 12px;
+        margin-left: 47px;
         // justify-content: space-between;
        }
        @include pc {
+        justify-content: flex-start;
         margin-right: 85px;
         margin-left: 85px;
        }
@@ -115,8 +121,7 @@ letter-spacing: 0.02em;
 }
 
 .meal-amount {
-display: flex;
-flex-direction: row;
+
 
     font-weight: 300;
 font-size: 14px;
@@ -153,7 +158,7 @@ letter-spacing: 0.02em;
     @include tablet {
         margin-top: 41px;
        
-        margin-right: 47px;
+        margin-right: 12px;
         // margin-left: 0;
 
        }

@@ -27,16 +27,15 @@
 
     margin-bottom: 60px;
     margin-top: 60px;
-    margin-right: auto;
+    margin-right: -0.3em;
     @include tablet {
       font-size: 64px;
       margin-top: 80px;
     
-      margin-right: 163px;
       margin-left: 154px;
     }
     @include pc {
-      margin-right: 231px;
+      
       margin-bottom: 35px;
     }
   }
@@ -69,6 +68,7 @@
       padding: 10px 12px;
       color: $color-tertiary;
       fill: $color-social-nonactive-icon;
+
       
       
     }
@@ -101,19 +101,29 @@
   &__box {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
 
     @include tablet {
       flex-direction: row;
       margin-top: 40px;
+
+      margin-right: 163px;
     }
+    @include pc {
+        margin-right: 231px;
+        
+      }
   }
 
   &__list {
+    
     @include tablet {
       margin-right: 140px;
+      
     }
     @include pc {
       margin-right: 200px;
+      
     }
   }
 }
@@ -137,6 +147,7 @@
 .footer__social--link {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 // outline: solid 2px tomato;
