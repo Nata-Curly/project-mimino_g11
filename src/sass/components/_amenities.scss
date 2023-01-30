@@ -1,8 +1,15 @@
 .amenities {
     position: relative;
     background-color: $color-background-primary;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 0;
+    
+    @include tablet {
+        padding: 32px 32px 200px;
+    }
+
+    @include pc {
+        padding: 49px 60px 208px;
+    }
 
     &__text {
         @include tablet {
