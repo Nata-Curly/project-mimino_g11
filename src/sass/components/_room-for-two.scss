@@ -1,0 +1,284 @@
+// .container {
+//     max-width: 414px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+//     outline: solid 2px tomato;
+
+//     @include mobile  {
+//         max-width: 414px;
+//     }
+
+//     @include tablet {
+//         max-width: 1024px;
+//     }
+
+//     @include pc {
+//         max-width: 1280px;
+//     }
+// }
+.container-room-for-two {
+    max-width: 414px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    // outline: solid 2px tomato;
+
+    @include mobile {
+        max-width: 414px;
+    }
+
+    @include tablet {
+        max-width: 1024px;
+        padding-top: 64px;
+        padding-bottom: 104px;
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+
+    @include pc {
+        max-width: 1280px;
+        padding-top: 72px;
+        padding-bottom: 40px;
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+}
+
+
+.room-for-two {
+    background-color: $color-background-primary;
+
+    &__thumb {
+        @include tablet {
+                display: flex;
+            }
+    }
+}
+
+
+.description-r42 {
+    list-style: none;
+    padding-left: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    &__subtitle {
+        font-family: 'Times New Roman';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+        margin-bottom: 8px;
+
+        color: #B4B4B4;
+
+        @include tablet {
+            font-size: 32px;
+            margin-bottom: 4px;
+            }
+    }
+
+    &__logo {
+    font-family: FilmP3, sans-serif; 
+           font-weight: 700;
+        font-size: 40px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        color: #494848;
+        text-transform: uppercase;
+
+        margin-bottom: 32px;
+
+        @include tablet {
+            font-size: 64px;
+            margin-bottom: 62px;
+        }
+        @include pc {
+            margin-bottom: 72px;
+        }
+    }
+
+    &__title {
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: $color-secondary;
+
+        margin-bottom: 12px;
+
+        @include tablet {
+            font-size: 30px;
+            margin-bottom: 16px;
+            }
+                @include pc {
+            font-size: 36px;
+                }
+    }
+
+    &__text {
+        max-width: 258px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+
+        color:$color-text-primary;
+
+        margin-bottom: 32px;
+
+        @include tablet {
+            max-width: 440px;
+            font-size: 16px;
+            }
+        @include pc {
+            max-width: 400px;
+        }
+    }
+
+    &__img {
+        max-width: 244px;
+        background: $color-background-tertiary;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+
+        margin-left: auto;
+
+        margin-bottom: 32px;
+
+        @include tablet {
+            max-width: 400px;
+            margin-bottom: 48px;
+            margin-top: -96px;
+            margin-left: 25px;
+            }
+        @include pc {
+            max-width: 460px;
+            margin-left: 150px;
+        }
+    }
+}
+
+.slider-and-buttons-thumb {
+    @include tablet {
+                display: flex;
+                justify-content: space-between;
+                // height: 194px;
+                // align-items: center;
+            }
+        @include pc {
+            // height: 254px;
+        }
+}
+
+// .slider-r42-tumb {
+//     // @include tablet {
+//     //         display: flex;
+//     //     }
+// }
+
+
+
+.buttons-r42-thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+    padding-top: 41px;
+        } 
+                @include pc {
+                    padding-top: 72px;
+                }
+}
+
+
+.button-r42-hotel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    width: 236px;
+    height: 48px;
+
+    color: $color-tertiary;
+    background: $color-secondary;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    border: 2px solid $color-primary;
+    border-radius: 25px;
+
+    @extend %cubic;
+
+    &:hover,
+    &:focus {
+        background: $color-primary;
+        border: 2px solid $color-tertiary;
+    }
+
+         &:not(:last-child) {
+             margin-bottom: 12px;
+         }
+}
+
+.arrows-r42 {
+    display: flex;
+    justify-content: space-between;
+    width: 98px;
+    margin-bottom: 20px;
+
+    @include tablet {
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: 16px;
+        }
+
+    &__icon {
+        fill: $color-secondary;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+
+// Стилі для картикнок заглушок для слайдів
+.slide-r42 {
+    width: 194px;
+    height: 194px;
+
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    background: $color-background-tertiary;
+
+    margin-bottom: 20px;
+    margin-right: 16px;
+
+    @include tablet {
+    margin-bottom: 32px;
+}
+    @include pc {
+        width: 254px;
+        height: 254px;
+    margin-bottom: 40px;
+}
+}
+
+.swiper-wrapper {
+    display: flex;
+        margin-left: -120px;
+
+        @include tablet {
+        margin-left: 0;
+}
+}
