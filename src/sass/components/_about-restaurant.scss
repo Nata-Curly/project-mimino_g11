@@ -76,7 +76,6 @@
     bottom: 0;
     margin-top: 32px;
     gap: 40px;
-    // width: 548px;
 
     @media screen and (min-width: 1024px) {
         margin-top: -28px;
@@ -185,8 +184,9 @@
 
 
 .about-restaurant-slick-container{
-    width: 330px;
-
+    width: 515px;
+    position: relative;
+    right: -185px;
     @media screen and (min-width: 1024px) {
         width: 428px;
     }
@@ -206,14 +206,22 @@
         }
 
     &__item {
-        margin: 15px;
+        margin-right: 25px;
+
+        @include tablet {
+            margin-right: 40px;
+        }
+
+        @include pc {
+            margin-right: 40px;
+        }
     }
 
     &__box {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 auto;
+        margin: 0 0;
     }
 
     
