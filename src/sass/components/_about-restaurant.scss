@@ -185,7 +185,7 @@
 
 
 .slick-container{
-    // width: 548px;
+    width: 548px;
 }
 
 .slick {
@@ -220,7 +220,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
-    width: 50px;
+    width: 32px;
     height: 40px;
     cursor: pointer;
     font-family: inherit;
@@ -233,6 +233,8 @@
 }
 
 .my-slick-prev {
+background-image: url(../images/slider-arrow-black-left.svg);
+
     left: 50px;
 
     @media screen and(min-width: 768px) {
@@ -245,6 +247,8 @@
 }
 
 .my-slick-next {
+    background-image: url(../images/slider-arrow-black-right.svg);
+
     right: 50px;
 
     @media screen and(min-width: 768px) {
@@ -252,6 +256,6 @@
     }
 
     @media screen and(min-width: 1200px) {
-        right: 350px;
+        right: 100px;
     }
 }
