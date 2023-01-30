@@ -215,7 +215,6 @@
 .my-slick-next {
     position: absolute;
     bottom: -40px;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,12 +222,7 @@
     width: 32px;
     height: 40px;
     cursor: pointer;
-    font-family: inherit;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 1;
     border: none;
-    color: green;
     background-color: transparent;
 }
 
