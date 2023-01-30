@@ -65,7 +65,7 @@
   font-weight: 700;
   src: local(""), url("/src/fonts/FilmP3Bold.woff2") format("woff2"), url("/src/fonts/FilmP3Bold.woff") format("woff");
 }
-.details-restaurant__wrapper {
+.details-restaurant__wrapper, .swiper-button-wrapper, .details-restaurant__swiper-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -524,16 +524,24 @@ p {
   }
 }
 
+.details-restaurant__swiper-wrapper {
+  flex-direction: row;
+}
+
 .details-restaurant__swiper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 23.6px;
   width: 274px;
   height: 100%;
 }
+@media screen and (min-width: 1024px) {
+  .details-restaurant__swiper {
+    gap: 32px;
+  }
+}
 
 .swiper-button-wrapper {
-  display: flex;
   gap: 32px;
 }
 

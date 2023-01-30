@@ -113,15 +113,22 @@
         margin-bottom: 40px;
     }
 }
+.details-restaurant__swiper-wrapper {
+    @extend %flex-centred;
+    flex-direction: row;
+}
 .details-restaurant__swiper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 23.60px;
     width: 274px;
     height: 100%;
+    @include tablet {
+        gap: 32px;
+    }
 }
 .swiper-button-wrapper {
-    display: flex;
+    @extend %flex-centred;
     gap: 32px;
 }
 .details-restaurant__picture {
