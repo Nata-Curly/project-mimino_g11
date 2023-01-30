@@ -14,13 +14,14 @@
   }
 
   @include pc {
-    padding: 0 85px 0 85px;
+    padding: 72 85px 0 85px;
   }
 }
 
 .section__lux-for-two {
-  background-color: $color-background-primary;
-  padding-bottom: 32px;
+	position: relative;
+  	background-color: $color-background-primary;
+  	padding-bottom: 32px;
 
   	@include tablet {
 		padding-bottom: 40px;
@@ -122,6 +123,7 @@
 			width: 439px;
 			font-size: 16px;
 			line-height: 1.25;
+			margin-bottom: 188px;
 		}
 
 		@include pc {
@@ -139,7 +141,7 @@
   text-transform: lowercase;
 }
 
-.content__lux-paragraph {
+/*.content__lux-paragraph {
   width: 258px;
   font-size: 12px;
   line-height: 1.22;
@@ -159,14 +161,16 @@
   letter-spacing: 0.02em;
 
   color: $color-text-primary;
-}
+}*/
 
 .img_backgroung-lux {
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 
   @include tablet {
-    margin-top: -33px;
+    //margin-top: -33px;
+	position: absolute;
+	top: -33px;
   }
 }
 
@@ -233,7 +237,7 @@
     display: flex;
     align-items: center;
 	justify-content:space-between;
-    margin-top: 49px;
+    //margin-top: 49px;
 	//margin-bottom: 72px;
   }
 }
