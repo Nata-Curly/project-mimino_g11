@@ -1,0 +1,109 @@
+.about-hotel {
+  &__container {
+    background-color: $color-background-primary;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 50px;
+
+    outline: 1px solid tomato;
+  }
+
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__double-room-img {
+    margin-left: 95px;
+    margin-top: -24px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+
+  &__declaration {
+    margin-left: 67px;
+    margin-top: 120px;
+  }
+
+  &__title {
+    text-align: right;
+    margin-bottom: 4px;
+
+    font-family: 'Times New Roman';
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    color: $color-text-subtitle;
+  }
+
+  &__logo {
+    text-align: right;
+    margin-right: -0.3em;
+    margin-bottom: 24px;
+
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    color: $color-logo-secondary;
+  }
+
+  &__title-description {
+    text-align: justify;
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    // font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: $color-text-primary;
+  }
+
+  &__hall {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__hall-description {
+    width: 311px;
+    margin-top: 123px;
+    margin-right: 45px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: $color-text-secondary;
+  }
+
+  &__hall-img {
+    margin-top: -46px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// slider
+.slider {
+  margin-top: -75px;
+
+  &__container {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    width: 254px;
+    height: 254px;
+
+    background: #dadada;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  &__img--mr {
+    margin-right: 40px;
+  }
+
+  &__svg-left {
+    margin-right: 32px;
+  }
+}
