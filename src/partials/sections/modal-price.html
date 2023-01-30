@@ -1,0 +1,50 @@
+<div data-popup-target="modal-menu-price" class="popup">
+  <div class="popup__content">
+    <button type="button" class="popup__close close-popup">X</button>
+
+    <h2 class="modal-menu__title">ЦІНИ НА НОМЕР</h2>
+
+    <div class="modal-discription">
+      <h3 class="modal-menu__second-title">Двомісний люкс</h3>
+      <p class="modal-menu__text modal-padding-reset modal-margin-reset">
+        Категорія номеру
+      </p>
+    </div>
+    <form class="modal-flex-box">
+      <div>
+        <div class="modal-flex-column">
+          <select name="testselect" class="js-select">
+            <option value="2">1</option>
+            <option value="3">2</option>
+            <option value="4">3</option>
+            <option value="5">4</option>
+          </select>
+          <label class="modal-menu__text">Кількість ночей</label>
+        </div>
+      </div>
+      <div>
+        <div class="modal-menu__item modal-flex-column">
+          <input
+            class="modal-menu__input"
+            type="number"
+            name="price"
+            id="price"
+            placeholder="1000"
+            pattern="[0-9]"
+          />
+          <label for="price" class="modal-menu__text modal-mobil-reset-margen"
+            >грн</label
+          >
+        </div>
+      </div>
+    </form>
+    <div class="modal-menu-box__submit">
+      <button
+        class="modal-menu__submit modal-menu-price__submit close-popup"
+        type="submit"
+      >
+        ЗАБРОНЮВАТИ НОМЕР
+      </button>
+    </div>
+  </div>
+</div>
