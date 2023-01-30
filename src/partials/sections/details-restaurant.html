@@ -6,42 +6,126 @@
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit.
           </p>
-        
-          <ul class="list list-images">
-            <li class="list-images__item">
-              <picture>
-                <!-- <source
+          <!-- Slider main container -->
+          <div class="swiper details-restaurant__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/homepage/pc/hp-hotel-1-pc_1x.jpg 1x,
+                      ./images/homepage/pc/hp-hotel-1-pc_2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/homepage/tablet/hp-hotel-1-tab_1x.jpg 1x,
+                    ./images/homepage/tablet/hp-hotel-1-tab_2x.jpg 2x
+                    "
+                    media="(min-width: 1024px)"
+                  />
+                  <source
                   srcset="
-                    ../../images/hotel_rooms/room3/pc/room3-1_pc_1x.jpg 1x,
-                    ../../images/hotel_rooms/room3/pc/room3-1_pc_2x.jpg 2x
+                    ./images/homepage/mob/hp-hotel-1-mob_1x.jpg 1x,
+                    ./images/homepage/mob/hp-hotel-1-mob_2x.jpg 2x
+                    
                   "
-                  media="(min-width: 1280px)"
                 />
-                <source
+                  <img
+                    srcset="#"
+                    src="#"
+                    alt="Стейк"
+                    class="restaurant-img"
+                  />
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/homepage/pc/hp-hotel-1-pc_1x.jpg 1x,
+                      ./images/homepage/pc/hp-hotel-1-pc_2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/homepage/tablet/hp-hotel-1-tab_1x.jpg 1x,
+                    ./images/homepage/tablet/hp-hotel-1-tab_2x.jpg 2x
+                    "
+                    media="(min-width: 1024px)"
+                  />
+                  <source
                   srcset="
-                    ../../images/hotel_rooms/room3/tablet/room3-1_tab_1x.jpg 1x,
-                    ../../images/hotel_rooms/room3/tablet/room3-1_tab_2x.jpg 2x,
+                    ./images/homepage/mob/hp-hotel-1-mob_1x.jpg 1x,
+                    ./images/homepage/mob/hp-hotel-1-mob_2x.jpg 2x
+                    
                   "
-                  media="(min-width: 1024px)"
-                /> -->
-                <img
-                  srcset="#"
-                  src="#"
-                  alt="Стейк"
-                  class="restaurant-img"
                 />
-              </picture>
-              <!-- <img src="" alt="Стейк" /> -->
-            </li>
-            <li class="list-images__item">
-              
-              <img src="#" alt="Шашлик" class="restaurant-img" />
-            </li>
-            <li class="list-images__item">
-              
-              <img src="#" alt="Салат" class="restaurant-img"/>
-            </li>
-          </ul>
+                  <img
+                    srcset="#"
+                    src="#"
+                    alt="Шашлик"
+                    class="restaurant-img"
+                  />
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/homepage/pc/hp-hotel-1-pc_1x.jpg 1x,
+                      ./images/homepage/pc/hp-hotel-1-pc_2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                    ./images/homepage/tablet/hp-hotel-1-tab_1x.jpg 1x,
+                    ./images/homepage/tablet/hp-hotel-1-tab_2x.jpg 2x
+                    "
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                  srcset="
+                    ./images/homepage/mob/hp-hotel-1-mob_1x.jpg 1x,
+                    ./images/homepage/mob/hp-hotel-1-mob_2x.jpg 2x
+                    
+                  "
+                />
+                  <img
+                    srcset="#"
+                    src="#"
+                    alt="Салат"
+                    class="restaurant-img"
+                  />
+                </picture>
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+              <svg class="details-restaurant__svg" width="30" height="17">
+                <use href="./images/icons/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="details-restaurant__svg" width="30" height="17">
+                <use href="./images/icons/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
 
           <div class="details-restaurant__wrapper">
             <button class="button details-restaurant__button" type="button">Забронювати столик</button>

@@ -1,54 +1,53 @@
 .details-restaurant {
-    background-color:rgba(0, 0, 0, 0.76);
-    // background-image: linear-gradient(
-    //     rgba(0, 0, 0, 0.76)
-    //   ),
-    //   url("#");
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.76)
+      ),
+      url("../images/homepage/mob/hp-rest-bkg-mob_1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1600px;
+    // width: 1280px;
     margin: 0 auto;
 
-//     @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: linear-gradient(
-//         rgba(0, 0, 0, 0.76)
-//       ),
-//       url("#");
-//   }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)
+      ),
+      url("../images/homepage/mob/hp-rest-bkg-mob_2x.jpg");
+  }
 
-//   @media screen and (min-width: 481px) {
-//     background-image: linear-gradient(
-//         rgba(0, 0, 0, 0.76)
-//       ),
-//       url("#");
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//         rgba(0, 0, 0, 0.76)
-//         ),
-//         url("#");
-//     }
-//   }
+  @media screen and (min-width: 1025px) {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)
+      ),
+      url("../images/homepage/tablet/hp-rest-bkg-tab_1x.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)
+        ),
+        url("../images/homepage/tablet/hp-rest-bkg-tab_2x.jpg");
+    }
+  }
 
-//   @media screen and (min-width: 769px) {
-//     background-image: linear-gradient(
-//         rgba(0, 0, 0, 0.76)
-//       ),
-//       url("_../images/homepage/hp-rest-bkg-PC_1x.jpg_");
+  @media screen and (min-width: 1281px) {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)
+      ),
+      url("../images/homepage/pc/hp-rest-bkg-pc_1x.jpg");
 
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//         rgba(0, 0, 0, 0.76)
-//         ),
-//         url("_../images/homepage/hp-rest-bkg-PC_2x.jpg_");
-//     }
-//   }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)
+        ),
+        url("../images/homepage/pc/hp-rest-bkg-pc_2x.jpg");
+    }
+  }
 }
 .details-restaurant__container {
     height: 100%;
@@ -92,6 +91,13 @@
         margin-bottom: 40px;
     }
 }
+.details-restaurant__swiper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 274px;
+    height: 100%;
+}
 .restaurant-img {
     color: $color-text-secondary;
 }
@@ -102,8 +108,17 @@
     flex-direction: column;
     gap: 16px;
 }
+.details-restaurant__svg {
+    fill:  $color-primary;
+}
 .details-restaurant__button {
     width: 236px;
     height: 48px;
     text-decoration: none;
+}
+
+// section slider
+.restaurant-img {
+    width: 274px;
+    height: 100%;
 }
