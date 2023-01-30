@@ -9,46 +9,73 @@
 
   color: #494848;
 
-  
-
-/*   &__block {
-	display: flex;
-	justify-content: flex-end;
-
-	flex-wrap: wrap;
-	align-items: flex-start;
-  } */
-
-//   &__item {
-//   }
 
 &__block{
 width: 100%;
 	display: flex;
-	flex-direction: column ;
+	flex-direction: column;
+
+	@include tablet {
+width: 100%;
+	}
+
+	@include pc {
+		
+	}
 	
 }
 
 &__block-left {
 
 	@include tablet {
+		// margin-left: auto;
+		// margin-right: auto;
 		width: 100%;
 		max-width: 1024px;
 		display: flex;
+		gap: 46px;
+		margin-left: 97px;
+		// margin-right: auto;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+	
+	@include pc {
+		max-width: 1200px;
+		width: 100%;
+		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-between;
-	}
-	@include pc {
   }
+}
+&__block-right {
 
+	@include tablet {
+		// margin-left: auto;
+		// margin-right: auto;
+		width: 100%;
+		max-width: 1024px;
+		display: flex;
+		gap: 46px;
+		// margin-right: auto;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
 }
 
   &__foto {
-	width: 244px;
-	max-width: none;
 	margin-left: auto;;
 	margin-bottom: 28px;
+
+	@include tablet {
+width: 400px;
+		margin-top: -24px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+	}
   }
+
+
 
 }
 
@@ -56,13 +83,33 @@ width: 100%;
 .items {
 	width:230px;
 	margin-bottom: 28px;
+
+	@include tablet {
+		width:420px;
+		text-align: right;
+	}
+
   &__title {
     font-family: 'Times New Roman';
+	 font-weight: 400;
     font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 1.086;
     color: $color-text-subtitle;
+	 &-marg {
+		margin-right: -10px;
+	}
+
+	 @include tablet {
+		font-weight: 400;
+		text-align: left;
+		font-size: 32px;
+    line-height: 1.16;
+	 text-align: right;
+	 margin-right: 5px;
+	}
+	 
+	
   }
 
   &__text {
@@ -73,6 +120,12 @@ width: 100%;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $color-text-primary;
+
+	 @include tablet {
+		text-align: left;
+		font-size: 16px;
+    line-height: 1.25;
+	}
   }
 
   &__text-brown {
@@ -89,6 +142,12 @@ width: 100%;
   &__list {
 	margin-top: 12px;
 
+	@include tablet {
+		display: inline-block;
+		width: 100%;
+	}
+
+
   }
 
   &__list:first-child {
@@ -99,6 +158,14 @@ width: 100%;
 	display: flex;
 	align-items: center;
 	gap: 20px;
+
+	@include tablet {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: row-reverse;
+		width: 100%;
+		margin-right: 32px;
+	}
   }
 }
 .slider-temp {
@@ -106,3 +173,4 @@ width: 100%;
 	width: 240px;
 	height: 317px;
 }
+
