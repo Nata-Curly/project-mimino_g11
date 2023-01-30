@@ -1,0 +1,141 @@
+.about-restaurant__container {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1024px) {
+        position: relative;
+        transform: translateY(-32px);
+    }
+
+    @media screen and (min-width: 1280px) {
+        position: relative;
+        transform: translateY(-33px);
+    }
+
+}
+
+.about-restaurant__title {
+    @include visually-hidden;
+}
+
+.about-restaurant__logo {
+    display: block;
+    font-family: 'FilmP3', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: $color-logo-secondary;
+    margin-bottom: 12px;
+    font-size: 40px;
+    line-height: 43px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 40px;
+    }
+}
+
+.about-restaurant-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.about-restaurant-h2-container {
+    margin-right: auto;
+
+    @media screen and (min-width: 1024px) {
+        margin-right: 37px;
+    }
+}
+
+.about-restaurant-secondary-container {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+
+    @media screen and (min-width: 1024px) {
+        margin-top: -16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: -49px;
+    }
+}
+
+.about-restaurant-slider-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+    margin-bottom: 118px;
+    gap: 40px;
+
+    @media screen and (min-width: 1024px) {
+        margin-top: -28px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: -107px;
+    }
+}
+
+.about-restaurant {
+    background-color: transparent;
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.15;
+        color: #B4B4B4;
+    }
+
+    &__text {
+        max-width: 258px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $color-text-primary;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 439px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 518px;
+        }
+    }
+
+    &__first-image {
+        margin-top: 28px;
+
+        @media screen and (min-width: 1024px) {
+            margin-top: 0px;
+        }
+    }
+
+    &__desc {
+        max-width: 163px;
+        margin-left: 32px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $color-text-secondary;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 312px;
+        }
+    }
+
+    // &__image--first {
+    //     background-color: $bgc-image;
+    //     margin-left: auto;
+    //     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    //     border-radius: 2px;
+    // }
+}
