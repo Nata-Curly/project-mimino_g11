@@ -8,8 +8,8 @@ function swiperSlider() {
             let arrowRight = slider.querySelector('.swiper-button-next');
 
             //коментуємо чи видаляемо якщо не потрібно
-            let pagination = slider.querySelector('.swiper-pagination');
-            //коментуємо чи видаляемо якщо не потрібно
+            // let pagination = slider.querySelector('.swiper-pagination');
+            // //коментуємо чи видаляемо якщо не потрібно
 
             let swiper = new Swiper(slider.querySelector('.swiper'), {
                 speed: 1500,
@@ -23,14 +23,14 @@ function swiperSlider() {
                 spaceBetween: 20, // відстань між слайдерами
 
 
-                // крапки пагінації
-                pagination: {
-                    el: pagination,
-                    clickable: true,
-                    renderBullet: function (index, className) {
-                        return '<li class="' + className + '"></li>';
-                    },
-                },
+                // // крапки пагінації
+                // pagination: {
+                //     el: pagination,
+                //     clickable: true,
+                //     renderBullet: function (index, className) {
+                //         return '<li class="' + className + '"></li>';
+                //     },
+                // },
                 // кнопки навігації
                 navigation: {
                     nextEl: arrowRight,
