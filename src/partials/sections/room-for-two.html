@@ -42,36 +42,81 @@
     </div>
 
     <div class="slider-and-buttons-thumb">
-      
       <!-- Slider main container -->
       <div class="slider-r42-tumb">
-        <div class="swiper">
+        <div class="swiper" [data-slider="team-slider" ]>
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
+            <!-- <div class="swiper-slide">Slide 1</div>
             <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
+            <div class="swiper-slide">Slide 3</div> -->
+
+            <!-- Просто картинки поки нема слайдера -->
+            <picture>
+              <source
+                srcset="
+                  ./images/hotel_rooms/room3/pc/room3-2_pc_1x.jpg 1x,
+                  ./images/hotel_rooms/room3/pc/room3-2_pc_2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/hotel_rooms/room3/tablet/room3-2_tab_1x.jpg 1x,
+                  ./images/hotel_rooms/room3/tablet/room3-2_tab_2x.jpg 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              <img
+                srcset="
+                  ./images/hotel_rooms/room3/mobile/room3-2_mob_1x.jpg 1x,
+                  ./images/hotel_rooms/room3/mobile/room3-2_mob_2x.jpg 2x
+                "
+                src="./images/hotel_rooms/room3/mobile/room3-2_mob_1x.jpg"
+                alt="Двомісний номер"
+                class="slide-r42"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  ./images/hotel_rooms/room3/pc/room3-3_pc_1x.jpg 1x,
+                  ./images/hotel_rooms/room3/pc/room3-3_pc_2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/hotel_rooms/room3/tablet/room3-3_tab_1x.jpg 1x,
+                  ./images/hotel_rooms/room3/tablet/room3-3_tab_2x.jpg 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              <img
+                srcset="
+                  ./images/hotel_rooms/room3/mobile/room3-3_mob_1x.jpg 1x,
+                  ./images/hotel_rooms/room3/mobile/room3-3_mob_2x.jpg 2x
+                "
+                src="./images/hotel_rooms/room3/mobile/room3-3_mob_1x.jpg"
+                alt="Двомісний номер"
+                class="slide-r42"
+              />
+            </picture>
           </div>
-          <!-- If we need pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar
-  <div class="swiper-scrollbar"></div> -->
-        </div>
-        <!-- Arrows -->
-        <div class="arrows-r42">
-          <svg class="arrows-r42__icon">
-            <use href="./images/icons/icons.svg#icon-arrow-left"></use>
-          </svg>
-          <svg class="arrows-r42__icon">
-            <use href="./images/icons/icons.svg#icon-arrow-right"></use>
-          </svg>
+          <!-- Arrows -->
+          <div class="arrows-r42">
+            <div class="swiper-button-prev">
+              <svg class="arrows-r42__icon">
+                <use href="./images/icons/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="arrows-r42__icon">
+                <use href="./images/icons/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
       <!-- buttons -->
