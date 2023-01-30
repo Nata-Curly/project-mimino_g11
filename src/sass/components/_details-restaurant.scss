@@ -1,4 +1,6 @@
 .details-restaurant {
+    display: block;
+    text-align: center;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.76)
       ),
@@ -6,7 +8,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    // width: 1280px;
     margin: 0 auto;
 
     @media (min-device-pixel-ratio: 2),
@@ -50,12 +51,29 @@
   }
 }
 .details-restaurant__container {
+    position: relative;
     height: 100%;
     padding-top: 24px;
     padding-bottom: 40px;
-    @media screen and (min-width:1024px) {
+    @include tablet {
         padding-top: 48px;
         padding-bottom: 40px;
+    }
+}
+.details-restaurant__information {
+    position: absolute;
+    left: 140px;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    text-align: left;
+    @include tablet {
+        left: 278px;
+
+    }
+    @include pc {
+        left: 338px;
+
     }
 }
 .details-restaurant__logo {
@@ -63,7 +81,7 @@
     line-height: 1.08;
     margin-bottom: 12px;
     color: $color-primary;
-    @media screen and (min-width: 1024px){
+    @include tablet {
         font-size: 64px;
         margin-bottom: 16px;
     }
@@ -74,32 +92,48 @@
     margin-bottom: 20px;
     letter-spacing: 0.02em;
     color: $color-primary;
-    @media screen and (min-width: 1024px){
+    @include tablet {
         font-size: 24px;
         margin-bottom: 8px;
     }
 }
 .details-restaurant__text {
+    max-width: 259px;
+    max-height: 62px;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
     margin-bottom: 48px;
     letter-spacing: 0.02em;
     color: $color-text-tertiary;
-    @media screen and (min-width: 1024px){
+    @include tablet{
+        max-width: 610px;
+        max-height: 44px;
         font-size: 16px;
         margin-bottom: 40px;
     }
 }
 .details-restaurant__swiper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
     width: 274px;
     height: 100%;
 }
+.swiper-button-wrapper {
+    display: flex;
+    gap: 32px;
+}
+.details-restaurant__picture {
+    width: 274px;
+    height: 100%;
+    @include tablet {
+        width: 270px;
+      }
+}
 .restaurant-img {
     color: $color-text-secondary;
+    width: 100%;
 }
 
 .details-restaurant__wrapper {
@@ -108,17 +142,17 @@
     flex-direction: column;
     gap: 16px;
 }
+.combined-buttons {
+    width: 100%;
+    height: 32px;
+}
 .details-restaurant__svg {
     fill:  $color-primary;
+    width: 30px;
+    height: 17px;
 }
 .details-restaurant__button {
     width: 236px;
     height: 48px;
     text-decoration: none;
-}
-
-// section slider
-.restaurant-img {
-    width: 274px;
-    height: 100%;
 }

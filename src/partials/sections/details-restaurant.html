@@ -1,18 +1,20 @@
   <section class="details-restaurant">
         <div class= "container details-restaurant__container">
-          <span class="logo details-restaurant__logo">Mimiho</span>
+          <div class="details-restaurant__information">
+            <span class="logo details-restaurant__logo">Mimiho</span>
           <h2 class="details-restaurant__title">Ресторан</h2>
           <p class="details-restaurant__text">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit.
           </p>
+          </div>
           <!-- Slider main container -->
           <div class="swiper details-restaurant__swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <picture>
+                <picture class="details-restaurant__picture">
                   <source
                     srcset="
                       ./images/homepage/pc/hp-hotel-1-pc_1x.jpg 1x,
@@ -35,8 +37,7 @@
                   "
                 />
                   <img
-                    srcset="#"
-                    src="#"
+                    src="./images/homepage/pc/hp-hotel-1-pc_1x.jpg"
                     alt="Стейк"
                     class="restaurant-img"
                   />
@@ -44,7 +45,7 @@
               </div>
 
               <div class="swiper-slide">
-                <picture>
+                <picture class="details-restaurant__picture">
                   <source
                     srcset="
                       ./images/homepage/pc/hp-hotel-1-pc_1x.jpg 1x,
@@ -67,8 +68,7 @@
                   "
                 />
                   <img
-                    srcset="#"
-                    src="#"
+                    src="./images/homepage/pc/hp-hotel-1-pc_1x.jpg"
                     alt="Шашлик"
                     class="restaurant-img"
                   />
@@ -76,7 +76,7 @@
               </div>
 
               <div class="swiper-slide">
-                <picture>
+                <picture class="details-restaurant__picture">
                   <source
                     srcset="
                       ./images/homepage/pc/hp-hotel-1-pc_1x.jpg 1x,
@@ -99,29 +99,32 @@
                   "
                 />
                   <img
-                    srcset="#"
-                    src="#"
+                    src="./images/homepage/pc/hp-hotel-1-pc_1x.jpg"
                     alt="Салат"
                     class="restaurant-img"
                   />
                 </picture>
               </div>
-              ...
+              
             </div>
             <!-- If we need pagination -->
             <!-- <div class="swiper-pagination"></div> -->
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev">
-              <svg class="details-restaurant__svg" width="30" height="17">
-                <use href="./images/icons/icons.svg#icon-arrow-left"></use>
-              </svg>
-            </div>
-            <div class="swiper-button-next">
-              <svg class="details-restaurant__svg" width="30" height="17">
-                <use href="./images/icons/icons.svg#icon-arrow-right"></use>
-              </svg>
-            </div>
+           <div class="combined-buttons details-restaurant__combined-buttons">
+            <div class="swiper-button-wrapper">
+              <div class="swiper-button-prev">
+                <svg class="details-restaurant__svg" width="30" height="17">
+                  <use href="./images/icons/icons.svg#icon-arrow-left"></use>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg class="details-restaurant__svg" width="30" height="17">
+                  <use href="./images/icons/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </div>
+             </div>
+           </div>
 
             <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->

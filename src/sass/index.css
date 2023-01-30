@@ -415,6 +415,8 @@ p {
 }
 
 .details-restaurant {
+  display: block;
+  text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.76)), url("../images/homepage/mob/hp-rest-bkg-mob_1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -448,6 +450,7 @@ p {
 }
 
 .details-restaurant__container {
+  position: relative;
   height: 100%;
   padding-top: 24px;
   padding-bottom: 40px;
@@ -456,6 +459,22 @@ p {
   .details-restaurant__container {
     padding-top: 48px;
     padding-bottom: 40px;
+  }
+}
+
+.details-restaurant__information {
+  position: absolute;
+  left: 140px;
+  text-align: left;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__information {
+    left: 278px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__information {
+    left: 338px;
   }
 }
 
@@ -487,6 +506,8 @@ p {
 }
 
 .details-restaurant__text {
+  max-width: 259px;
+  max-height: 62px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -496,6 +517,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .details-restaurant__text {
+    max-width: 610px;
+    max-height: 44px;
     font-size: 16px;
     margin-bottom: 40px;
   }
@@ -503,14 +526,30 @@ p {
 
 .details-restaurant__swiper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   width: 274px;
   height: 100%;
 }
 
+.swiper-button-wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.details-restaurant__picture {
+  width: 274px;
+  height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__picture {
+    width: 270px;
+  }
+}
+
 .restaurant-img {
   color: #C79002;
+  width: 100%;
 }
 
 .details-restaurant__wrapper {
@@ -519,19 +558,21 @@ p {
   gap: 16px;
 }
 
+.combined-buttons {
+  width: 100%;
+  height: 32px;
+}
+
 .details-restaurant__svg {
   fill: #fff;
+  width: 30px;
+  height: 17px;
 }
 
 .details-restaurant__button {
   width: 236px;
   height: 48px;
   text-decoration: none;
-}
-
-.restaurant-img {
-  width: 274px;
-  height: 100%;
 }
 
 .logo {
