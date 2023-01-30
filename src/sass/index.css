@@ -65,7 +65,8 @@
   font-weight: 700;
   src: local(""), url("/src/fonts/FilmP3Bold.woff2") format("woff2"), url("/src/fonts/FilmP3Bold.woff") format("woff");
 }
-.details-restaurant__wrapper, .swiper-button-wrapper, .details-restaurant__swiper-wrapper {
+
+.amenities__room-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -369,13 +370,22 @@ p {
   }
 }
 .section__title {
+  font-family: "Times New Roman";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.section__text {
   font-family: "Montserrat";
+  font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.21;
+  font-size: 16px;
+  line-height: 1.25;
   letter-spacing: 0.02em;
-  font-size: 36px;
-  margin-bottom: 8px;
+  color: #7A7A7A;
+  margin-bottom: 32px;
 }
 
 .address {
@@ -394,6 +404,26 @@ p {
 }
 .address__icon {
   margin-right: 8px;
+}
+
+.amenities {
+  background-color: #FFFDEE;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.amenities__room-list {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.amenities__room-item {
+  margin-bottom: 32px;
+}
+.amenities__room-title {
+  font-family: "Times New Roman";
+  font-size: 24px;
+  line-height: 1.17;
+  margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
 .button {

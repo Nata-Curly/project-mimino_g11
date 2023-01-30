@@ -1,167 +1,177 @@
 .menu {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $color-background-primary;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: $color-background-primary;
-    &__title{
-        font-family: 'Times New Roman';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 37px;
+  @include tablet {
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+  @include pc {
+    padding-bottom: 60px;
+  }
+  &__title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
 
-margin-bottom: 32px;
-
-@include pc {
-    margin-left: 85px;
-   }
-    }
+    margin-bottom: 32px;
 
     @include tablet {
-            // margin-right: 47px;
-            // margin-left: 47px;
-            background-color: $color-background-secondary;
+      margin-left: 47px;
     }
-   
+
+    @include pc {
+      margin-left: 85px;
+    }
+  }
+
+  @include tablet {
+    // margin-right: 47px;
+    // margin-left: 47px;
+    background-color: $color-background-secondary;
+  }
 }
 
 .food-type {
-    &__title {
-        font-family: 'Times New Roman';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 23px;
+  &__title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
 
-        margin-bottom: 16px;
-
-        @include tablet {
-            margin-bottom: 20px;
-           }
-           
-    }
-
-    
-}
-
-.our-menu {
-    @include tablet {
-        display: flex;
-        
-        // justify-content: space-between;
-       }
-       @include pc {
-        margin-right: 85px;
-        margin-left: 85px;
-       }
-
-}
-
-.main-menu {
-    @include tablet {
-        margin-right: 88px;
-       }
-       @include pc {
-        margin-right: 140px;
-       }
-}
-
-.meal-list {
     margin-bottom: 16px;
 
     @include tablet {
-        margin-bottom: 20px;
-       }
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.our-menu {
+  @include tablet {
+    display: flex;
+    margin-right: 12px;
+    margin-left: 47px;
+    // justify-content: space-between;
+  }
+  @include pc {
+    justify-content: flex-start;
+    margin-right: 85px;
+    margin-left: 85px;
+  }
+}
+
+.main-menu {
+  @include tablet {
+    margin-right: 88px;
+  }
+  @include pc {
+    margin-right: 140px;
+  }
+}
+
+.meal-list {
+  margin-bottom: 16px;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
 }
 
 .meal {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 
-    @include tablet {
-       justify-content: flex-start;
-       }
-    
+  @include tablet {
+    justify-content: flex-start;
+  }
 }
 
-.about-meal{
-    margin-right: auto;
-    width: 220px;
+.about-meal {
+  margin-right: auto;
+  width: 220px;
 
-    @include tablet {
-       margin-right: 45px;
-      }
-      @include pc {
-        margin-right: 60px;
-        width: 252px;
-      }
+  @include tablet {
+    margin-right: 45px;
+  }
+  @include pc {
+    margin-right: 60px;
+    width: 252px;
+  }
 }
 
 .meal-name {
-    font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
 
-margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .meal-components {
-    font-weight: 400;
-font-size: 10px;
-line-height: 12px;
-letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
 }
 
 .meal-amount {
-display: flex;
-flex-direction: row;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
 
-    font-weight: 300;
-font-size: 14px;
-line-height: 17px;
-letter-spacing: 0.02em;
+  width: 51px;
 
-width: 51px;
+  // margin-right: 32px;
+  margin-right: auto;
 
-// margin-right: 32px;
-margin-right: auto;
-
-@include tablet {
+  @include tablet {
     margin-right: 47px;
-   }
+  }
 }
 
 .meal-price {
-    font-weight: 700;
-font-size: 14px;
-line-height: 17px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
 
-
-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 }
 
 .reserve-table-button {
-    margin-right: auto;
-    margin-left: auto;
-    
-    background-color: $color-secondary;
+  margin-right: auto;
+  margin-left: auto;
+
+//   @extend %cubic;
+
+//   background-color: $color-button-disabled;
+  background-color: $color-secondary;
+  color: $color-tertiary;
+  margin-top: 32px;
+
+  &:hover, 
+  :focus {
+    background-color: $color-background-primary;
     color: $color-tertiary;
-    margin-top: 32px;
+  }
 
-    @include tablet {
-        margin-top: 41px;
-       
-        margin-right: 47px;
-        // margin-left: 0;
+  @include tablet {
+    margin-top: 41px;
 
-       }
-       @include pc {
-        margin-top: 51px;
-       
-        margin-right: 85px;
-        // margin-left: 0;
+    margin-right: 12px;
+    // margin-left: 0;
+  }
+  @include pc {
+    margin-top: 51px;
 
-       }
+    margin-right: 85px;
+    // margin-left: 0;
+  }
 }
