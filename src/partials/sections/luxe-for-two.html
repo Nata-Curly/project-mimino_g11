@@ -4,7 +4,7 @@
 		<div class="content">
 			<div class="content__hotel">
 				<p class="content__paragrahp">Amet minim mollit non</p>
-				<h2 class="content__title">Mimiho</h2>
+				<span class="content__title">Mimiho</span>
 				<h3 class="content__lux-title">
 				Двомісний номер <span class="lux">люкс</span>
 				</h3>
@@ -14,7 +14,6 @@
 				veniam consequat sunt nostrud amet.
 				</p>
 			</div>
-			<!-- <img class="image" src='./images/hotel_rooms/room3/pc/room3-1_pc_1x.jpg' alt="" width="460" /> -->
 
 			<div class="image-wrapper">
 				<picture>
@@ -39,14 +38,78 @@
 					alt=""
 					class="img_backgroung-lux"
 					/>
-			</picture>
+				</picture>
+			</div>
 		</div>
-	</div>
 
 		<div class="content-slider">
 			<div class="slider-lux">
-				<img class="slider-lux__img" src="./images/hotel_rooms/room3/pc/room3-2_pc_1x.jpg" alt="" width="254">
-				<img class="slider-lux__img" src="./images/hotel_rooms/room3/pc/room3-3_pc_1x.jpg" alt="" width="254">
+				<div class="slider-img">
+					<picture>
+						<source
+						srcset="
+							./images/hotel_rooms/room3/pc/room3-2_pc_1x.jpg    1x,
+							./images/hotel_rooms/room3/pc/room3-2_pc_2x.jpg 2x"
+						media="(min-width: 1280px)"/>
+						<source
+						srcset="
+							./images/hotel_rooms/room3/tablet/room3-2_tab_1x.jpg    1x,
+							./images/hotel_rooms/room3/tablet/room3-2_tab_2x.jpg 2x
+						"
+						media="(min-width: 1024px)"
+						/>
+						<img
+						srcset="
+							./images/hotel_rooms/room3/mobile/room3-2_mob_1x.jpg    1x,
+							./images/hotel_rooms/room3/mobile/room3-2_mob_2x.jpg 2x
+						"
+						src="./images/hotel_rooms/room3/mobile/room3-2_mob_1x.jpg"
+						alt=""
+						class="slider-lux__img"
+						/>
+					</picture>
+
+					<picture>
+						<source
+						srcset="
+							./images/hotel_rooms/room3/pc/room3-3_pc_1x.jpg    1x,
+							./images/hotel_rooms/room3/pc/room3-3_pc_2x.jpg 2x"
+						media="(min-width: 1280px)"/>
+						<source
+						srcset="
+							./images/hotel_rooms/room3/tablet/room3-3_tab_1x.jpg    1x,
+							./images/hotel_rooms/room3/tablet/room3-3_tab_2x.jpg 2x
+						"
+						media="(min-width: 1024px)"
+						/>
+						<img
+						srcset="
+							./images/hotel_rooms/room3/mobile/room3-3_mob_1x.jpg    1x,
+							./images/hotel_rooms/room3/mobile/room3-3_mob_2x.jpg 2x
+						"
+						src="./images/hotel_rooms/room3/mobile/room3-3_mob_1x.jpg"
+						alt=""
+						class="slider-lux__img"
+						/>
+					</picture>
+
+
+					<!-- <img class="slider-lux__img" src="./images/hotel_rooms/room3/pc/room3-2_pc_1x.jpg" alt="" width="254">
+					<img class="slider-lux__img" src="./images/hotel_rooms/room3/pc/room3-3_pc_1x.jpg" alt="" width="254"> -->
+				</div>
+
+				<div class="arrow-button">
+					<button class="arrow-lux-button">
+						<svg width="32" height="32">
+							<use href="./images/icons/icons.svg#icon-arrow-left"></use>
+						</svg>
+					</button>
+					<button class="arrow-lux-button"> 
+						<svg width="32" height="32">
+							<use href="./images/icons/icons.svg#icon-arrow-right"></use>
+						</svg>
+					</button>
+				</div>
 			</div>
 
 			<div class="buttons">
@@ -54,17 +117,4 @@
 				<button class="button button--lux" type="button">Переглянути ціни</button>
 			</div>
 		</div>
-
-		<div class="arrow-button">
-			<button class="arrow-lux-button">
-				<svg width="32" height="32">
-					<use href="./images/icons/icons.svg#icon-arrow-left"></use>
-				</svg>
-			</button>
-			<button class="arrow-lux-button"> 
-				<svg width="32" height="32">
-					<use href="./images/icons/icons.svg#icon-arrow-right"></use>
-				</svg>
-			</button>
-		</div>	
 </section>
