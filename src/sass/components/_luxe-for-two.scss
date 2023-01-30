@@ -282,6 +282,10 @@
 	}
 	/*position: absolute;
 	right: -5px;*/
+	@include pc {
+		margin-left: 430px;
+  	}
+
 
 }
 
