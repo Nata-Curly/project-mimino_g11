@@ -80,12 +80,13 @@
     }
 
     &__logo {
-    font-family: FilmP3, sans-serif; 
-           font-weight: 700;
+        display: block;
+        font-family: FilmP3, sans-serif; 
+        font-weight: 700;
         font-size: 40px;
         line-height: 1.07;
         letter-spacing: 0.3em;
-        color: #494848;
+        color: $color-logo-secondary;
         text-transform: uppercase;
 
         margin-bottom: 32px;

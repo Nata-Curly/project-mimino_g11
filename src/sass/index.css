@@ -993,6 +993,7 @@ p {
   }
 }
 .description-r42__logo {
+  display: block;
   font-family: FilmP3, sans-serif;
   font-weight: 700;
   font-size: 40px;
