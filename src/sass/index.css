@@ -65,11 +65,16 @@
   font-weight: 700;
   src: local(""), url("/src/fonts/FilmP3Bold.woff2") format("woff2"), url("/src/fonts/FilmP3Bold.woff") format("woff");
 }
-
-.amenities__room-list {
+.details-restaurant__wrapper, .swiper-button-wrapper, .amenities__room-list {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button {
+  transition-property: background-color, color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -165,19 +170,17 @@ p {
   font-size: 36px;
   margin-bottom: 60px;
   margin-top: 60px;
-  margin-right: auto;
+  margin-right: -0.3em;
 }
 @media screen and (min-width: 1024px) {
   .footer__logo {
     font-size: 64px;
     margin-top: 80px;
-    margin-right: 163px;
     margin-left: 154px;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer__logo {
-    margin-right: 231px;
     margin-bottom: 35px;
   }
 }
@@ -223,11 +226,18 @@ p {
 .footer__box {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
 }
 @media screen and (min-width: 1024px) {
   .footer__box {
     flex-direction: row;
     margin-top: 40px;
+    margin-right: 163px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__box {
+    margin-right: 231px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -260,6 +270,7 @@ p {
 .footer__social--link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header {
@@ -386,6 +397,33 @@ p {
   letter-spacing: 0.02em;
   color: #7A7A7A;
   margin-bottom: 32px;
+}
+
+.kitchen {
+  background-color: #FFFDEE;
+  font-family: "Film P3";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  /* identical to box height */
+  text-align: left;
+  color: #494848;
+}
+.items__title {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.086;
+  color: #B4B4B4;
+}
+.items__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #7A7A7A;
 }
 
 .address {
@@ -541,7 +579,6 @@ p {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
-  margin-bottom: 48px;
   letter-spacing: 0.02em;
   color: #BABABA;
 }
@@ -550,44 +587,60 @@ p {
     max-width: 610px;
     max-height: 44px;
     font-size: 16px;
-    margin-bottom: 40px;
   }
 }
 
 .details-restaurant__swiper-wrapper {
-  flex-direction: row;
-}
-
-.details-restaurant__swiper {
+  position: relative;
+  top: 209px;
+  left: 25px;
   display: flex;
-  flex-direction: column;
-  gap: 23.6px;
-  width: 274px;
-  height: 100%;
+  gap: 19px;
+  margin-bottom: 23.6px;
 }
 @media screen and (min-width: 1024px) {
-  .details-restaurant__swiper {
-    gap: 32px;
+  .details-restaurant__swiper-wrapper {
+    gap: 34px;
+    top: 206px;
+    left: 297px;
+    margin-bottom: 32px;
   }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__swiper-wrapper {
+    gap: 86px;
+    left: 338px;
+  }
+}
+
+.details-restaurant__swiper-slide {
+  width: 274px;
+  height: 270px;
+}
+
+.details-restaurant__swiper-slide > picture {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.details-restaurant__swiper-btns {
+  position: absolute;
+  top: 503px;
+  left: 26px;
 }
 
 .swiper-button-wrapper {
-  gap: 32px;
-}
-
-.details-restaurant__picture {
-  width: 274px;
-  height: 100%;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant__picture {
-    width: 270px;
-  }
+  gap: 34px;
 }
 
 .restaurant-img {
   color: #C79002;
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: 100%;
 }
 
 .details-restaurant__wrapper {
@@ -770,14 +823,14 @@ p {
 }
 
 .bg-image {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/hp-hero-mobile_1x.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/hp-hero-mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .bg-image {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/hp-hero-mobile_2x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/hp-hero-mob_2x.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -808,14 +861,14 @@ p {
 }
 
 .bg-image__rest {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/rest-hero-mobile_1x.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/rest-hero-mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .bg-image__rest {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/rest-hero-mobile_2x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/rest-hero-mob_2x.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -846,14 +899,14 @@ p {
 }
 
 .bg-image__hotel {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/hotel-hero-mobile_1x.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/hotel-hero-mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .bg-image__hotel {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/hotel-hero-mobile_2x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero_images/mobile/hotel-hero-mob_2x.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -888,6 +941,17 @@ p {
   padding-bottom: 32px;
   background-color: #FFFDEE;
 }
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu {
+    padding-bottom: 60px;
+  }
+}
 .menu__title {
   font-family: "Times New Roman";
   font-style: normal;
@@ -895,6 +959,11 @@ p {
   font-size: 32px;
   line-height: 37px;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__title {
+    margin-left: 47px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .menu__title {
@@ -924,10 +993,13 @@ p {
 @media screen and (min-width: 1024px) {
   .our-menu {
     display: flex;
+    margin-right: 12px;
+    margin-left: 47px;
   }
 }
 @media screen and (min-width: 1280px) {
   .our-menu {
+    justify-content: flex-start;
     margin-right: 85px;
     margin-left: 85px;
   }
@@ -996,8 +1068,6 @@ p {
 }
 
 .meal-amount {
-  display: flex;
-  flex-direction: row;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -1025,10 +1095,15 @@ p {
   color: #F3C653;
   margin-top: 32px;
 }
+.reserve-table-button:hover,
+.reserve-table-button :focus {
+  background-color: #FFFDEE;
+  color: #F3C653;
+}
 @media screen and (min-width: 1024px) {
   .reserve-table-button {
     margin-top: 41px;
-    margin-right: 47px;
+    margin-right: 12px;
   }
 }
 @media screen and (min-width: 1280px) {
