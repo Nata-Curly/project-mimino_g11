@@ -184,14 +184,22 @@
 }
 
 
-.slick-container{
-    width: 548px;
+.about-restaurant-slick-container{
+    width: 330px;
+
+    @media screen and (min-width: 1024px) {
+        width: 428px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        width: 548px;
+    }
 }
 
-.slick {
+.about-restaurant-slick {
     
     &__list {
-            width: 100%;
+            // width: 254px;
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
@@ -211,8 +219,8 @@
     
 }
 
-.my-slick-prev,
-.my-slick-next {
+.about-restaurant-slick__list .my-slick-prev,
+.about-restaurant-slick__list .my-slick-next {
     position: absolute;
     bottom: -40px;
     display: flex;
@@ -226,30 +234,30 @@
     background-color: transparent;
 }
 
-.my-slick-prev {
+.about-restaurant-slick__list .my-slick-prev {
 background-image: url(../images/slider-arrow-black-left.svg);
 
-    left: 50px;
+    right: 82px;
 
-    @media screen and(min-width: 768px) {
-        left: 250px;
+    @media screen and(min-width: 1024px) {
+        right: 126px;
     }
 
-    @media screen and(min-width: 1200px) {
-        left: 350px;
+    @media screen and(min-width: 1280px) {
+        right: 158px;
     }
 }
 
-.my-slick-next {
+.about-restaurant-slick__list .my-slick-next {
     background-image: url(../images/slider-arrow-black-right.svg);
 
-    right: 50px;
+    right: 18px;
 
-    @media screen and(min-width: 768px) {
-        right: 250px;
+    @media screen and(min-width: 1024px) {
+        right: 63px;
     }
 
-    @media screen and(min-width: 1200px) {
-        right: 100px;
+    @media screen and(min-width: 1280px) {
+        right: 94px;
     }
 }
