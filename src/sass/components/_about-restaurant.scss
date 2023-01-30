@@ -1,21 +1,20 @@
 .about-restaurant__container {
     margin-left: auto;
     margin-right: auto;
+    padding: 16px 15px 72px 15px;
 
     @media screen and (min-width: 1024px) {
         position: relative;
         transform: translateY(-32px);
+        padding: 0 60px 96px 47px;
     }
 
     @media screen and (min-width: 1280px) {
         position: relative;
         transform: translateY(-33px);
+        padding: 0 85px 118px 85px;
     }
 
-}
-
-.about-restaurant__title {
-    @include visually-hidden;
 }
 
 .about-restaurant__logo {
@@ -65,23 +64,45 @@
     }
 
     @media screen and (min-width: 1280px) {
-        margin-top: -49px;
+        margin-top: -65px;
     }
 }
 
 .about-restaurant-slider-container {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    right: -185px;
+    bottom: 0;
     margin-top: 32px;
-    margin-bottom: 118px;
     gap: 40px;
 
     @media screen and (min-width: 1024px) {
         margin-top: -28px;
+        position: relative;
+        right: 0;
+        bottom: 0;
     }
 
     @media screen and (min-width: 1280px) {
         margin-top: -107px;
+        position: relative;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.slider__image{
+    width: 245px;
+    overflow: hidden;
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 0px;
+        width: 194px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 254px;
     }
 }
 
@@ -92,7 +113,7 @@
         font-weight: 400;
         font-size: 32px;
         line-height: 1.15;
-        color: #B4B4B4;
+        color: $color-text-subtitle;
     }
 
     &__text {
@@ -113,11 +134,32 @@
 
     &__first-image {
         margin-top: 28px;
+            width: 244px;
 
         @media screen and (min-width: 1024px) {
             margin-top: 0px;
+            width: 400px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 460px;
         }
     }
+
+    // &__second-image {
+    //     margin-top: 32px;
+    //     width: 200px;
+
+    //     @media screen and (min-width: 1024px) {
+    //         margin-top: -16px;
+    //         width: 350px;
+    //     }
+
+    //     @media screen and (min-width: 1280px) {
+    //         margin-top: -65px;
+    //         width: 460px;
+    //     }
+    // }
 
     &__desc {
         max-width: 163px;
