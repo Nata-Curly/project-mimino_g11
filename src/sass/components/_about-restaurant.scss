@@ -156,6 +156,16 @@
     &__image--shadow{
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
+
+        @include tablet{
+            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+            border-radius: 0px;
+        }
+
+        @include pc{
+            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+            border-radius: 2px;
+        }
     }
 
     // &__second-image {
@@ -196,16 +206,16 @@
 
 
 .about-restaurant-slick-container{
-    width: 515px;
+    width: 540px;
     position: relative;
     
 
     @include tablet {
-        width: 428px;
+        width: 468px;
     }
     
     @include pc {
-        width: 548px;
+        width: 588px;
     }
 }
 
@@ -268,6 +278,11 @@ background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
 
     right: 267px;
 
+    &:hover,
+    &:focus{
+        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+    }
+
     @include tablet {
         right: 126px;
     }
@@ -281,6 +296,11 @@ background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
     background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
 
     right: 203px;
+
+    &:hover,
+    &:focus{
+        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
+    }
 
     @include tablet {
         right: 63px;
