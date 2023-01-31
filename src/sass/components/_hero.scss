@@ -1,17 +1,20 @@
 .hero {
   &__container {
     min-height: 740px;
-    padding: 64px 15px 20px 15px;
+    padding-top: 64px;
+    padding-bottom: 20px;
     text-align: center;
     color: $color-primary;
 
     @include tablet {
       min-height: 720px;
-      padding: 188px 47px 15px 47px;
+      padding-top: 188px;
+        padding-bottom: 15px;
     }
 
     @include pc {
-      padding: 164px 85px 64px 85px;
+      padding-top: 164px;
+        padding-bottom: 64px;
     }
   }
 
@@ -160,18 +163,20 @@
     @media screen and (max-width: 1023px) {
       flex-direction: column;
       align-items: flex-start;
-      margin-right: 70px;
+      // margin-right: 70px;
     }
   }
 
   &__room_container {
     position: relative;
     display: flex;
+    justify-content: space-between;
     @media screen and (max-width: 1023px) {
       align-items: center;
+      
     }
     @include tablet {
-      justify-content: space-between;
+      // justify-content: space-between;
     }
 
     &--first {
