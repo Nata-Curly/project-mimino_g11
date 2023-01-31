@@ -1,0 +1,68 @@
+<div data-popup-target="modal-book-table" class="popup">
+  <div class="popup__content">
+    <button type="button" class="popup__close close-popup">X</button>
+
+    <h2 class="modal-menu__title">ЗАБРОНЮВАТИ СТОЛИК</h2>
+
+    <form class="modal-flex-box">
+      <div>
+        <div class="modal-menu__item modal-flex-column">
+          <input
+            class="modal-menu__input"
+            type="text"
+            name="name"
+            placeholder="Ваше ім’я"
+            pattern="[a-z]"
+          />
+          <label class="modal-menu__text">На кого забронювати столик?</label>
+        </div>
+
+        <div class="modal-menu__item modal-flex-column">
+          <input
+            type="text"
+            name="tel"
+            id="tel"
+            pattern="[0-9]"
+            class="js-inputmask modal-menu__input"
+          />
+          <label id="tel" class="modal-menu__text modal-margin-reset"
+            >Номер телефону
+          </label>
+        </div>
+      </div>
+      <div>
+        <div class="modal-flex-column">
+          <select name="testselect" class="js-select">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <label class="modal-menu__text">Столик на яку кількість осіб?</label>
+        </div>
+
+        <div class="modal-flex-column">
+          <select id="date" name="testselect" class="js-select">
+            <option value="1">Сьогодні</option>
+            <option value="11">Завтра</option>
+            <option value="111">Післязавтра</option>
+          </select>
+
+          <label
+            for="date"
+            class="modal-menu__text modal-margin-reset modal-mobil-reset-margen"
+          >
+            На яку дату бронювати?
+          </label>
+        </div>
+      </div>
+    </form>
+
+    <div class="modal-menu-box__submit">
+      <button class="modal-menu__submit close-popup" type="submit">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </div>
+  </div>
+</div>
