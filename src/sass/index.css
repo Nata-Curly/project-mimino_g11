@@ -1740,6 +1740,9 @@ p {
 
 .details-restaurant__container {
   height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   padding-top: 24px;
   padding-bottom: 40px;
 }
@@ -1814,6 +1817,9 @@ p {
   }
 }
 
+.details-restaurant__combined-section {
+  width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .details-restaurant__combined-section {
     display: flex;
@@ -1826,10 +1832,6 @@ p {
   .details-restaurant__combined-section {
     gap: 32px;
   }
-}
-
-.details-restaurant__swiper {
-  position: relative;
 }
 
 .details-restaurant__swiper-wrapper {
@@ -1864,21 +1866,13 @@ p {
 }
 
 .details-restaurant__swiper-slide:nth-child(2) {
-  width: 274px;
+  width: 162px;
   height: 270px;
 }
-@media screen and (min-width: 1024px) {
-  .details-restaurant__swiper-slide:nth-child(2) {
-    width: 162px;
-    height: 270px;
-  }
-}
 
-@media screen and (min-width: 1024px) {
-  .details-restaurant__swiper-slide:last-child {
-    width: 162px;
-    height: 270px;
-  }
+.details-restaurant__swiper-slide:last-child {
+  width: 162px;
+  height: 270px;
 }
 @media screen and (min-width: 1280px) {
   .details-restaurant__swiper-slide:last-child {
@@ -1892,17 +1886,13 @@ p {
      object-fit: cover;
 }
 
-.details-restaurant__swiper-slide--part-visible {
-  display: flex;
-}
-
 .details-restaurant__swiper-slide--hidden {
   display: none;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 500px) {
   .details-restaurant__swiper-slide--hidden {
     display: block;
     visibility: visible;
@@ -1932,38 +1922,32 @@ p {
   display: flex;
   align-items: center;
   gap: 34px;
-}
-@media screen and (min-width: 1024px) {
-  .swiper-button-wrapper {
-    padding-left: 30px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .swiper-button-wrapper {
-    padding-left: 34px;
-  }
+  margin-left: 15px;
 }
 
 .restaurant-img {
   color: #C79002;
   display: block;
+  background: #DADADA;
+  border-radius: 2px;
 }
 
 .details-restaurant__wrapper {
   width: 236px;
+  margin-left: 75px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 @media screen and (min-width: 1024px) {
   .details-restaurant__wrapper {
-    padding-bottom: 48px;
-    padding-left: 32px;
+    margin-bottom: 48px;
+    margin-left: 32px;
   }
 }
 @media screen and (min-width: 1280px) {
   .details-restaurant__wrapper {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 

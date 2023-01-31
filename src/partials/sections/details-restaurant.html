@@ -15,7 +15,7 @@
         <div class="swiper-wrapper details-restaurant__swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide details-restaurant__swiper-slide">
-            <!-- <picture class="details-restaurant__picture">
+            <picture class="details-restaurant__picture">
               <source type="image/jpeg"
                       srcset="
                         ./images/restaurant_images/sl-food_1x.jpg 1x,
@@ -29,14 +29,14 @@
                       ./images/restaurant_images/sl-food_1x.jpg 2x
                       "
                       media="(min-width: 1024px)"
-                    /> -->
-              <!-- <source type="image/jpeg"
+                    />
+              <source type="image/jpeg"
                     srcset="
                     ./images/restaurant_images/mobile/sl-food-mob_1x.jpg 1x,
                     ./images/restaurant_images/mobile/sl-food-mob_2x.jpg  2x
                     "
-                    /> -->
-              <!-- <img
+                    />
+              <img
                 srcset="
                 ./images/restaurant_images/mobile/sl-food-mob_1x.jpg 1x,
                 ./images/restaurant_images/mobile/sl-food-mob_2x.jpg  2x
@@ -48,9 +48,9 @@
                 height="270"
               />
             </picture>
-          </div> -->
+          </div>
 
-          <!-- <div class="swiper-slide details-restaurant__swiper-slide details-restaurant__swiper-slide--part-visible">
+          <div class="swiper-slide details-restaurant__swiper-slide details-restaurant__swiper-slide--part-visible">
             <picture class="details-restaurant__picture">
               <source type="image/jpeg"
                       srcset="
@@ -65,15 +65,8 @@
                       ./images/restaurant_images/sl-food-1_2x.jpg 2x
                       "
                       media="(min-width: 1024px)"
-                    /> -->
-                    <!-- <source type="image/jpeg"
-                    srcset="
-                      ./images/homepage/tablet/sl-food-1_1x.jpg 1x,
-                      ./images/homepage/tablet/sl-food-1_2x.jpg 2x
-                      
-                    "
-                  /> -->
-              <!-- <img
+                    /> 
+              <img
                 srcset="
                 ./images/restaurant_images/sl-food-1_1x.jpg 1x,
                 ./images/restaurant_images/sl-food-1_2x.jpg 2x
@@ -85,9 +78,9 @@
                 height="270"
               />
             </picture>
-          </div> -->
+          </div>
 
-          <!-- <div class="swiper-slide details-restaurant__swiper-slide details-restaurant__swiper-slide--hidden">
+          <div class="swiper-slide details-restaurant__swiper-slide details-restaurant__swiper-slide--hidden">
             <picture class="details-restaurant__picture">
               <source type="image/jpeg"
                       srcset="
@@ -102,20 +95,13 @@
                       ./images/restaurant_images/tablet/sl-food-tablet-2_2x.jpg 2x
                       "
                       media="(min-width: 1024px)"
-                    /> -->
-                    <!-- <source type="image/jpeg"
-                    srcset="
-                      ./images/homepage/tablet/sl-food-2_1x.jpg 1x,
-                      ./images/homepage/tablet/sl-food-2_2x.jpg 2x
-                      
-                    "
-                  /> -->
-              <!-- <img
+                    />
+              <img
                 srcset="
-                ./images/restaurant_images/sl-food-2_1x.jpg 1x,
-                ./images/restaurant_images/sl-food-2_2x.jpg 2x
+                ./images/restaurant_images/tablet/sl-food-tablet-2_1x.jpg 1x,
+                ./images/restaurant_images/tablet/sl-food-tablet-2_2x.jpg 2x
                 "
-                src="/src/images/restaurant_images/sl-food-2_1x.jpg"
+                src="/src/images/restaurant_images/tablet/sl-food-tablet-2_1x.jpg"
                 alt="Салат"
                 class="restaurant-img"
                 width="274"
@@ -123,7 +109,7 @@
               />
             </picture>
           </div>
-        </div> -->
+        </div>
         <!-- If we need pagination -->
         <!-- <div class="swiper-pagination"></div> -->
 
@@ -148,11 +134,11 @@
       </div>
 
       <div class="details-restaurant__wrapper">
-        <button class="button details-restaurant__button" type="button">
+        <button data-popup-btn="modal-book-table" class=" popup-link button details-restaurant__button" type="button">
           Забронювати столик
         </button>
 
-        <a href="#" class="button details-restaurant__button"
+        <a href="./restaurant.html" class="button details-restaurant__button"
           >Переглянути меню
         </a>
       </div>
