@@ -1,118 +1,118 @@
 .room-for-three {
-    &__section {
-      background: #f0ecd6;
-      padding: 32px 0;
-    }
-  
-    &__subtitle {
-      font-family: 'TimesNew Roman';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 1.15;
-      color: #b4b4b4;
-      text-align: right;
-      margin-bottom: 8px;
-  
-      @media (min-width: 1024px) {
-        font-size: 32px;
-        line-height: 1.16;
-      }
-    }
-  
-    &__name {
-      font-family: 'FilmP3';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 1.08;
-      letter-spacing: 0.3em;
-      color: #494848;
-      display: block;
-      text-align: right;
-      margin-bottom: 32px;
-  
-      @media (min-width: 1024px) {
-        font-size: 64px;
-        line-height: 1.08;
-      }
-    }
-  
-    &__title {
-      font-family: 'Times New Roman';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 1.17;
-      letter-spacing: 0.05em;
-      color: #000000;
-      margin: 0 0 12px 81px;
-  
-      @media (min-width: 1024px) {
-        font-size: 30px;
-        line-height: 1.13;
-      }
-  
-      @media (min-width: 1280px) {
-        font-size: 36px;
-        line-height: 1.14;
-      }
-    }
-  
-    &__text {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 1.25;
-      letter-spacing: 0.02em;
-      color: #7a7a7a;
-      margin: 0 59px 32px 81px;
-  
-      @media (min-width: 1024px) {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-      }
-    }
-  
-    &__foto {
-      width: 244px;
-      margin-bottom: 32px;
-    }
-  
-    &__slide {
-      overflow: hidden;
-    }
-  
-    &__box {
-      display: flex;
-      gap: 16px;
-      margin-bottom: 72px;
-    }
-  
-    &__img {
-      width: 194px;
-    }
-  
-    &__button {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 20px;
-      letter-spacing: 0.02em;
-      color: #f3c653;
-      justify-content: center;
-      align-items: center;
-      width: 236px;
-      height: 48px;
-      background: #000000;
-      border: 2px solid #f0ecd6;
-      border-radius: 25px;
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 16px;
+  &__section {
+    background: #f0ecd6;
+    padding: 32px 0;
+  }
+
+  &__subtitle {
+    font-family: 'TimesNew Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #b4b4b4;
+    text-align: right;
+    margin-bottom: 8px;
+
+    @media (min-width: 1024px) {
+      font-size: 32px;
+      line-height: 1.16;
     }
   }
+
+  &__name {
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: #494848;
+    display: block;
+    text-align: right;
+    margin-bottom: 32px;
+
+    @media (min-width: 1024px) {
+      font-size: 64px;
+      line-height: 1.08;
+    }
+  }
+
+  &__title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin: 0 0 12px 81px;
+
+    @media (min-width: 1024px) {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 36px;
+      line-height: 1.14;
+    }
+  }
+
+  &__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #7a7a7a;
+    margin: 0 59px 32px 81px;
+
+    @media (min-width: 1024px) {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+
+  &__foto {
+    width: 244px;
+    margin-bottom: 32px;
+  }
+
+  &__slide {
+    overflow: hidden;
+  }
+
+  &__box {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 72px;
+  }
+
+  &__img {
+    width: 194px;
+  }
+
+  &__button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #f3c653;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    height: 48px;
+    background: #000000;
+    border: 2px solid #f0ecd6;
+    border-radius: 25px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
+}
