@@ -1,27 +1,82 @@
 <section class="kitchen">
   <div class="container">
-    <h2 class="visually-hidden">Ресторан готелю Міміно</h2>
-    <ul class="kitchen__block list" >
-      <li class="kitchen__item">
+    <ul class="kitchen__block-top list">
+      <li class="kitchen__block-left">
+        <h2 class="visually-hidden">Ресторан готелю Міміно</h2>
         <ul class="items list">
-          <li class="items__title"><p>Amet minim mollit non</p></li>
-          <li class="logo">MIMIHO</li>
-          <li>
+          <li class="items__list">
+            <p class="items__title">Amet minim mollit non</p>
+          </li>
+          <li class="items__list"><h3 class="logo items__title-marg">MIMIHO</h3></li>
+          <li class="items__list">
             <p class="items__text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              Exercitation veniam consequat sunt nostrud amet!
             </p>
           </li>
         </ul>
+	  </li>
+	  <li class="kitchen__block-right">
+		<picture>
+			<source
+			  srcset="
+				 ./images/restaurant_images/pc/rest-2-pc_1x.jpg 1x,
+				 ./images/restaurant_images/pc/rest-2-pc_2x.jpg 2x
+			  "
+			  media="(min-width: 1280px)"/>
+			<source
+			  srcset="
+				 ./images/restaurant_images/tablet/rest-2-tab_1x.jpg 1x,
+				 ./images/restaurant_images/tablet/rest-2-tab_2x.jpg 2x
+			  "
+			  media="(min-width: 1024px)"/>
+			<img
+			  class="kitchen__foto-top"
+			  srcset="
+				 ./images/restaurant_images/mobile/rest-2-mob_1x.jpg 1x,
+				 ./images/restaurant_images/mobile/rest-2-mob_2x.jpg 2x
+			  "
+			  src="./images/restaurant_images/mobile/rest-2-mob_1x.jpg"
+			  alt="Готель"/>
+			</picture>
+	  </li>
+	</ul>
+	<ul class="list kitchen__block-bottom">
+		<li>
+			<picture>
+				<source
+					srcset="
+						 ./images/restaurant_images/pc/rest-1-pc_1x.jpg 1x,
+						 ./images/restaurant_images/pc/rest-1-pc_2x.jpg 2x
+					  "
+					  media="(min-width: 1280px)"/>
+					<source
+					  srcset="
+						 ./images/restaurant_images/tablet/rest-1-tab_1x.jpg 1x,
+						 ./images/restaurant_images/tablet/rest-1-tab_1x.jpg 2x
+					  "
+					  media="(min-width: 1024px)"/>
+					<img
+					  class="kitchen__foto-bottom"
+					  srcset="
+						 ./images/restaurant_images/mobile/rest-1-mob_1x.jpg 1x,
+						 ./images/restaurant_images/mobile/rest-1-mob_2x.jpg 2x
+					  "
+					  src="./images/restaurant_images/mobile/rest-1-mob_1x.jpg"
+					  alt="Готель"/>
+					</picture>
+			</li>
+			<li>
+				<p class="items__text-brown">
+				  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+				  amet sint. Velit officia consequat duis enim velit mollit.
+				  Exercitation veniam consequat sunt nostrud amet.
+				</p>
+			 </li>
+	</ul>
+      <li class="list">
+        <div class="slider-temp">Slider will be there... later )</div>
       </li>
-      <li class="kitchen__foto">
-        <img
-          srcset="./images/homepage/mob/hp-hotel-1-mob_1x.jpg"
-          src="./images/homepage/mob/hp-hotel-1-mob_2x.jpg"
-          alt="Готель"
-        />
-      </li>
-    </ul>
   </div>
 </section>
