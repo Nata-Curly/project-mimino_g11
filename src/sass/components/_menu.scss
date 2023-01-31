@@ -20,14 +20,21 @@
 
     margin-bottom: 32px;
 
-    @include tablet {
-      margin-left: 47px;
-    }
-
-    @include pc {
-      margin-left: 85px;
-    }
+    
   }
+
+  &__container {
+
+    margin: 0 auto;
+    @include tablet {
+        padding: 0 47px;
+      }
+  
+      @include pc {
+        padding: 0 85px;
+      }
+    
+}
 
   @include tablet {
     // margin-right: 47px;
@@ -35,6 +42,8 @@
     background-color: $color-background-secondary;
   }
 }
+
+
 
 .food-type {
   &__title {
@@ -55,23 +64,25 @@
 .our-menu {
   @include tablet {
     display: flex;
-    margin-right: 12px;
-    margin-left: 47px;
+    gap: 90px;
+   
+    // margin-left: 47px;
     // justify-content: space-between;
   }
   @include pc {
     justify-content: flex-start;
-    margin-right: 85px;
-    margin-left: 85px;
+    gap: 142px;
+    // margin-left: 85px;
   }
 }
 
 .main-menu {
   @include tablet {
-    margin-right: 88px;
+    width: 420px;
   }
   @include pc {
-    margin-right: 140px;
+    // margin-right: 140px;
+    width: 485px;
   }
 }
 
@@ -85,12 +96,12 @@
 
 .meal {
   display: flex;
-  justify-content: space-between;
+//   justify-content: space-between;
   margin-bottom: 8px;
 
-  @include tablet {
-    justify-content: flex-start;
-  }
+//   @include tablet {
+//     justify-content: flex-start;
+//   }
 }
 
 .about-meal {
@@ -98,11 +109,11 @@
   width: 220px;
 
   @include tablet {
-    margin-right: 45px;
+    // margin-right: 45px;
   }
   @include pc {
-    margin-right: 60px;
-    width: 252px;
+    // margin-right: 60px;
+    width: 291px;
   }
 }
 
@@ -134,7 +145,7 @@
   margin-right: auto;
 
   @include tablet {
-    margin-right: 47px;
+    margin-right: 49px;
   }
 }
 
@@ -142,6 +153,8 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
+
+  
 
   letter-spacing: 0.02em;
 }
@@ -165,14 +178,15 @@
 
   @include tablet {
     margin-top: 41px;
+    margin-right: 0;
 
-    margin-right: 12px;
+    // margin-right: 12px;
     // margin-left: 0;
   }
   @include pc {
     margin-top: 51px;
 
-    margin-right: 85px;
+    // margin-right: 85px;
     // margin-left: 0;
   }
 }
