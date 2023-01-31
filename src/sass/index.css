@@ -1825,6 +1825,7 @@ p {
     display: flex;
     gap: 30px;
     align-items: flex-end;
+    justify-content: flex-end;
     flex-direction: row-reverse;
   }
 }
@@ -1951,6 +1952,12 @@ p {
   }
 }
 
+.details-restaurant__button {
+  width: 236px;
+  height: 48px;
+  text-decoration: none;
+}
+
 .combined-buttons {
   width: 100%;
   height: 32px;
@@ -1960,12 +1967,6 @@ p {
   fill: #fff;
   width: 30px;
   height: 17px;
-}
-
-.details-restaurant__button {
-  width: 236px;
-  height: 48px;
-  text-decoration: none;
 }
 
 .logo {

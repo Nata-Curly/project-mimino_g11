@@ -115,6 +115,7 @@
     display: flex;
     gap: 30px;
     align-items: flex-end;
+    justify-content: flex-end;
     flex-direction: row-reverse;
   }
   @include pc {
@@ -162,22 +163,8 @@
 }
 .details-restaurant__swiper-slide > img {
     object-fit: cover;
-   
-    // width: 274px;
-    // height: 270px;
-    // @include tablet {
-    //     width: 100%;
-    //     height: 100%;
-    //   }
 }
 
-// .details-restaurant__swiper-slide--part-visible {
-//     display: flex;
-//     margin-right: -193px;
-//     @include tablet {
-//         margin-right: -300px;
-//     }
-// }
 .details-restaurant__swiper-slide--hidden {
     display: none;
     opacity: 0;
@@ -189,13 +176,6 @@
         opacity: 1;
         pointer-events: painted;
     }
-
-    // @include tablet {
-    //     display: block;
-    //     visibility: visible;
-    //     opacity: 1;
-    //     pointer-events: painted;
-    // }
 }
 .details-restaurant__swiper-slide > picture {
   display: block;
@@ -215,13 +195,6 @@
   align-items: center;
   gap: 34px;
   margin-left: 15px;
-
-//   @include tablet {
-//     padding-left: 30px;
-//   }
-//   @include pc {
-//     padding-left: 34px;
-//   }
 }
 .restaurant-img {
   color: $color-text-secondary;
@@ -243,6 +216,11 @@
     margin-bottom: 60px;
   }
 }
+.details-restaurant__button {
+    width: 236px;
+    height: 48px;
+    text-decoration: none;
+  }  
 .combined-buttons {
   width: 100%;
   height: 32px;
@@ -251,9 +229,4 @@
   fill: $color-primary;
   width: 30px;
   height: 17px;
-}
-.details-restaurant__button {
-  width: 236px;
-  height: 48px;
-  text-decoration: none;
 }

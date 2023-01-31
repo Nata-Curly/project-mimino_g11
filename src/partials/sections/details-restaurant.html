@@ -12,7 +12,7 @@
     <div class="combined-section details-restaurant__combined-section">
       <div class="swiper details-restaurant__swiper">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper details-restaurant__swiper-wrapper">
+        <div data-slick='{"slidesToShow": 3, "slidesToScroll": 1}' class="swiper-wrapper details-restaurant__swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide details-restaurant__swiper-slide">
             <picture class="details-restaurant__picture">
@@ -50,7 +50,7 @@
             </picture>
           </div>
 
-          <div class="swiper-slide details-restaurant__swiper-slide details-restaurant__swiper-slide--part-visible">
+          <div class="swiper-slide details-restaurant__swiper-slide">
             <picture class="details-restaurant__picture">
               <source type="image/jpeg"
                       srcset="
@@ -116,15 +116,19 @@
         <!-- If we need navigation buttons -->
         <div class="swiper-btns details-restaurant__swiper-btns">
           <div class="swiper-button-wrapper">
-            <div class="swiper-button-prev">
-              <svg class="details-restaurant__svg" width="30" height="17">
-                <use href="./images/icons/icons.svg#icon-arrow-left"></use>
-              </svg>
+            <div class="button-prev">
+              <button type="button" class="my-slick-prev">
+                <svg class="details-restaurant__svg" width="30" height="17">
+                  <use href="./images/icons/icons.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
             </div>
-            <div class="swiper-button-next">
-              <svg class="details-restaurant__svg" width="30" height="17">
-                <use href="./images/icons/icons.svg#icon-arrow-right"></use>
-              </svg>
+            <div class="button-next">
+              <button type="button" class="my-slick-next">
+                <svg class="details-restaurant__svg" width="30" height="17">
+                  <use href="./images/icons/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
