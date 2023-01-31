@@ -160,21 +160,6 @@
         }
     }
 
-    // &__second-image {
-    //     margin-top: 32px;
-    //     width: 200px;
-
-    //     @include tablet {
-    //         margin-top: -16px;
-    //         width: 350px;
-    //     }
-
-    //     @include pc {
-    //         margin-top: -65px;
-    //         width: 460px;
-    //     }
-    // }
-
     &__desc {
         max-width: 163px;
         margin-left: 32px;
@@ -188,12 +173,6 @@
         }
     }
 
-    // &__image--first {
-    //     background-color: $bgc-image;
-    //     margin-left: auto;
-    //     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    //     border-radius: 2px;
-    // }
 }
 
 // swiper styles
