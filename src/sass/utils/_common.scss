@@ -1,18 +1,17 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 // @import '../../node_modules/swiper/swiper-bundle.min.css';
-@import './node_modules/nice-select2/src/scss/nice-select2.scss';
-
+@import '../../../node_modules/nice-select2/src/scss/nice-select2.scss';
 
 .noshow-mobile {
-    @media screen and (max-width: 1023px) {
-        display: none;
-    }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .noshow-tablet {
-    @media screen and (min-width: 1024px) {
-        display: none;
-    }
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .noshow-desktop {
