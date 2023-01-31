@@ -1,18 +1,15 @@
-
-
-
 .details-hotel {
 
-    
+    min-height: 735px;
 
-    background-image: linear-gradient(
+  background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.65)
     ),
     url(../images/homepage/mob/hp-room-bkg-mob_1x.jpg);
   background-size: cover;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center center;
 
   @media (min-device-pixel-ratio: 2),
@@ -27,73 +24,73 @@
         ),
         url(../images/homepage/mob/hp-room-bkg-mob_2x.jpg);
     }
-    }
-
-    padding-bottom: 40px;
-    padding-top: 24px;
-
-    // ТИМЧАСОВО
-min-height: 735px;
-    // ТИМЧАСОВО
-
-    @include tablet {
-
-        padding: 48px;
-        
-
-            background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url(../images/homepage/tablet/hp-room-bkg-tab_1x.jpg);
-  background-size: cover;
-    background-repeat: no-repeat;
-  background-position: center center;
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    & {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/homepage/tablet/hp-room-bkg-tab_2x.jpg);
-    }
-    }
-
-        // ТИМЧАСОВО
-min-height: 620px;
-    // ТИМЧАСОВО
   }
 
+  padding-bottom: 40px;
+  padding-top: 24px;
+
+
+
+  @include tablet {
+
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage/tablet/hp-room-bkg-tab_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/homepage/tablet/hp-room-bkg-tab_2x.jpg);
+      }
+    }
+
+    // ТИМЧАСОВО
+    height: 620px;
+    // ТИМЧАСОВО
+
+      padding-bottom: 100px;
+  padding-top: 48px;
+  }
 
   @include pc {
-            background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url(../images/homepage/pc/hp-room-bkg-pc_1x.jpg);
-  background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage/pc/hp-room-bkg-pc_1x.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-  background-position: center center;
+    background-position: center center;
 
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    & {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/homepage/pc/hp-room-bkg-pc_2x.jpg);
-    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/homepage/pc/hp-room-bkg-pc_2x.jpg);
+      }
+
+            padding-bottom: 48px;
+  padding-top: 48px;
     }
   }
 
@@ -105,43 +102,41 @@ min-height: 620px;
     letter-spacing: 0.3em;
 
     @include tablet {
-        
-margin-right: -0.3em;
-font-size: 64px;
-line-height: 1.078;
-margin-bottom: 16px;
+      margin-right: -0.3em;
+      font-size: 64px;
+      line-height: 1.078;
+      margin-bottom: 16px;
     }
   }
 
   &__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     color: $color-primary;
     margin-bottom: 20px;
     letter-spacing: 0.02em;
 
-
     @include tablet {
-        font-size: 24px;
-        line-height: 1.2;
-        margin-bottom: 8px;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 8px;
     }
   }
 
   &__caption {
     font-weight: 600;
-font-size: 12px;
-line-height: 1.25;
-letter-spacing: 0.02em;
-color: $color-text-tertiary;
-margin-bottom: 48px;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $color-text-tertiary;
+    margin-bottom: 48px;
 
-
-@include tablet {
-    margin-bottom: 40px;
-    font-size: 16px;
-    
-}
+    @include tablet {
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
   }
 
   &__container {
@@ -150,48 +145,356 @@ margin-bottom: 48px;
     margin-right: 139px;
 
     @include tablet {
-        // margin-right: 0px;
-        width: 549px;
-    display: flex;
-    flex-direction: column;
+      // margin-right: 0px;
+      width: 549px;
+      display: flex;
+      flex-direction: column;
     }
 
     @include pc {
-        width: 595px;
+      width: 595px;
+    }
+  }
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__button {
+
+    text-decoration: none;
+
+transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+  &:focus {
+    background-color: $color-primary;
+    color: $color-tertiary
+  }
+  }
+
+  &__buttons {
+
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      width: 236px;
+      position: relative;
+      bottom: 262px;
+      left: 324px;
+    }
+
+    @include pc {
+        bottom: 154px;
+        left: 436px;
+    }
+  }
+
+  &__wrapper {
+
+
+    @Media (max-width: 414px) {
+        overflow: hidden;
+    }
+
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      padding: 0 48px;
+    }
+    // ТИМЧАСОВО
+    min-height: 735px;
+    // ТИМЧАСОВО
+  }
+
+  &__image {
+
+    width: 274px;
+
+    @include tablet {
+        width: 270px;
+    }
+
+  }
+
+  &__swiperf {
+    width: 414px;
+
+    gap: 20px;
+    transform: translatex(-108%);
+    display: flex;
+
+    margin-bottom: 16px;
+
+    @include tablet {
+        width: 1024px;
+    }
+  }
+
+  &__arrows {
+    border: none;
+    background-color: transparent;
+    fill: white;
+    padding: 0;
+
+    &:first-child {
+        padding-right: 30px;
+    }
+  }
+
+  &__controls {
+
+    margin-bottom: 32px;
+    
+    width: 414px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+
+.details-hotel-slider-container {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: -480px;
+    bottom: 230px;
+
+    @include tablet {
+        bottom: 262px;
+        left: -200px;
+    }
+
+    @include pc {
+        bottom: 156px;
+        left: -35px;
+    }
+ }
+
+
+    .details-hotel-slick__list .my-slick-prev,
+.details-hotel-slick__list .my-slick-next {
+    position: absolute;
+    bottom: -52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    @include tablet{
+       bottom: -64px;
+    }
+
+    @include pc{
+        bottom: -68px;
     }
 }
 
-&__titles {
-display: flex;
-flex-direction: column;
-align-items: flex-end;
+
+
+
+
+.details-hotel {
+    background-color: $color-background-primary;
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.15;
+        color: $color-text-subtitle;
+    }
+
+    &__text {
+        max-width: 258px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $color-text-primary;
+
+        @include tablet {
+            max-width: 439px;
+        }
+
+        @include pc {
+            max-width: 518px;
+        }
+    }
+
+    &__first-image {
+        margin-top: 28px;
+        width: 244px;
+
+        @include tablet {
+            margin-top: 0px;
+            width: 400px;
+        }
+
+        @include pc {
+            width: 460px;
+        }
+    }
+
+    &__image--shadow{
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+    }
+
+    // &__second-image {
+    //     margin-top: 32px;
+    //     width: 200px;
+
+    //     @include tablet {
+    //         margin-top: -16px;
+    //         width: 350px;
+    //     }
+
+    //     @include pc {
+    //         margin-top: -65px;
+    //         width: 460px;
+    //     }
+    // }
+
+    &__desc {
+        max-width: 163px;
+        margin-left: 32px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $color-text-secondary;
+
+        @include tablet {
+            max-width: 312px;
+        }
+    }
+
+    // &__image--first {
+    //     background-color: $bgc-image;
+    //     margin-left: auto;
+    //     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    //     border-radius: 2px;
+    // }
 }
 
-&__button {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 16px;
-}
 
-&__buttons {
+.details-hotel-slick-container{
+    width: 885px;
+    position: relative;
+    
 
     @include tablet {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; }
+        width: 928px;
+    }
+    
 }
 
+.details-hotel-slick {
+    
+    &__list {
+            // width: 254px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+        }
 
-&__wrapper {
+    &__item {
+        margin-right: 20px;
+
+        @include tablet {
+            margin-right: 34px;
+        
+
+        // &.slick-active {
+        //     width: 162px !important;
+        //     height: 270px !important; 
+        // }
+        // &.slick-current { width: 270px !important;
+        // } 
+        
+    }
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0;
+    }
+
+    
+}
+
+.details-hotel-slick__list .my-slick-prev,
+.details-hotel-slick__list .my-slick-next {
+    position: absolute;
+    bottom: -52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    @include tablet{
+       bottom: -64px;
+    }
+
+    @include pc{
+        bottom: -68px;
+    }
+}
+
+.details-hotel-slick__list .my-slick-prev {
+background-image: url(../images/slider_svg/slider-arrow-left.svg);
+
+    right: 89px;
 
     @include tablet {
-    display: flex;
-    justify-content: space-around; }
-    // ТИМЧАСОВО
-    min-height: 620px;
-    // ТИМЧАСОВО
-}
+        right: 96px;
+    }
+
+    @include pc {
+        right: 100pxpx;
+    }
 }
 
+.details-hotel-slick__list .my-slick-next {
+    background-image: url(../images/slider_svg/slider-arrow-right.svg);
 
+    right: 25px;
+
+    @include tablet {
+        right: 40px;
+    }
+
+    @include pc {
+        right: 36px;
+    }
+}
 
