@@ -1235,206 +1235,6 @@ p {
   border-color: #F3C653;
 }
 
-.details-restaurant {
-  display: block;
-  text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.76)), url("../images/homepage/mob/hp-rest-bkg-mob_1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .details-restaurant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/homepage/mob/hp-rest-bkg-mob_2x.jpg");
-  }
-}
-@media screen and (min-width: 1025px) {
-  .details-restaurant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/homepage/tablet/hp-rest-bkg-tab_1x.jpg");
-  }
-}
-@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
-  .details-restaurant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/homepage/tablet/hp-rest-bkg-tab_2x.jpg");
-  }
-}
-@media screen and (min-width: 1281px) {
-  .details-restaurant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/homepage/pc/hp-rest-bkg-pc_1x.jpg");
-  }
-}
-@media screen and (min-width: 1281px) and (min-device-pixel-ratio: 2), screen and (min-width: 1281px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1281px) and (min-resolution: 192dpi), screen and (min-width: 1281px) and (min-resolution: 2dppx) {
-  .details-restaurant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/homepage/pc/hp-rest-bkg-pc_2x.jpg");
-  }
-}
-
-.details-restaurant__container {
-  height: 100%;
-  padding-top: 24px;
-  padding-bottom: 40px;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant__container {
-    padding-top: 48px;
-    padding-bottom: 40px;
-  }
-}
-
-.details-restaurant__information {
-  margin-right: 125px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant__information {
-    margin-right: 263px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-restaurant__information {
-    margin-right: 318px;
-  }
-}
-
-.details-restaurant__logo {
-  font-size: 40px;
-  line-height: 1.08;
-  margin-bottom: 12px;
-  color: #fff;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant__logo {
-    font-size: 64px;
-    margin-bottom: 16px;
-  }
-}
-
-.details-restaurant__title {
-  font-size: 20px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  letter-spacing: 0.02em;
-  color: #fff;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant__title {
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
-}
-
-.details-restaurant__text {
-  max-width: 259px;
-  max-height: 62px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  margin-bottom: 48px;
-  letter-spacing: 0.02em;
-  color: #BABABA;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant__text {
-    max-width: 610px;
-    max-height: 44px;
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .details-restaurant__combined-section {
-    display: flex;
-    gap: 30px;
-    flex-direction: row-reverse;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-restaurant__combined-section {
-    gap: 32px;
-  }
-}
-
-.details-restaurant__swiper-wrapper {
-  display: flex;
-  gap: 19px;
-  margin-right: -193px;
-  margin-left: 25px;
-  margin-bottom: 23.6px;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant__swiper-wrapper {
-    gap: 34px;
-    margin-bottom: 32px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-restaurant__swiper-wrapper {
-    gap: 86px;
-  }
-}
-
-.details-restaurant__swiper-slide {
-  width: 274px;
-  height: 270px;
-}
-
-.details-restaurant__swiper-slide > picture {
-  display: block;
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.details-restaurant__swiper-btns {
-  margin-bottom: 40px;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant__swiper-btns {
-    margin-bottom: 0;
-  }
-}
-
-.swiper-button-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 34px;
-}
-
-.restaurant-img {
-  color: #C79002;
-  display: block;
-  max-width: 100%;
-  height: 100%;
-}
-
-.details-restaurant__wrapper {
-  width: 100%;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.combined-buttons {
-  width: 100%;
-  height: 32px;
-}
-
-.details-restaurant__svg {
-  fill: #fff;
-  width: 30px;
-  height: 17px;
-}
-
-.details-restaurant__button {
-  width: 236px;
-  height: 48px;
-  text-decoration: none;
-}
 .button-amenities {
   font-weight: 500;
   font-size: 20px;
@@ -1667,6 +1467,287 @@ p {
   .contacts__box--hotl {
     margin: 8px 0 0 0;
   }
+}
+
+.details-restaurant {
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.76)), url("../images/homepage/mob/hp-rest-bkg-mob_1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/homepage/mob/hp-rest-bkg-mob_2x.jpg");
+  }
+}
+@media screen and (min-width: 1025px) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/homepage/tablet/hp-rest-bkg-tab_1x.jpg");
+  }
+}
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 192dpi), screen and (min-width: 1025px) and (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/homepage/tablet/hp-rest-bkg-tab_2x.jpg");
+  }
+}
+@media screen and (min-width: 1281px) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/homepage/pc/hp-rest-bkg-pc_1x.jpg");
+  }
+}
+@media screen and (min-width: 1281px) and (min-device-pixel-ratio: 2), screen and (min-width: 1281px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1281px) and (min-resolution: 192dpi), screen and (min-width: 1281px) and (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/homepage/pc/hp-rest-bkg-pc_2x.jpg");
+  }
+}
+
+.details-restaurant__container {
+  height: 100%;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__container {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+}
+
+.details-restaurant__information {
+  margin-left: 125px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__information {
+    margin-left: 263px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__information {
+    margin-left: 318px;
+  }
+}
+
+.details-restaurant__logo {
+  font-size: 40px;
+  line-height: 1.08;
+  margin-bottom: 12px;
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__logo {
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
+}
+
+.details-restaurant__title {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.details-restaurant__text {
+  max-width: 259px;
+  max-height: 62px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  margin-bottom: 48px;
+  letter-spacing: 0.02em;
+  color: #BABABA;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__text {
+    max-width: 610px;
+    max-height: 44px;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .details-restaurant__combined-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__combined-section {
+    gap: 32px;
+  }
+}
+
+.details-restaurant__swiper {
+  position: relative;
+}
+
+.details-restaurant__swiper-wrapper {
+  display: flex;
+  gap: 19px;
+  margin-right: -193px;
+  margin-left: 25px;
+  margin-bottom: 23.6px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__swiper-wrapper {
+    gap: 34px;
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__swiper-wrapper {
+    gap: 86px;
+  }
+}
+
+.details-restaurant__swiper-slide:first-child {
+  width: 274px;
+  height: 270px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__swiper-slide:first-child {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+.details-restaurant__swiper-slide:nth-child(2) {
+  width: 274px;
+  height: 270px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__swiper-slide:nth-child(2) {
+    width: 162px;
+    height: 270px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .details-restaurant__swiper-slide:last-child {
+    width: 162px;
+    height: 270px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__swiper-slide:last-child {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+.details-restaurant__swiper-slide > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.details-restaurant__swiper-slide--part-visible {
+  display: flex;
+}
+
+.details-restaurant__swiper-slide--hidden {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__swiper-slide--hidden {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: painted;
+  }
+}
+
+.details-restaurant__swiper-slide > picture {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.details-restaurant__swiper-btns {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__swiper-btns {
+    margin-bottom: 0;
+  }
+}
+
+.swiper-button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+@media screen and (min-width: 1024px) {
+  .swiper-button-wrapper {
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper-button-wrapper {
+    padding-left: 34px;
+  }
+}
+
+.restaurant-img {
+  color: #C79002;
+  display: block;
+}
+
+.details-restaurant__wrapper {
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__wrapper {
+    padding-bottom: 48px;
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__wrapper {
+    padding-bottom: 60px;
+  }
+}
+
+.combined-buttons {
+  width: 100%;
+  height: 32px;
+}
+
+.details-restaurant__svg {
+  fill: #fff;
+  width: 30px;
+  height: 17px;
+}
+
+.details-restaurant__button {
+  width: 236px;
+  height: 48px;
+  text-decoration: none;
 }
 
 .logo {
@@ -2377,16 +2458,20 @@ p {
   font-weight: 700;
   font-size: 32px;
   line-height: 37px;
+  text-transform: uppercase;
   margin-bottom: 32px;
 }
+.menu__container {
+  margin: 0 auto;
+}
 @media screen and (min-width: 1024px) {
-  .menu__title {
-    margin-left: 47px;
+  .menu__container {
+    padding: 0 47px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .menu__title {
-    margin-left: 85px;
+  .menu__container {
+    padding: 0 85px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -2412,26 +2497,24 @@ p {
 @media screen and (min-width: 1024px) {
   .our-menu {
     display: flex;
-    margin-right: 12px;
-    margin-left: 47px;
+    gap: 90px;
   }
 }
 @media screen and (min-width: 1280px) {
   .our-menu {
     justify-content: flex-start;
-    margin-right: 85px;
-    margin-left: 85px;
+    gap: 142px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .main-menu {
-    margin-right: 88px;
+    width: 420px;
   }
 }
 @media screen and (min-width: 1280px) {
   .main-menu {
-    margin-right: 140px;
+    width: 485px;
   }
 }
 
@@ -2446,28 +2529,16 @@ p {
 
 .meal {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 8px;
-}
-@media screen and (min-width: 1024px) {
-  .meal {
-    justify-content: flex-start;
-  }
 }
 
 .about-meal {
   margin-right: auto;
   width: 220px;
 }
-@media screen and (min-width: 1024px) {
-  .about-meal {
-    margin-right: 45px;
-  }
-}
 @media screen and (min-width: 1280px) {
   .about-meal {
-    margin-right: 60px;
-    width: 252px;
+    width: 291px;
   }
 }
 
@@ -2496,7 +2567,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .meal-amount {
-    margin-right: 47px;
+    margin-right: 49px;
   }
 }
 
@@ -2522,13 +2593,12 @@ p {
 @media screen and (min-width: 1024px) {
   .reserve-table-button {
     margin-top: 41px;
-    margin-right: 12px;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1280px) {
   .reserve-table-button {
     margin-top: 51px;
-    margin-right: 85px;
   }
 }
 
