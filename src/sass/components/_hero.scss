@@ -1,17 +1,24 @@
 .hero {
   &__container {
     min-height: 740px;
-    padding: 64px 15px 20px 15px;
+    padding-top: 64px;
+    padding-bottom: 20px;
     text-align: center;
     color: $color-primary;
 
     @include tablet {
       min-height: 720px;
-      padding: 188px 47px 15px 47px;
+      padding-top: 188px;
+      padding-bottom: 15px;
+      padding-right: 47px;
+      padding-left: 47px;
     }
 
     @include pc {
-      padding: 164px 85px 64px 85px;
+      padding-top: 164px;
+      padding-bottom: 64px;
+      padding-right: 85px;
+      padding-left: 85px;
     }
   }
 
@@ -34,6 +41,7 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 1.25;
+    letter-spacing: 0.02em;
 
     @include tablet {
       margin-bottom: 56px;
@@ -76,6 +84,7 @@
 
   &__address {
     @media screen and (max-width: 1023px) {
+      position: relative;
       margin-left: auto;
       margin-bottom: 70px;
       color: $address-color;
@@ -117,6 +126,102 @@
     display: flex;
     align-items: flex-end;
   }
+
+  &__room {
+    margin-bottom: 24px;
+    font-family: 'Times New Roman';
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    text-align: left;
+
+    @include tablet {
+      font-size: 36px;
+    }
+  }
+
+  &__room--top {
+    @include tablet {
+      padding-top: 466px;
+    }
+  }
+  &__room_discription {
+    margin-bottom: 24px;
+    display: block;
+    max-width: 325px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include pc {
+      margin-bottom: 0;
+    }
+  }
+
+  &__room_social {
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__room_container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1023px) {
+      align-items: center;
+    }
+
+    &--first {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      @include pc {
+        display: none;
+      }
+    }
+  }
+
+  &__room_address {
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 320px;
+    }
+  }
+
+  &__room_button {
+    @include tablet {
+      position: absolute;
+      right: 0;
+      top: -100%;
+    }
+
+    @include pc {
+      position: absolute;
+      right: 0;
+      top: -85px;
+    }
+  }
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 143px;
+  z-index: 0;
+  background-image: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .hero__address.noshow-tablet {
@@ -132,238 +237,5 @@
 .hero__social.noshow-desktop {
   @media screen and (min-width: 1280px) {
     display: none;
-  }
-}
-
-.bg-image {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url(../images/hero_images/mobile/hp-hero-mob_1x.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    & {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/hero_images/mobile/hp-hero-mob_2x.jpg);
-    }
-  }
-  @include tablet {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/hero_images/tablet/hp-hero-tabl_1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      & {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero_images/tablet/hp-hero-tabl_2x.jpg);
-      }
-    }
-  }
-
-  @include pc {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/hero_images/pc/hp-hero-pc_1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      & {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero_images/pc/hp-hero-pc_2x.jpg);
-      }
-    }
-  }
-}
-
-.bg-image__rest {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url(../images/hero_images/mobile/rest-hero-mob_1x.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    & {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/hero_images/mobile/rest-hero-mob_2x.jpg);
-    }
-  }
-
-  @include tablet {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/hero_images/tablet/rest-hero-tabl_1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      & {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero_images/tablet/rest-hero-tabl_2x.jpg);
-      }
-    }
-  }
-
-  @include pc {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/hero_images/pc/rest-hero-pc_1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      & {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero_images/pc/rest-hero-pc_2x.jpg);
-      }
-    }
-  }
-}
-
-.bg-image__hotel {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url(../images/hero_images/mobile/hotel-hero-mob_1x.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    & {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/hero_images/mobile/hotel-hero-mob_2x.jpg);
-    }
-  }
-
-  @include tablet {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/hero_images/tablet/hotel-hero-tabl_1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      & {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero_images/tablet/hotel-hero-tabl_2x.jpg);
-      }
-    }
-  }
-
-  @include pc {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/hero_images/pc/hotel-hero-pc_1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      & {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero_images/pc/hotel-hero-pc_2x.jpg);
-      }
-    }
   }
 }

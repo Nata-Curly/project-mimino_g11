@@ -1,18 +1,57 @@
 .amenities {
+    position: relative;
     background-color: $color-background-primary;
     padding-top: 32px;
     padding-bottom: 32px;
-
     
-    &__room-list {
+    @include tablet {
+        padding-top: 50px;
+        padding-bottom: 200px;
+    }
+
+    @include pc {
+        padding-top: 49px;
+        padding-bottom: 208px;
+    }
+
+    &__text {
+        @include tablet {
+            max-width: 757px;
+        }
+    }
+
+    &__room {
+        padding-top: 32px;
+                
+            @include tablet {
+                padding-top: 50px;
+           }
+        
+            @include pc {
+                padding-top: 49px;
+            }
+    }
+    &__room-desctiption {
+        padding-bottom: 32px;
+    
+        @include tablet {
+            padding-bottom: 200px;
+        }
+
+        @include pc {
+            padding-bottom: 208px;
+        }
+    }
+    
+    &__room-list {        
         @extend %flex-centred;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    &__room-item {    
-        margin-bottom: 32px;
-    }
+    // &__room-item {    
+    //     margin-bottom: 32px;
+    // }
 
     &__room-title {
         font-family: 'Times New Roman';
@@ -20,6 +59,26 @@
         line-height: 1.17;
         margin-bottom: 16px;
         text-transform: uppercase;        
+    }
+
+    &__room-text {
+        @include tablet {
+            max-width: 400px;
+        }
+    }
+
+    &__room-box {
+        @extend %flex-centred;
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+            gap: 80px;
+        }
+        
+        @include pc {
+            gap: 160px;
+        }
     }
 
 }
