@@ -1,0 +1,155 @@
+.contacts {
+  &__section {
+    background-color: $color-background-primary;
+    padding: 36px 0px 32px 0px;
+    @include tablet {
+      padding: 56px 0px 40px 0px;
+    }
+    @include pc {
+      padding: 56px 0px 74px 0px;
+    }
+  }
+  &__content--box {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+    @include tablet {
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    @include tablet {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  &__nav--link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: $color-tertiary;
+    fill: $color-tertiary;
+  }
+
+  &__phone--link {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.02em;
+    padding: 9px 6px;
+    background-color: $color-primary;
+    color: #494848;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $color-tertiary;
+      transition: $action-duration;
+    }
+  }
+
+  &__icon {
+    fill: $color-text-secondary;
+    margin: 4px;
+  }
+  &__header {
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: -0.3em;
+    color: $color-logo-secondary;
+    @include tablet {
+      font-size: 64px;
+      letter-spacing: -0.3em;
+      line-height: 1.08;
+    }
+  }
+  &__tittle {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    color: $color-text-primary;
+    @include tablet {
+      margin-bottom: 35px;
+    }
+    @include pc {
+      font-size: 20px;
+    }
+  }
+  &__map {
+    width: 100%;
+    height: 220px;
+    @include tablet {
+      width: 54%;
+      height: 412px;
+    }
+  }
+  &__adress {
+    display: flex;
+    align-items: center;
+    max-width: 259px;
+    margin-left: auto;
+    border: $nav-frames-border;
+    border-radius: 2px;
+    background-color: $color-primary;
+    @include tablet {
+      margin: 28px 0 0 0;
+    }
+  }
+  &__adress--link {
+    text-decoration: none;
+    padding: 9px 6px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: $color-logo-secondary;
+  }
+  &__box--rest {
+    display: flex;
+    max-width: 144px;
+    margin-left: 25px;
+    margin-right: auto;
+    border: $nav-frames-border;
+    border-radius: 2px;
+    background-color: $color-primary;
+    align-items: center;
+    @include tablet {
+      margin: 8px 0 0 0;
+    }
+  }
+  &__box--hotl {
+    display: flex;
+    max-width: 261px;
+    margin-left: auto;
+    border: $nav-frames-border;
+    border-radius: 2px;
+    background-color: $color-primary;
+    align-items: center;
+    gap: 1px;
+    @include tablet {
+      margin: 8px 0 0 0;
+    }
+  }
+}
