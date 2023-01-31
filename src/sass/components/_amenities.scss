@@ -1,14 +1,17 @@
 .amenities {
     position: relative;
     background-color: $color-background-primary;
-    padding: 32px 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
     @include tablet {
-        padding: 32px 32px 200px;
+        padding-top: 50px;
+        padding-bottom: 200px;
     }
 
     @include pc {
-        padding: 49px 60px 208px;
+        padding-top: 49px;
+        padding-bottom: 208px;
     }
 
     &__text {
@@ -17,16 +20,38 @@
         }
     }
 
+    &__room {
+        padding-top: 32px;
+                
+            @include tablet {
+                padding-top: 50px;
+           }
+        
+            @include pc {
+                padding-top: 49px;
+            }
+    }
+    &__room-desctiption {
+        padding-bottom: 32px;
     
-    &__room-list {
+        @include tablet {
+            padding-bottom: 200px;
+        }
+
+        @include pc {
+            padding-bottom: 208px;
+        }
+    }
+    
+    &__room-list {        
         @extend %flex-centred;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    &__room-item {    
-        margin-bottom: 32px;
-    }
+    // &__room-item {    
+    //     margin-bottom: 32px;
+    // }
 
     &__room-title {
         font-family: 'Times New Roman';
