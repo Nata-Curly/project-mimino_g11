@@ -233,8 +233,7 @@
 }
 
 .bg-image__room {
-  background-image:
-    url(../images/hero_images/mobile/hotel-hero-mob_1x.jpg);
+  background-image: url(../images/hero_images/mobile/hotel-hero-mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -244,14 +243,12 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     & {
-      background-image:
-        url(../images/hero_images/mobile/hotel-hero-mob_2x.jpg);
+      background-image: url(../images/hero_images/mobile/hotel-hero-mob_2x.jpg);
     }
   }
 
   @include tablet {
-    background-image: 
-      url(../images/hero_images/tablet/hotel-hero-tabl_1x.jpg);
+    background-image: url(../images/hero_images/tablet/hotel-hero-tabl_1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -261,15 +258,13 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: 
-          url(../images/hero_images/tablet/hotel-hero-tabl_2x.jpg);
+        background-image: url(../images/hero_images/tablet/hotel-hero-tabl_2x.jpg);
       }
     }
   }
 
   @include pc {
-    background-image: 
-       url(../images/hero_images/pc/hotel-hero-pc_1x.jpg);
+    background-image: url(../images/hero_images/pc/hotel-hero-pc_1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -279,8 +274,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: 
-                url(../images/hero_images/pc/hotel-hero-pc_2x.jpg);
+        background-image: url(../images/hero_images/pc/hotel-hero-pc_2x.jpg);
       }
     }
   }

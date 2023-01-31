@@ -9,12 +9,16 @@
     @include tablet {
       min-height: 720px;
       padding-top: 188px;
-        padding-bottom: 15px;
+      padding-bottom: 15px;
+      padding-right: 47px;
+      padding-left: 47px;
     }
 
     @include pc {
       padding-top: 164px;
-        padding-bottom: 64px;
+      padding-bottom: 64px;
+      padding-right: 85px;
+      padding-left: 85px;
     }
   }
 
@@ -80,6 +84,7 @@
 
   &__address {
     @media screen and (max-width: 1023px) {
+      position: relative;
       margin-left: auto;
       margin-bottom: 70px;
       color: $address-color;
@@ -172,7 +177,6 @@
     justify-content: space-between;
     @media screen and (max-width: 1023px) {
       align-items: center;
-      
     }
 
     &--first {
@@ -212,7 +216,12 @@
   width: 100%;
   height: 143px;
   z-index: 0;
-  background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .hero__address.noshow-tablet {
