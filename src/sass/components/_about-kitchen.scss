@@ -9,32 +9,234 @@
 
   color: #494848;
 
-  &__block {
+  &__block-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      width: 100%;
+      flex-direction: row;
+      position: relative;
+      transform: translateY(-32px);
+      padding: 0 118px 0 32px;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @include pc {
+		padding: 0 165px 0 73px;
+    }
+  }
+  &__block-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    @include tablet {
+      flex-direction: row;
+      position: relative;
+      transform: translateY(-76px);
+      padding: 0 267px 0 32px;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 48px;
+    }
+
+	 @include pc {
+		padding: 0 165px 0 73px;
+	 }
+    &__list {
+      width: 350px;
+    }
+    &__text-block {
+      width: 163px;
+    }
   }
 
-  &__item {
+  &__block-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    min-width: 200px;
+
+    @include tablet {
+      // margin-left: auto;
+      // margin-right: auto;
+      width: 100%;
+      max-width: 1024px;
+      display: flex;
+      gap: 46px;
+      // margin-left: 97px;
+      // margin-right: auto;
+      justify-content: flex-end;
+    }
+
+    @include pc {
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+  &__block-right {
+    display: flex;
+    justify-content: flex-end;
+
+    @include tablet {
+      // margin-left: auto;
+      // margin-right: auto;
+
+      display: flex;
+      gap: 46px;
+      // margin-right: auto;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+    }
+	 @include pc {
+		// padding: 0 267px 0 32px;
+	 }
   }
 
-  &__foto {
+  &__foto-top {
+	 max-width: none;
+    margin-left: auto;
+    margin-bottom: 28px;
+
+    @include tablet {box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+		width: 400px;
+	}
+	 @include pc {
+		box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+		width: 460px;
+	}
   }
+  &__foto-bottom {
+	
+	max-width: none;
+	margin-left: auto;
+	margin-bottom: 28px;
+
+	@include tablet {box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+	  border-radius: 2px;
+	  width: 350px;
+	}
+	@include pc {
+		box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+		width: 460px;
+	}
+ }
 }
 
+// items-margin
 .items {
+  width: 230px;
+  margin-bottom: 28px;
+  text-align: left;
+  padding-top: 12px;
+
+  @include tablet {
+    width: 420px;
+    text-align: left;
+  }
+  @include pc {
+	width: 580px;
+	text-align: left;
+ }
+
   &__title {
     font-family: 'Times New Roman';
-    font-style: normal;
     font-weight: 400;
+    font-style: normal;
     font-size: 20px;
     line-height: 1.086;
     color: $color-text-subtitle;
+    &-marg {
+      margin-right: -10px;
+    }
+
+    @include tablet {
+      font-weight: 400;
+      text-align: left;
+      font-size: 32px;
+      line-height: 1.16;
+      margin-right: 5px;
+    }
   }
 
   &__text {
+    display: inline-block;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $color-text-primary;
+
+    @include tablet {
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.25;
+    }
   }
+
+  &__text-brown {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $color-text-secondary;
+    width: 100%;
+    max-width: 163px;
+
+    @include tablet {
+      display: inline-block;
+      width: 100%;
+      font-size: 16px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+      max-width: 312px;
+    }
+  }
+
+  &__list {
+    margin-top: 12px;
+    margin-left: auto;
+
+    @include tablet {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  &__list:first-child {
+    margin-top: 0;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include tablet {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+      width: 100%;
+      margin-right: 32px;
+    }
+  }
+}
+.slider-temp {
+  text-align: center;
+  width: 240px;
+  height: 317px;
 }
