@@ -333,8 +333,6 @@
         
         max-width: 420px; // вирішує висоту і відступ між слайдами 0_о. В моєму випадку 420w робить висоту 194 (яка мені потрібна)
     
-        // display: inline; // не допомагає
-        // gap: 16px;
         position: absolute;
     
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -349,27 +347,28 @@
     }
     
     .room-4-2-slick {
+        overflow: hidden;
+        margin: 0 auto;
 
         &__list {
-            // width: 254px;
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
-            gap: 16px;
-    
-    
+            justify-content: space-around;
+            padding-left: -16px;
+            padding-right: -16px;
+        }
+
+        &__slide {
+            margin: 0 16px;
         }
     
         &__item {
-            margin-left: 16px; // відступ між слайдами?
-            gap: 0 16px;
-            // &:not(:last-child) {
-            //         margin-left: 0px;
-            //     }
+            width: 194px;
     
             @include tablet {
-                margin-left: 40px;
-                gap: 40px;
+                // margin-left: 40px;
+                // gap: 40px;
             }
     
             // @include pc {
@@ -378,10 +377,11 @@
         }
     
         &__box {
+            max-width: 194px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 0;
+            // margin: 0 0;
         }
     
     

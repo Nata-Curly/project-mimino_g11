@@ -3115,27 +3115,29 @@ p {
   }
 }
 
+.room-4-2-slick {
+  overflow: hidden;
+  margin: 0 auto;
+}
 .room-4-2-slick__list {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  gap: 16px;
+  justify-content: space-around;
+  padding-left: -16px;
+  padding-right: -16px;
+}
+.room-4-2-slick__slide {
+  margin: 0 16px;
 }
 .room-4-2-slick__item {
-  margin-left: 16px;
-  gap: 0 16px;
-}
-@media screen and (min-width: 1024px) {
-  .room-4-2-slick__item {
-    margin-left: 40px;
-    gap: 40px;
-  }
+  width: 194px;
 }
 .room-4-2-slick__box {
+  max-width: 194px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0;
 }
 
 .room-4-2-slick__list .my-slick-prev,
