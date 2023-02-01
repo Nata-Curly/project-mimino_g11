@@ -16,10 +16,11 @@
     @include pc {
       padding-left: 85px;
       padding-right: 85px;
-      padding-bottom: 50px;
+      // padding-bottom: 50px;
+      padding-bottom: 122px;
     }
 
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
   }
 
   &__numbers {
@@ -235,10 +236,16 @@
 // }
 
 // swiper styles
+.about-hotel-slider-container {
+  position: relative;
+  // margin-bottom: 122px;
+  // outline: 1px solid tomato;
+}
 
 .about-hotel-slick-container {
   width: 540px;
-  position: relative;
+  position: absolute;
+  top: -254px;
 
   @include tablet {
     width: 468px;
@@ -273,6 +280,7 @@
 .about-hotel-slick__list .my-slick-next {
   position: absolute;
   bottom: -52px;
+  // left: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
