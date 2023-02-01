@@ -1,8 +1,13 @@
 .social {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 
-    &__link {
-        fill: $color-social-nonactive-icon;
+  &__link {
+    fill: $color-main-header-footer;
+
+    &:hover,
+    &:focus {
+      fill: $color-tertiary;
     }
+  }
 }
