@@ -7,6 +7,9 @@
   line-height: 1.08;
   /* identical to box height */
   text-align: left;
+  transform: translateY(-32px);
+  background-color: transparent;
+  overflow-x: hidden;
 
   
 
@@ -141,7 +144,7 @@
       box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
       width: 400px;
-		transform: translateY(-32px);
+		// transform: translateY(-32px);
     }
     @include pc {
       box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
@@ -281,7 +284,7 @@
 
   @include tablet {
     width: 540px;
-    left: 521px;
+    left: 481px;
     top: -124px;
   }
 
@@ -346,6 +349,7 @@
   }
 
   @include tablet {
+	top:251px;
     right: 136px;
   }
 
@@ -365,6 +369,7 @@
   }
 
   @include tablet {
+	top:251px;
     right: 83px;
   }
 
@@ -383,4 +388,7 @@
   @include pc {
     position: relative;
   }
+}
+.test2{
+	transform: translateY(-32px);
 }
