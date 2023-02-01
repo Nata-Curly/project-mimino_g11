@@ -131,7 +131,7 @@
 
         color:$color-text-primary;
 
-        margin-bottom: 386px;
+        margin-bottom: 652px;
 
         @include tablet {
             max-width: 440px;
@@ -173,23 +173,18 @@
     }
 }
 
-.slider-and-buttons-thumb {
-    @include tablet {
-                display: flex;
-                justify-content: space-between;
-                // height: 194px;
-                // align-items: center;
-            }
-        @include pc {
-            // height: 254px;
-        }
-}
-
-// .slider-r42-tumb {
-//     // @include tablet {
-//     //         display: flex;
-//     //     }
+// .slider-and-buttons-thumb {
+//     @include tablet {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 // height: 194px;
+//                 // align-items: center;
+//             }
+//         @include pc {
+//             // height: 254px;
+//         }
 // }
+
 
 
 
@@ -197,13 +192,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+        // margin-top: 20px;
 
     @include tablet {
     padding-top: 41px;
         } 
-                @include pc {
-                    padding-top: 72px;
-                }
+    @include pc {
+        padding-top: 72px;
+    }
 }
 
 
@@ -228,6 +224,7 @@
     border: 2px solid $color-primary;
     border-radius: 25px;
 
+
     @extend %cubic;
 
     &:hover,
@@ -241,56 +238,191 @@
          }
 }
 
-.arrows-r42 {
+// .arrows-r42 {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 98px;
+//     margin-bottom: 20px;
+
+//     @include tablet {
+//             margin-bottom: 0;
+//             margin-left: auto;
+//             margin-right: 16px;
+//         }
+
+//     &__icon {
+//         fill: $color-secondary;
+//         width: 32px;
+//         height: 32px;
+//     }
+// }
+
+
+
+// Стилі для картикнок заглушок для слайдів
+// .slide-r42 {
+//     width: 194px;
+//     height: 194px;
+
+//     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+//     border-radius: 2px;
+//     background: $color-background-tertiary;
+
+//     margin-bottom: 20px;
+//     margin-right: 16px;
+
+//     @include tablet {
+//     margin-bottom: 32px;
+// }
+//     @include pc {
+//         width: 254px;
+//         height: 254px;
+//     margin-bottom: 40px;
+// }
+// }
+
+// .swiper-wrapper-r42 {
+//     display: flex;
+//         margin-left: -120px;
+
+//         @include tablet {
+//         margin-left: 0;
+// }
+// }
+
+// стилі для слайдера
+
+.room-4-2-slider-container {
     display: flex;
-    justify-content: space-between;
-    width: 98px;
-    margin-bottom: 20px;
+    padding-left: 0;
+    justify-content: flex-start;
+    position: absolute;
+    top: 640px;
+    left: -185px;
+    bottom: 216px;
+    
+    margin-top: 0px;
 
     @include tablet {
-            margin-bottom: 0;
-            margin-left: auto;
-            margin-right: 16px;
-        }
+        position: relative;
+        left: -40px;
+        bottom: 0;
+        margin-top: -28px;
+    }
 
-    &__icon {
-        fill: $color-secondary;
-        width: 32px;
-        height: 32px;
+    @include pc {
+        position: relative;
+        left: -40px;
+        bottom: 0;
+        margin-top: -107px;
+    }
+}
+
+.slider__image{
+    width: 194px;
+    margin-bottom: 20px;
+
+    // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+    @include pc {
+        width: 254px;
     }
 }
 
 
 
-// Стилі для картикнок заглушок для слайдів
-.slide-r42 {
-    width: 194px;
-    height: 194px;
-
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    background: $color-background-tertiary;
-
-    margin-bottom: 20px;
-    margin-right: 16px;
+.room-4-2-slick-container{
+    max-width: 414px;
+    position: relative;
+    
 
     @include tablet {
-    margin-bottom: 32px;
-}
+        max-width: 428px;
+    }
+    
     @include pc {
-        width: 254px;
-        height: 254px;
-    margin-bottom: 40px;
-}
+        max-width: 548px;
+    }
 }
 
-.swiper-wrapper-r42 {
-    display: flex;
-        margin-left: -120px;
+.room-4-2-slick {
+    
+    &__list {
+            // width: 254px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+    &__item {  
+        margin-left: 16px;
 
         @include tablet {
-        margin-left: 0;
-}
+            margin-left: 40px;
+        }
+
+        @include pc {
+            margin-left: 40px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0;
+    }
+
+    
 }
 
-// комент за ради коміту
+.room-4-2-slick__list .my-slick-prev,
+.room-4-2-slick__list .my-slick-next {
+    position: relative;
+    bottom: -52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    
+
+    @include tablet{
+       bottom: -64px;
+    }
+
+    @include pc{
+        bottom: -68px;
+    }
+}
+
+.room-4-2-slick__list .my-slick-prev {
+background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
+    left: 15px;
+
+    @include tablet {
+        left: 126px;
+    }
+
+    @include pc {
+        left: 158px;
+    }
+}
+
+.room-4-2-slick__list .my-slick-next {
+    background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
+    right: 203px;
+
+    @include tablet {
+        right: 63px;
+    }
+
+    @include pc {
+        right: 94px;
+    }
+}
