@@ -283,7 +283,7 @@
   align-items: center;
 }
 
-.button-r42-hotel, .button, .modal-menu__submit, .popup__close {
+.social__link, .button-r42-hotel, .button, .modal-menu__submit, .popup__close, .header__contact, .header__phone, .header__link, .header__logo, .footer__social--link, .footer__link {
   transition-property: background-color, color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -372,7 +372,7 @@ p {
 
 .footer {
   background-color: #0E0C07;
-  color: #F3C653;
+  color: rgba(243, 198, 83, 0.7);
   justify-content: space-between;
   padding: 40px 0;
   align-items: center;
@@ -396,18 +396,22 @@ p {
   .footer__logo {
     font-size: 64px;
     margin-top: 80px;
-    margin-left: 154px;
+    margin-left: 140px;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer__logo {
     margin-bottom: 35px;
+    margin-left: 130px;
   }
 }
 .footer__link {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+}
+.footer__link:hover, .footer__link:focus {
+  color: #F3C653;
 }
 .footer__item {
   margin-bottom: 16px;
@@ -423,9 +427,21 @@ p {
     display: block;
   }
 }
+.footer__social--link:hover, .footer__social--link:focus {
+  color: #F3C653;
+  fill: #F3C653;
+  border-color: #F3C653;
+}
+@media screen and (min-width: 1024px) {
+  .footer__social--link {
+    padding: 10px 12px;
+    border: 0.5px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+}
 .footer__social__link {
   padding: 10px 12px;
-  color: #F3C653;
+  color: rgba(243, 198, 83, 0.7);
   fill: rgba(243, 198, 83, 0.7);
 }
 .footer__social--item:not(:last-child) {
@@ -433,9 +449,6 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .footer__social--item {
-    border: 0.5px solid #F3C653;
-    border-radius: 2px;
-    padding: 10px 12px;
     width: 144px;
   }
   .footer__social--item:not(:last-child) {
@@ -453,11 +466,13 @@ p {
     flex-direction: row;
     margin-top: 40px;
     margin-right: 163px;
+    margin-left: 163px;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer__box {
     margin-right: 231px;
+    margin-left: 230px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -527,6 +542,9 @@ p {
     margin-right: auto;
   }
 }
+.header__logo:hover, .header__logo:focus {
+  color: #F3C653;
+}
 .header__list {
   display: flex;
 }
@@ -560,6 +578,10 @@ p {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+  color: rgba(243, 198, 83, 0.7);
+  fill: rgba(243, 198, 83, 0.7);
+}
+.header__link:hover, .header__link:focus {
   color: #F3C653;
   fill: #F3C653;
 }
@@ -579,6 +601,9 @@ p {
     border-radius: 2px;
   }
 }
+.header__phone:hover, .header__phone:focus {
+  border: 1px solid #F3C653;
+}
 .header__contact {
   font-size: 14px;
   line-height: 1.214;
@@ -589,6 +614,9 @@ p {
   .header__contact {
     display: none;
   }
+}
+.header__contact:hover, .header__contact:focus {
+  color: #F3C653;
 }
 
 @media screen and (max-width: 1279px) {
@@ -956,6 +984,286 @@ input[type=date]::-webkit-calendar-picker-indicator {
   letter-spacing: 0.02em;
   color: #7A7A7A;
   margin-bottom: 32px;
+}
+
+.about-hotel {
+  background-color: #FFFDEE;
+}
+.about-hotel__container {
+  padding-top: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel__container {
+    padding-top: 0px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel__container {
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 122px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel__numbers {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.about-hotel__double-room-img {
+  margin-top: 28px;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  max-width: 244px;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel__double-room-img {
+    margin-left: 65px;
+    max-width: 400px;
+    margin-top: 0px;
+    position: relative;
+    top: -24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel__double-room-img {
+    margin-left: 95px;
+    max-width: 460px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel__declaration {
+    margin-left: 46px;
+    margin-top: 120px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel__declaration {
+    margin-left: 67px;
+  }
+}
+.about-hotel__title {
+  text-align: right;
+  margin-bottom: 6px;
+  font-family: "Times New Roman";
+  color: #B4B4B4;
+  font-size: 20px;
+  line-height: 1.15;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel__title {
+    font-size: 32px;
+    line-height: 1.15625;
+    margin-bottom: 4px;
+  }
+}
+.about-hotel__logo {
+  text-align: right;
+  margin-right: -0.3em;
+  margin-bottom: 16px;
+  color: #494848;
+  font-size: 40px;
+  line-height: 1.075;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel__logo {
+    font-size: 64px;
+    line-height: 1.078125;
+    margin-bottom: 24px;
+  }
+}
+.about-hotel__title-description {
+  margin-left: auto;
+  font-family: "Montserrat";
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #7A7A7A;
+  font-size: 12px;
+  line-height: 1.25;
+  width: 242px;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel__title-description {
+    margin-left: 0;
+    width: 100%;
+    text-align: right;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.about-hotel__hall {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel__hall {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+}
+.about-hotel__hall-description {
+  width: 100%;
+  margin-right: 21px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 12px;
+  line-height: 1.25;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #C79002;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel__hall-description {
+    margin-top: 172px;
+    margin-right: 45px;
+    width: 311px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel__hall-description {
+    margin-top: 123px;
+  }
+}
+.about-hotel__hall-img {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  max-width: 200px;
+  height: 278px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel__hall-img {
+    max-width: 350px;
+    height: 500px;
+    position: relative;
+    top: -48px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel__hall-img {
+    max-width: 460px;
+    height: 574px;
+    top: -70px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+.about-hotel-slider-container {
+  position: relative;
+}
+
+.about-hotel-slick-container {
+  width: 540px;
+  position: absolute;
+  top: -254px;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel-slick-container {
+    width: 468px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel-slick-container {
+    width: 588px;
+  }
+}
+
+.about-hotel-slick__list {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+.about-hotel-slick__item {
+  margin-right: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel-slick__item {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel-slick__item {
+    margin-right: 40px;
+  }
+}
+
+.about-hotel-slick__list .my-slick-prev,
+.about-hotel-slick__list .my-slick-next {
+  position: absolute;
+  bottom: -52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel-slick__list .my-slick-prev,
+.about-hotel-slick__list .my-slick-next {
+    bottom: -64px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel-slick__list .my-slick-prev,
+.about-hotel-slick__list .my-slick-next {
+    bottom: -68px;
+  }
+}
+
+.about-hotel-slick__list .my-slick-prev {
+  background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
+  right: 267px;
+}
+.about-hotel-slick__list .my-slick-prev:hover, .about-hotel-slick__list .my-slick-prev:focus {
+  background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel-slick__list .my-slick-prev {
+    right: 126px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel-slick__list .my-slick-prev {
+    right: 158px;
+  }
+}
+
+.about-hotel-slick__list .my-slick-next {
+  background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
+  right: 203px;
+}
+.about-hotel-slick__list .my-slick-next:hover, .about-hotel-slick__list .my-slick-next:focus {
+  background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel-slick__list .my-slick-next {
+    right: 63px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel-slick__list .my-slick-next {
+    right: 94px;
+  }
 }
 
 .kitchen {
@@ -2904,11 +3212,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 @media screen and (min-width: 1280px) {
   .section__container {
-    padding: 0 85px 0 85px;
+    padding: 72 85px 0 85px;
   }
 }
 
 .section__lux-for-two {
+  position: relative;
   background-color: #FFFDEE;
   padding-bottom: 32px;
 }
@@ -3011,6 +3320,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     width: 439px;
     font-size: 16px;
     line-height: 1.25;
+    margin-bottom: 188px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -3023,35 +3333,35 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-transform: lowercase;
 }
 
-.content__lux-paragraph {
+/*.content__lux-paragraph {
   width: 258px;
   font-size: 12px;
   line-height: 1.22;
   margin-bottom: 32px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: #7A7A7A;
-}
-@media screen and (min-width: 1024px) {
-  .content__lux-paragraph {
+
+  @include tablet {
     width: 439px;
     font-size: 16px;
     line-height: 1.25;
   }
-}
-@media screen and (min-width: 1280px) {
-  .content__lux-paragraph {
+
+  @include pc {
     width: 400px;
   }
-}
 
+  font-weight: 700;
+  letter-spacing: 0.02em;
+
+  color: $color-text-primary;
+}*/
 .img_backgroung-lux {
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 @media screen and (min-width: 1024px) {
   .img_backgroung-lux {
-    margin-top: -33px;
+    position: absolute;
+    top: -33px;
   }
 }
 
@@ -3110,7 +3420,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 49px;
   }
 }
 
@@ -3157,6 +3466,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
     margin-left: 0;
   }
 }
+@media screen and (min-width: 1280px) {
+  .arrow-button {
+    margin-left: 430px;
+  }
+}
 
 @media (max-width: 1023px) {
   .arrow-button {
@@ -3174,6 +3488,144 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-right: 32px;
 }
 
+/*.about-restaurant-slider-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: -185px;
+    bottom: 0;
+    gap: 40px;
+    margin-top: 32px;
+
+    @include tablet {
+        position: relative;
+        right: -40px;
+        bottom: 0;
+        margin-top: -28px;
+    }
+
+    @include pc {
+        position: relative;
+        right: -40px;
+        bottom: 0;
+        margin-top: -107px;
+    }
+}
+
+.slider__image{
+    width: 245px;
+
+    @include tablet {
+        margin-top: 0px;
+        width: 194px;
+    }
+
+    @include pc {
+        width: 254px;
+    }
+}
+
+
+
+
+.about-restaurant-slick-container{
+    width: 515px;
+    position: relative;
+
+
+    @include tablet {
+        width: 428px;
+    }
+
+    @include pc {
+        width: 548px;
+    }
+}
+
+.about-restaurant-slick {
+
+    &__list {
+            // width: 254px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+    &__item {
+        margin-right: 25px;
+
+        @include tablet {
+            margin-right: 40px;
+        }
+
+        @include pc {
+            margin-right: 40px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0;
+    }
+
+
+}*/
+/*.lux-for-two-slider-container {
+	width: 530px;
+}
+
+.lux-for-two-slick__list .my-slick-prev,
+.lux-for-two-slick__list .my-slick-next {
+    position: absolute;
+    bottom: -52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    @include tablet{
+       bottom: -64px;
+    }
+
+    @include pc{
+        bottom: -68px;
+    }
+}
+
+.lux-for-two-slick__list .my-slick-prev {
+background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
+
+    right: 267px;
+
+    @include tablet {
+        right: 126px;
+    }
+
+    @include pc {
+        right: 158px;
+    }
+}
+
+.lux-for-two-slick__list .my-slick-next {
+    background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
+
+    right: 203px;
+
+    @include tablet {
+        right: 63px;
+    }
+
+    @include pc {
+        right: 94px;
+    }
+}*/
 .menu {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -3540,13 +3992,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media screen and (min-width: 1024px) {
   .room-4-2-slider-container {
     top: 540px;
-    left: 47px;
+    left: 7px;
   }
 }
 @media screen and (min-width: 1280px) {
   .room-4-2-slider-container {
     top: 590px;
-    left: 85px;
+    left: 65px;
   }
 }
 
@@ -3564,39 +4016,35 @@ input[type=date]::-webkit-calendar-picker-indicator {
   max-width: 420px;
   position: absolute;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  margin: 0 -16px;
 }
 @media screen and (min-width: 1024px) {
   .room-4-2-slick-container {
-    max-width: 420px;
+    max-width: 473px;
   }
 }
 @media screen and (min-width: 1280px) {
   .room-4-2-slick-container {
-    max-width: 548px;
+    max-width: 590px;
   }
 }
 
+.room-4-2-slick {
+  overflow: hidden;
+  margin: 0 auto;
+}
 .room-4-2-slick__list {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  gap: 16px;
 }
 .room-4-2-slick__item {
-  margin-left: 16px;
-  gap: 0 16px;
+  margin: 0 16px;
 }
 @media screen and (min-width: 1024px) {
   .room-4-2-slick__item {
-    margin-left: 40px;
-    gap: 40px;
+    margin: 0 40px;
   }
-}
-.room-4-2-slick__box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0;
 }
 
 .room-4-2-slick__list .my-slick-prev,
@@ -3628,38 +4076,51 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .room-4-2-slick__list .my-slick-prev {
   background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
-  left: 135px;
+  left: 150px;
 }
 .room-4-2-slick__list .my-slick-prev:hover, .room-4-2-slick__list .my-slick-prev:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
 }
 @media screen and (min-width: 1024px) {
   .room-4-2-slick__list .my-slick-prev {
-    left: 330px;
+    left: 370px;
   }
 }
 @media screen and (min-width: 1280px) {
   .room-4-2-slick__list .my-slick-prev {
-    left: 450px;
+    left: 490px;
   }
 }
 
 .room-4-2-slick__list .my-slick-next {
   background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
-  left: 200px;
+  left: 215px;
 }
 .room-4-2-slick__list .my-slick-next:hover, .room-4-2-slick__list .my-slick-next:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
 }
 @media screen and (min-width: 1024px) {
   .room-4-2-slick__list .my-slick-next {
-    left: 394px;
+    left: 434px;
   }
 }
 @media screen and (min-width: 1280px) {
   .room-4-2-slick__list .my-slick-next {
-    left: 515px;
+    left: 555px;
   }
+}
+
+.draggable {
+  height: 194px;
+}
+@media screen and (min-width: 1280px) {
+  .draggable {
+    height: 254px;
+  }
+}
+
+.slick-track {
+  max-height: 194px;
 }
 
 .social {
@@ -3668,4 +4129,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .social__link {
   fill: rgba(243, 198, 83, 0.7);
+}
+.social__link:hover, .social__link:focus {
+  fill: #F3C653;
 }/*# sourceMappingURL=index.css.map */
