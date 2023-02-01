@@ -33,7 +33,7 @@
     @include tablet {
         max-width: 1024px;
         padding-top: 64px;
-        padding-bottom: 104px;
+        padding-bottom: 145px;
         padding-left: 47px;
         padding-right: 47px;
     }
@@ -41,7 +41,7 @@
     @include pc {
         max-width: 1280px;
         padding-top: 72px;
-        padding-bottom: 40px;
+        padding-bottom: 182px;
         padding-left: 85px;
         padding-right: 85px;
     }
@@ -136,11 +136,11 @@
         @include tablet {
             max-width: 440px;
             font-size: 16px;
-            margin-bottom: 174px;
+            margin-bottom: 217px;
             }
         @include pc {
             max-width: 400px;
-            margin-bottom: 188px;
+            margin-bottom: 260px;
         }
     }
 
@@ -153,9 +153,7 @@
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
 
-        // margin-left: auto;
-
-        // margin-bottom: 32px;
+     
 
         @include tablet {
             top: -32px;
@@ -192,13 +190,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-        // margin-top: 20px;
+       
 
     @include tablet {
-    padding-top: 41px;
-        } 
+    // padding-top: 41px;
+align-items: flex-end;
+
+} 
     @include pc {
-        padding-top: 72px;
+        // padding-top: 72px;
     }
 }
 
@@ -298,46 +298,43 @@
     justify-content: flex-start;
     position: absolute;
     top: 640px;
-    left: -185px;
-    bottom: 216px;
-    
-    margin-top: 0px;
+    left: -120px; // відступ за межі контейнера вліво для мобілки
+   
 
     @include tablet {
-        position: relative;
-        left: -40px;
-        bottom: 0;
-        margin-top: -28px;
+        top: 540px;
+        left: 47px;
     }
 
     @include pc {
-        position: relative;
-        left: -40px;
-        bottom: 0;
-        margin-top: -107px;
+        top: 590px;
+        left: 85px;
     }
 }
 
 .slider__image{
-    width: 194px;
-    margin-bottom: 20px;
+    max-width: 194px;
 
-    // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
     @include pc {
-        width: 254px;
+        max-width: 254px;
     }
 }
 
 
 
-.room-4-2-slick-container{
-    max-width: 414px;
-    position: relative;
+.room-4-2-slick-container{ //
+    max-width: 420px; // вирішує висоту і відступ між слайдами 0_о. В моєму випадку 420w робить висоту 194 (яка мені потрібна)
     
+    // display: inline; // не допомагає
+    // gap: 16px;
+    position: absolute;
+    
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
     @include tablet {
-        max-width: 428px;
+        max-width: 420px;
     }
     
     @include pc {
@@ -352,18 +349,26 @@
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
+            gap: 16px;
+
+
         }
 
     &__item {  
-        margin-left: 16px;
+        margin-left: 16px; // відступ між слайдами?
+            gap: 0 16px;
+        // &:not(:last-child) {
+        //         margin-left: 0px;
+        //     }
 
         @include tablet {
             margin-left: 40px;
+                        gap: 40px;
         }
 
-        @include pc {
-            margin-left: 40px;
-        }
+        // @include pc {
+        //     margin-left: 40px;
+        // }
     }
 
     &__box {
@@ -378,8 +383,8 @@
 
 .room-4-2-slick__list .my-slick-prev,
 .room-4-2-slick__list .my-slick-next {
-    position: relative;
-    bottom: -52px;
+    position: absolute;
+    bottom: -52px; //32 висота іконки + 20 відступ від слайдера знизу до іконки
     display: flex;
     align-items: center;
     justify-content: center;
@@ -403,26 +408,26 @@
 
 .room-4-2-slick__list .my-slick-prev {
 background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
-    left: 15px;
+    left: 135px;   // відступ -120 за межі контейнера + 15 позиція на сторінці
 
     @include tablet {
-        left: 126px;
+        left: 330px;
     }
 
     @include pc {
-        left: 158px;
+        left: 450px;
     }
 }
 
 .room-4-2-slick__list .my-slick-next {
     background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
-    right: 203px;
+    left: 200px; // відступ -120 за межі контейнера + 80 позиція на сторінці
 
     @include tablet {
-        right: 63px;
-    }
+        left: 394px;
+        }
 
     @include pc {
-        right: 94px;
+        left: 515px;
     }
 }
