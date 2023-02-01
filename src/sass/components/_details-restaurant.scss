@@ -149,113 +149,216 @@
 
 // SlICK-SlIDER
 
-/* Слайдер */
-.details-restaurant__slick-container {
-    min-width: 0;
-    margin-bottom: 100px;
-}
-// .slick-slider{}
-// /* Слайдер запущен */
-// .slick-slider.slick-initialized{}
-// /* Слайдер с точками */
-// .slick-slider.slick-dotted{}
-// /* Ограничивающая оболочка */
-.slick-list {
-    overflow: hidden;
-}
-// /* Лента слайдов */
-.slick-track{
-    display: flex;
-}
+// /* Слайдер */
+// .details-restaurant__slick-container {
+//     min-width: 0;
+//     margin-bottom: 100px;
+// }
+// // .slick-slider{}
+// // /* Слайдер запущен */
+// // .slick-slider.slick-initialized{}
+// // /* Слайдер с точками */
+// // .slick-slider.slick-dotted{}
+// // /* Ограничивающая оболочка */
+// .slick-list {
+//     overflow: hidden;
+// }
+// // /* Лента слайдов */
+// .slick-track{
+//     display: flex;
+// }
 
 
-/* Слайд */
-// .slick-slide{   margin-right: 20px;
+// /* Слайд */
+// // .slick-slide{   margin-right: 20px;
+// //     width: 274px;
+// //     height: 270px;
+// //     @include tablet {
+// //         margin-right: 34px;
+
+// // }}
+// // /* Слайд активный (показывается) */
+// .slick-track.slick-slide.slick-active{ 
+//     margin-right: 20px;
 //     width: 274px;
 //     height: 270px;
+//     overflow-y: hidden;
 //     @include tablet {
 //         margin-right: 34px;
 
-// }}
-// /* Слайд активный (показывается) */
-.slick-track.slick-slide.slick-active{ 
-    margin-right: 20px;
-    width: 274px;
-    height: 270px;
-    overflow-y: hidden;
-    @include tablet {
-        margin-right: 34px;
-
-}
-}
-// /* Слайд основной */
-.slick-slide.slick-current{
-    width: 274px;
-    height: 270px;
-    @include tablet {
-        width: 270px;
-        height: 270px;
-    }
+// }
+// }
+// // /* Слайд основной */
+// .slick-slide.slick-current{
+//     width: 274px;
+//     height: 270px;
+//     @include tablet {
+//         width: 270px;
+//         height: 270px;
+//     }
    
-}
-// /* Слайд по центру */
-// .slick-slide.slick-center{}
-// /* Клонированный слайд */
-// .slick-slide.slick-cloned{}
-/* Стрелка */
-// .slick-arrow{}
-// /* Стрелка влево */
-// .slick-arrow.slick-prev{}
-// /* Стрелка вправо */
-// .slick-arrow.slick-next{}
-// /* Стрелка не активная */
-// .slick-arrow.slick-disabled{}
-.slider {
-    position: relative;
-    width: 500px;
-    padding-left: 25px;
-    @include tablet {
-        width: 2000px;
-    }
+// }
+// // /* Слайд по центру */
+// // .slick-slide.slick-center{}
+// // /* Клонированный слайд */
+// // .slick-slide.slick-cloned{}
+// /* Стрелка */
+// // .slick-arrow{}
+// // /* Стрелка влево */
+// // .slick-arrow.slick-prev{}
+// // /* Стрелка вправо */
+// // .slick-arrow.slick-next{}
+// // /* Стрелка не активная */
+// // .slick-arrow.slick-disabled{}
+// .slider {
+//     position: relative;
+//     width: 500px;
+//     padding-left: 25px;
+//     @include tablet {
+//         width: 2000px;
+//     }
     
-}
-.slider .slick-arrow{
-position: absolute;
-top: 115%;
-z-index: 5;
-font-size: 0;
-width: 32px;
-height: 32px;
-cursor: pointer;
-border: none;
-justify-content: center;
-align-items: center;
-// background-color: transparent;
+// }
+// .slider .slick-arrow{
+// position: absolute;
+// top: 115%;
+// z-index: 5;
+// font-size: 0;
+// width: 32px;
+// height: 32px;
+// cursor: pointer;
+// border: none;
+// justify-content: center;
+// align-items: center;
+// // background-color: transparent;
 
+// }
+// .slider .slick-arrow.my-slick-prev {
+//     background-image: url(../images/slider_svg/slider-arrow-left.svg) no-repeat;
+//     // left: 0;
+//     &:hover,
+//     &:focus{
+//         background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg)  no-repeat;
+//     }
+// }
+// .slider .slick-arrow.my-slick-next {
+//     background-image: url(../images/slider_svg/slider-arrow-right.svg) no-repeat;
+//    left: 90px;
+//     &:hover,
+//     &:focus{
+//         background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg) no-repeat;
+//     }
+// }
+// .slider__item {
+//     margin-right: 20px;
+//     max-width: 274px;
+//     max-height: 270px;
+//     @include tablet {
+//         margin-right: 34px;
+//         // margin-left: 50px;
+
+// }
+// }
+
+
+
+// Slider new
+
+// swiper styles
+
+.details-restaurant-slick-container {
+  width: 540px;
+  position: relative;
+
+
+  @include tablet {
+    width: 468px;
+  }
+
+  @include pc {
+    width: 588px;
+  }
 }
-.slider .slick-arrow.my-slick-prev {
-    background-image: url(../images/slider_svg/slider-arrow-left.svg) no-repeat;
-    // left: 0;
-    &:hover,
-    &:focus{
-        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg)  no-repeat;
-    }
-}
-.slider .slick-arrow.my-slick-next {
-    background-image: url(../images/slider_svg/slider-arrow-right.svg) no-repeat;
-   left: 90px;
-    &:hover,
-    &:focus{
-        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg) no-repeat;
-    }
-}
-.slider__item {
-    margin-right: 20px;
-    max-width: 274px;
-    max-height: 270px;
+
+.details-restaurant-slick {
+
+  &__list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 25px;
+
     @include tablet {
-        margin-right: 34px;
-        // margin-left: 50px;
+      margin-right: 40px;
+    }
+
+    @include pc {
+      margin-right: 40px;
+    }
+  }
 
 }
+
+.details-restaurant-slick__list .my-slick-prev,
+.details-restaurant-slick__list .my-slick-next {
+  position: absolute;
+  bottom: -52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  @include tablet {
+    bottom: -64px;
+  }
+
+  @include pc {
+    bottom: -68px;
+  }
+}
+
+.details-restaurant-slick__list .my-slick-prev {
+  background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
+
+  right: 267px;
+
+  &:hover,
+  &:focus {
+    background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+  }
+
+  @include tablet {
+    right: 126px;
+  }
+
+  @include pc {
+    right: 158px;
+  }
+}
+
+.details-restaurant-slick__list .my-slick-next {
+  background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
+
+  right: 203px;
+
+  &:hover,
+  &:focus {
+    background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
+  }
+
+  @include tablet {
+    right: 63px;
+  }
+
+  @include pc {
+    right: 94px;
+  }
 }
