@@ -2498,69 +2498,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin: 0 0;
 }
 
-.details-hotel-slick__list .my-slick-prev,
-.details-hotel-slick__list .my-slick-next {
-  position: absolute;
-  bottom: -52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-@media screen and (min-width: 1024px) {
-  .details-hotel-slick__list .my-slick-prev,
-.details-hotel-slick__list .my-slick-next {
-    bottom: -64px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-hotel-slick__list .my-slick-prev,
-.details-hotel-slick__list .my-slick-next {
-    bottom: -68px;
-  }
-}
-
-.details-hotel-slick__list .my-slick-prev {
-  background-image: url(../images/slider_svg/slider-arrow-left.svg);
-  right: 89px;
-}
-.details-hotel-slick__list .my-slick-prev:hover, .details-hotel-slick__list .my-slick-prev:focus {
-  background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
-}
-@media screen and (min-width: 1024px) {
-  .details-hotel-slick__list .my-slick-prev {
-    right: 96px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-hotel-slick__list .my-slick-prev {
-    right: 100pxpx;
-  }
-}
-
-.details-hotel-slick__list .my-slick-next {
-  background-image: url(../images/slider_svg/slider-arrow-right.svg);
-  right: 25px;
-}
-.details-hotel-slick__list .my-slick-next:hover, .details-hotel-slick__list .my-slick-next:focus {
-  background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
-}
-@media screen and (min-width: 1024px) {
-  .details-hotel-slick__list .my-slick-next {
-    right: 40px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-hotel-slick__list .my-slick-next {
-    right: 36px;
-  }
-}
-
 .details-restaurant {
   display: block;
   text-align: center;
@@ -2714,6 +2651,33 @@ input[type=date]::-webkit-calendar-picker-indicator {
 /* Слайдер */
 /* Слайд */
 /* Стрелка */
+.details-hotel-slick__list .my-slick-prev,
+.details-hotel-slick__list .my-slick-next {
+  position: absolute;
+  bottom: -52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 1024px) {
+  .details-hotel-slick__list .my-slick-prev,
+.details-hotel-slick__list .my-slick-next {
+    bottom: -64px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-hotel-slick__list .my-slick-prev,
+.details-hotel-slick__list .my-slick-next {
+    bottom: -68px;
+  }
+}
+
 .logo {
   display: block;
   font-family: "FilmP3", sans-serif;
