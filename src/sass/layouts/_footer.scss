@@ -44,6 +44,11 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    @extend %cubic;
+    &:hover,
+    &:focus {
+      color: $color-tertiary;
+    }
   }
 
   &__item {
@@ -63,7 +68,7 @@
 
     &--link {
 
-       
+        @extend %cubic;
 
         &:hover,
         &:focus {
