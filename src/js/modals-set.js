@@ -75,10 +75,10 @@ function funcPopup() {
     if (lockPadding.length > 0) {
       for (let index = 0; index < lockPadding.length; index++) {
         const el = lockPadding[index];
-        el.style.paddingRight = scrollBarWidth + 'px';
+        // el.style.paddingRight = scrollBarWidth + 'px';
       }
     }
-    body.style.paddingRight = scrollBarWidth + 'px';
+    // body.style.paddingRight = scrollBarWidth + 'px';
     body.classList.add('lock');
 
     unlock = false;
@@ -92,10 +92,10 @@ function funcPopup() {
       if (lockPadding.length > 0) {
         for (let index = 0; index < lockPadding.length; index++) {
           const el = lockPadding[index];
-          el.style.paddingRight = 0;
+          // el.style.paddingRight = 0;
         }
       }
-      body.style.paddingRight = 0;
+      // body.style.paddingRight = 0;
       body.classList.remove('lock');
     }, timeout);
 

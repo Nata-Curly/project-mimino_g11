@@ -1,13 +1,11 @@
 <div data-popup-target="modal-book-room" class="popup">
-  <div class="popup__content">
+  <div class="modal-menu popup__content">
     <button type="button" class="popup__close close-popup">
       <svg width="24" height="24">
         <use href="./images/icons/icons.svg#icon-close"></use>
       </svg>
     </button>
-
-    <h2 class="modal-menu__title">ЗАБРОНЮВАТИ НОМЕР</h2>
-
+    <h2 class="modal-menu__title">Забронювати номер</h2>
     <form class="modal-flex-box">
       <div class="modal-flex-column-second">
         <div class="modal-menu__item modal-flex-column">
@@ -24,7 +22,7 @@
           >
         </div>
 
-        <div class="modal-menu__item modal-flex-column">
+        <div class="modal-flex-column">
           <input
             class="modal-menu__input input-date"
             type="date"
@@ -54,13 +52,12 @@
         </div>
 
         <div class="modal-flex-column">
-          <select name="testselect" class="js-select">
+          <select id="room" name="testselect" class="js-select">
             <option value="2">Двомісний люкс</option>
             <option value="3">Двомісний номер</option>
             <option value="4">Одномісний номер</option>
           </select>
-
-          <label class="modal-menu__text">Категорія номеру</label>
+          <label for="room" class="modal-menu__text">Категорія номеру</label>
         </div>
 
         <div class="modal-flex-column">
@@ -80,10 +77,8 @@
         </div>
       </div>
     </form>
-    <div class="modal-menu-box__submit">
-      <button class="modal-menu__submit close-popup" type="submit">
-        ОФОРМИТИ БРОНЮВАННЯ
-      </button>
-    </div>
+    <button class="modal-menu__submit close-popup" type="submit">
+      ОФОРМИТИ БРОНЮВАННЯ
+    </button>
   </div>
 </div>

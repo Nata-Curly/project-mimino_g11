@@ -283,13 +283,13 @@
   align-items: center;
 }
 
-.social__link, .button-r42-hotel, .button, .modal-menu__submit, .popup__close, .header__contact, .header__phone, .header__link, .header__logo, .footer__social--link, .footer__link {
+.social__link, .button-r42-hotel, .button, .modal-menu__submit, .header__contact, .header__phone, .header__link, .header__logo, .footer__social--link, .footer__link {
   transition-property: background-color, color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nice-select, .modal-menu__input, .modal-menu__second-title, .modal-menu__title {
+.nice-select, .modal-menu__input, .modal-menu__title-second, .modal-menu__title {
   font-family: "Times New Roman";
   font-weight: 700;
   font-size: 24px;
@@ -635,12 +635,16 @@ p {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-  overflow-y: scroll;
   background-color: rgba(41, 48, 61, 0.2);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 95px 15px;
+  padding: 70px 15px;
+}
+@media screen and (max-width: 413px) {
+  .popup {
+    overflow-y: scroll;
+  }
 }
 @media screen and (min-width: 414px) {
   .popup {
@@ -660,6 +664,7 @@ p {
   position: relative;
   background: #FFFDEE;
   box-shadow: 0px 0px 30px rgba(41, 48, 61, 0.15);
+  border-radius: 2px;
   opacity: 0;
   padding-left: 15px;
   padding-right: 15px;
@@ -686,13 +691,12 @@ p {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   position: absolute;
   top: 16px;
   right: 16px;
   padding: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .popup__close:hover {
   fill: #F3C653;
@@ -753,10 +757,15 @@ p {
   }
 }
 
+.modal-menu {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
 .modal-menu__title {
   color: #000;
+  text-transform: uppercase;
   text-align: center;
-  padding-top: 60px;
   margin-bottom: 40px;
   margin-top: 0;
 }
@@ -767,20 +776,16 @@ p {
   }
 }
 
-.modal-menu__second-title {
-  color: #808080;
-  margin: 0;
-  margin-bottom: 28px;
-}
-
 @media screen and (min-width: 1024px) {
   .modal-discription {
     padding-left: 60px;
   }
 }
 
-.modal-menu__item {
-  position: relative;
+.modal-menu__title-second {
+  color: #808080;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 .modal-menu__input {
@@ -811,6 +816,9 @@ p {
 }
 
 .input-date::after {
+  content: "";
+  display: block;
+  position: absolute;
   height: 16px;
   width: 16px;
   border-bottom: 3.5px solid #C79002;
@@ -818,23 +826,19 @@ p {
   border-radius: 2px;
   top: 45%;
   margin-right: 25px;
-  content: "";
-  display: block;
   margin-top: -4px;
   pointer-events: none;
-  position: absolute;
   right: 12px;
   transform: rotate(45deg);
-  transition: all 0.15s ease-in-out;
 }
 
-input[type=date]::before {
+.input-date::before {
   content: attr(placeholder);
   width: 100%;
 }
 
-input[type=date]:focus::before,
-input[type=date]:valid::before {
+.input-date:focus::before,
+.input-date:valid::before {
   display: none;
 }
 
@@ -874,6 +878,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: block;
   margin: 0 auto;
   padding: 20px 43px 20px 43px;
+  margin-top: 40px;
   cursor: pointer;
 }
 .modal-menu__submit:hover {
@@ -893,14 +898,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media screen and (min-width: 1024px) {
   .modal-menu__submit {
     font-size: 24px;
-    line-height: 29px;
+    line-height: 1.2;
     padding: 18px 117px 18px 117px;
   }
-}
-
-.modal-menu-box__submit {
-  padding-bottom: 60px;
-  margin-top: 40px;
 }
 
 .modal-menu-price__submit {
@@ -919,6 +919,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border: 1px solid #C79002;
   border-radius: 2px;
   background: #FFFDEE;
+  outline: #C79002;
   width: 100%;
   height: 54px;
 }
@@ -937,18 +938,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .nice-select-dropdown {
   width: 100%;
 }
-.nice-select:hover {
-  border: 1px solid #C79002;
-}
 .nice-select:active, .nice-select.open, .nice-select:focus {
-  border: 1px solid #C79002;
+  outline: 1px solid #C79002;
 }
 
 .nice-select:after {
   height: 16px;
   width: 16px;
-  border-bottom: 3.5px solid #C79002;
-  border-right: 3.5px solid #C79002;
+  border-bottom: 3.7px solid #C79002;
+  border-right: 3.7px solid #C79002;
   border-radius: 2px;
   top: 45%;
   margin-right: 25px;
