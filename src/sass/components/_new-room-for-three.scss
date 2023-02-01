@@ -180,15 +180,15 @@
      }
  }
 
- .slider__image {
-     max-width: 194px;
+//  .slider__image {    //! -
+//      max-width: 194px;
 
-     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+//      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
-     @include pc {
-         max-width: 254px;
-     }
- }
+//      @include pc {
+//          max-width: 254px;
+//      }
+//  }
 
 
 
