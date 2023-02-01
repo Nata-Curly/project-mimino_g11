@@ -2904,11 +2904,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 @media screen and (min-width: 1280px) {
   .section__container {
-    padding: 0 85px 0 85px;
+    padding: 72 85px 0 85px;
   }
 }
 
 .section__lux-for-two {
+  position: relative;
   background-color: #FFFDEE;
   padding-bottom: 32px;
 }
@@ -3011,6 +3012,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     width: 439px;
     font-size: 16px;
     line-height: 1.25;
+    margin-bottom: 188px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -3023,35 +3025,35 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-transform: lowercase;
 }
 
-.content__lux-paragraph {
+/*.content__lux-paragraph {
   width: 258px;
   font-size: 12px;
   line-height: 1.22;
   margin-bottom: 32px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: #7A7A7A;
-}
-@media screen and (min-width: 1024px) {
-  .content__lux-paragraph {
+
+  @include tablet {
     width: 439px;
     font-size: 16px;
     line-height: 1.25;
   }
-}
-@media screen and (min-width: 1280px) {
-  .content__lux-paragraph {
+
+  @include pc {
     width: 400px;
   }
-}
 
+  font-weight: 700;
+  letter-spacing: 0.02em;
+
+  color: $color-text-primary;
+}*/
 .img_backgroung-lux {
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 @media screen and (min-width: 1024px) {
   .img_backgroung-lux {
-    margin-top: -33px;
+    position: absolute;
+    top: -33px;
   }
 }
 
@@ -3110,7 +3112,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 49px;
   }
 }
 
@@ -3157,6 +3158,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
     margin-left: 0;
   }
 }
+@media screen and (min-width: 1280px) {
+  .arrow-button {
+    margin-left: 430px;
+  }
+}
 
 @media (max-width: 1023px) {
   .arrow-button {
@@ -3174,6 +3180,144 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-right: 32px;
 }
 
+/*.about-restaurant-slider-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: -185px;
+    bottom: 0;
+    gap: 40px;
+    margin-top: 32px;
+
+    @include tablet {
+        position: relative;
+        right: -40px;
+        bottom: 0;
+        margin-top: -28px;
+    }
+
+    @include pc {
+        position: relative;
+        right: -40px;
+        bottom: 0;
+        margin-top: -107px;
+    }
+}
+
+.slider__image{
+    width: 245px;
+
+    @include tablet {
+        margin-top: 0px;
+        width: 194px;
+    }
+
+    @include pc {
+        width: 254px;
+    }
+}
+
+
+
+
+.about-restaurant-slick-container{
+    width: 515px;
+    position: relative;
+
+
+    @include tablet {
+        width: 428px;
+    }
+
+    @include pc {
+        width: 548px;
+    }
+}
+
+.about-restaurant-slick {
+
+    &__list {
+            // width: 254px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+    &__item {
+        margin-right: 25px;
+
+        @include tablet {
+            margin-right: 40px;
+        }
+
+        @include pc {
+            margin-right: 40px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0;
+    }
+
+
+}*/
+/*.lux-for-two-slider-container {
+	width: 530px;
+}
+
+.lux-for-two-slick__list .my-slick-prev,
+.lux-for-two-slick__list .my-slick-next {
+    position: absolute;
+    bottom: -52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    @include tablet{
+       bottom: -64px;
+    }
+
+    @include pc{
+        bottom: -68px;
+    }
+}
+
+.lux-for-two-slick__list .my-slick-prev {
+background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
+
+    right: 267px;
+
+    @include tablet {
+        right: 126px;
+    }
+
+    @include pc {
+        right: 158px;
+    }
+}
+
+.lux-for-two-slick__list .my-slick-next {
+    background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
+
+    right: 203px;
+
+    @include tablet {
+        right: 63px;
+    }
+
+    @include pc {
+        right: 94px;
+    }
+}*/
 .menu {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -3546,7 +3690,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media screen and (min-width: 1280px) {
   .room-4-2-slider-container {
     top: 590px;
-    left: 85px;
+    left: 65px;
   }
 }
 
@@ -3564,6 +3708,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   max-width: 420px;
   position: absolute;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  margin: 0 -15px;
 }
 @media screen and (min-width: 1024px) {
   .room-4-2-slick-container {
@@ -3572,7 +3717,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 @media screen and (min-width: 1280px) {
   .room-4-2-slick-container {
-    max-width: 548px;
+    max-width: 588px;
   }
 }
 
@@ -3584,23 +3729,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  padding-left: -16px;
-  padding-right: -16px;
-}
-.room-4-2-slick__slide {
-  margin: 0 16px;
 }
 .room-4-2-slick__item {
-  width: 194px;
+  margin: 0 15px;
 }
-.room-4-2-slick__box {
-  max-width: 194px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .room-4-2-slick__list .my-slick-prev,
 .room-4-2-slick__list .my-slick-next {
   position: absolute;
@@ -3662,6 +3794,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .room-4-2-slick__list .my-slick-next {
     left: 515px;
   }
+}
+
+.draggable {
+  height: 194px;
+}
+
+.slick-track {
+  max-height: 194px;
 }
 
 .social {

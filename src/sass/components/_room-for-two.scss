@@ -305,7 +305,6 @@
         top: 640px;
         left: -120px; // відступ за межі контейнера вліво для мобілки
     
-    
         @include tablet {
             top: 540px;
             left: 47px;
@@ -313,7 +312,7 @@
     
         @include pc {
             top: 590px;
-            left: 85px;
+            left: 65px;
         }
     }
     
@@ -336,13 +335,15 @@
         position: absolute;
     
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    
+        
+        margin: 0 -15px; // !!!
+
         @include tablet {
             max-width: 420px;
         }
     
         @include pc {
-            max-width: 548px;
+            max-width: 588px;
         }
     }
     
@@ -354,17 +355,17 @@
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-around;
-            padding-left: -16px;
-            padding-right: -16px;
+
+            // padding-left: -16px;
+            // padding-right: -16px;
         }
 
-        &__slide {
-            margin: 0 16px;
-        }
+        // &__slide {
+        //     margin: 0 16px;
+        // }
     
         &__item {
-            width: 194px;
+            margin: 0 15px; // !!!
     
             @include tablet {
                 // margin-left: 40px;
@@ -377,14 +378,15 @@
         }
     
         &__box {
-            max-width: 194px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            // width: 194px;
+            // margin-left: 8px;
+            // margin-right: 8px;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
             // margin: 0 0;
         }
-    
-    
+       
     }
     
     .room-4-2-slick__list .my-slick-prev,
@@ -434,7 +436,7 @@
         background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
             left: 200px; // відступ -120 за межі контейнера + 80 позиція на сторінці
         
-&:hover,
+    &:hover,
     &:focus {
         background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
     }
@@ -447,4 +449,26 @@
                 left: 515px;
             }
         }
+.draggable {
+    height: 194px;
+}
+        // Спроби зробити фіксовані відступи між слайдами 
 
+
+// .slider_wrap * {
+//     box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     -webkit-box-sizing: border-box;
+// }
+
+// .slick-slide {
+//     margin: 0 10px;
+// }
+
+// .slider-item img {
+//     max-width: 100%;
+// }
+
+.slick-track {
+max-height: 194px;
+}
