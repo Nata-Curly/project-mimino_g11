@@ -6,40 +6,36 @@
   line-height: 1.08;
   /* identical to box height */
   text-align: left;
-// transform: translateY(-32px);
-// background-color: transparent;
-
-
-  
+  padding-bottom: 40px;
+  // transform: translateY(-32px);
+  // background-color: transparent;
 
   color: #494848;
 
-//   @include tablet {
-// 	overflow-x: hidden;
-// 	overflow-y: visible;
-//   }
+  //   @include tablet {
+  // 	overflow-x: hidden;
+  // 	overflow-y: visible;
+  //   }
 
-//   @include pc {
-// 	overflow-x: visible;
-//   }
-  
+  //   @include pc {
+  // 	overflow-x: visible;
+  //   }
+
   @include tablet {
-      width: 100%;
-      flex-direction: row;
-      position: relative;
-      // transform: translateY(-32px);
-      // padding: 0 0 0 32px;
-      align-items: center;
-		padding-bottom: 134px;
-      gap: 20px;
-		
-    }
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+    // transform: translateY(-32px);
+    // padding: 0 0 0 32px;
+    align-items: center;
+    padding-bottom: 134px;
+    gap: 20px;
+  }
 
-    @include pc {
-		padding-bottom: 104px;
-      // padding: 0 165px 0 73px;
-    }
-  
+  @include pc {
+    padding-bottom: 104px;
+    // padding: 0 165px 0 73px;
+  }
 
   &__block-top {
     width: 100%;
@@ -110,7 +106,6 @@
     @include pc {
       max-width: 1200px;
       width: 100%;
-      
     }
   }
   &__block-right {
@@ -136,13 +131,12 @@
     max-width: none;
     margin-left: auto;
     margin-bottom: 28px;
-	 
 
     @include tablet {
       box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
       width: 400px;
-		// transform: translateY(-32px);
+      // transform: translateY(-32px);
     }
     @include pc {
       box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
@@ -176,8 +170,8 @@
   padding-top: 12px;
 
   @include tablet {
-   max-width: 420px; 
-	width: 100%;
+    max-width: 420px;
+    width: 100%;
     text-align: left;
   }
   @include pc {
@@ -275,7 +269,7 @@
 }
 
 .about-kitchen-slick-container {
- width: 540px;
+  width: 540px;
   position: relative;
   left: 69px;
 
@@ -287,7 +281,7 @@
 
   @include pc {
     width: 588px;
-	 left: 632px;
+    left: 632px;
     top: -256px;
   }
 }
@@ -346,11 +340,12 @@
   }
 
   @include tablet {
-	top:225px;
+    top: 225px;
     right: 136px;
   }
 
   @include pc {
+    top: 300px;
     right: 100px;
   }
 }
@@ -366,18 +361,17 @@
   }
 
   @include tablet {
-	top:225px;
+    top: 225px;
     right: 83px;
   }
 
   @include pc {
-	top:300px;
+    top: 300px;
     right: 45px;
   }
 }
 .slider-position {
-	
-	position: relative;
+  position: relative;
 
   @include tablet {
     position: absolute;
@@ -387,19 +381,18 @@
     position: absolute;
   }
 }
-.test2{
-	background-color: transparent;
-	// overflow-x: hidden;
-	
+.test2 {
+  background-color: transparent;
+  overflow-x: hidden;
 
-	@include tablet {
-		transform: translateY(-32px);
-	 }
+  @include tablet {
+    transform: translateY(-32px);
+    overflow-x: visible;
+  }
 
-	 @include pc {
-		height: auto;
-		
-	 }
-	// overflow-x: hidden;
-	
+  @include pc {
+    height: auto;
+    overflow-x: visible;
+  }
+  // overflow-x: hidden;
 }
