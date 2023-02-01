@@ -1,0 +1,258 @@
+.details-restaurant {
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.76)),
+    url('../images/homepage/mob/hp-rest-bkg-mob_1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+      url('../images/homepage/mob/hp-rest-bkg-mob_2x.jpg');
+  }
+
+  @media screen and (min-width: 1025px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+      url('../images/homepage/tablet/hp-rest-bkg-tab_1x.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.76),
+          rgba(0, 0, 0, 0.76)
+        ),
+        url('../images/homepage/tablet/hp-rest-bkg-tab_2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1281px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+      url('../images/homepage/pc/hp-rest-bkg-pc_1x.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.76),
+          rgba(0, 0, 0, 0.76)
+        ),
+        url('../images/homepage/pc/hp-rest-bkg-pc_2x.jpg');
+    }
+  }
+
+  &__container {
+    // position: relative;
+  //   overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    @include tablet {
+      padding-top: 48px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__information {
+    // left: 140px;
+    margin-left: 125px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    @include tablet {
+      margin-left: 263px;
+    }
+    @include pc {
+      margin-left: 318px;
+    }
+  }
+  &__logo {
+    font-size: 40px;
+    line-height: 1.08;
+    margin-bottom: 12px;
+    color: $color-primary;
+    @include tablet {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: 0.02em;
+    color: $color-primary;
+    @include tablet {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+  }
+  &__text {
+    max-width: 259px;
+    max-height: 62px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    margin-bottom: 48px;
+    letter-spacing: 0.02em;
+    color: $color-text-tertiary;
+    @include tablet {
+      max-width: 610px;
+      max-height: 44px;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+  }
+  &__combined-section {
+    width: 100%;
+  @include tablet {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+  @include pc {
+    gap: 32px;
+    // min-width: 0;
+  }
+}
+
+  &__wrapper {
+    width: 236px;
+    margin-left: 75px;
+    display: flex;
+    margin-bottom: 56pxpx;
+    flex-direction: column;
+    gap: 16px;
+    @include tablet {
+      margin-bottom: 32px;
+      margin-left: 32px
+    }
+    @include pc{
+      margin-bottom: 60px;
+    }
+  }
+  &__button {
+      width: 236px;
+      height: 48px;
+      text-decoration: none;
+    }  
+}
+
+// SlICK-SlIDER
+
+/* Слайдер */
+.details-restaurant__slick-container {
+    min-width: 0;
+}
+// .slick-slider{}
+// /* Слайдер запущен */
+// .slick-slider.slick-initialized{}
+// /* Слайдер с точками */
+// .slick-slider.slick-dotted{}
+// /* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+// /* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+
+
+/* Слайд */
+// .slick-slide{   margin-right: 20px;
+//     width: 274px;
+//     height: 270px;
+//     @include tablet {
+//         margin-right: 34px;
+
+// }}
+// /* Слайд активный (показывается) */
+.slick-track.slick-slide.slick-active{ 
+    margin-right: 20px;
+    width: 274px;
+    height: 270px;
+    overflow-y: hidden;
+    @include tablet {
+        margin-right: 34px;
+
+}
+}
+// /* Слайд основной */
+.slick-slide.slick-current{
+    width: 274px;
+    height: 270px;
+    @include tablet {
+        width: 270px;
+        height: 270px;
+    }
+   
+}
+// /* Слайд по центру */
+// .slick-slide.slick-center{}
+// /* Клонированный слайд */
+// .slick-slide.slick-cloned{}
+/* Стрелка */
+// .slick-arrow{}
+// /* Стрелка влево */
+// .slick-arrow.slick-prev{}
+// /* Стрелка вправо */
+// .slick-arrow.slick-next{}
+// /* Стрелка не активная */
+// .slick-arrow.slick-disabled{}
+.slider {
+    position: relative;
+    width: 1000px;
+    padding-left: 25px;
+    @include tablet {
+        width: 2000px;
+    }
+    
+}
+.slider .slick-arrow{
+position: absolute;
+top: 90%;
+z-index: 5;
+font-size: 0;
+width: 32px;
+height: 32px;
+cursor: pointer;
+border: none;
+// background-color: transparent;
+
+}
+.slider .slick-arrow.my-slick-prev {
+    background-image: url(../images/slider_svg/slider-arrow-left.svg) no-repeat;
+    // left: 0;
+    &:hover,
+    &:focus{
+        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg)  no-repeat;
+    }
+}
+.slider .slick-arrow.my-slick-next {
+    background-image: url(../images/slider_svg/slider-arrow-right.svg) no-repeat;
+   left: 90px;
+    &:hover,
+    &:focus{
+        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg) no-repeat;
+    }
+}
+.slider__item {
+    margin-right: 20px;
+    max-width: 274px;
+    max-height: 270px;
+    @include tablet {
+        margin-right: 34px;
+        // margin-left: 50px;
+
+}
+}
