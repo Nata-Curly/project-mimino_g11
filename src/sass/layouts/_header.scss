@@ -67,13 +67,14 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $color-main-header-footer;
-    fill: $color-main-header-footer;
+    
     @extend %cubic;
 
     &:hover,
     &:focus {
       color: $color-tertiary;
       fill: $color-tertiary;
+      
     }
 
     @include tablet {
@@ -84,6 +85,7 @@
 
   &__phone {
     @extend %cubic;
+    fill: $color-main-header-footer;
     @include tablet {
       display: flex;
       align-items: center;
@@ -91,32 +93,57 @@
       padding: 8px;
       border: $nav-frames-border;
       border-radius: 2px;
+      font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.02em;
+    color: $color-primary;
+    
     }
 
     &:hover,
     &:focus {
-      border: 1px solid $color-tertiary;
+      border-color: $color-tertiary;
+      fill: currentColor;
+      color: $color-tertiary;
+    }
+    &:hover + .head__svg,
+    &:focus + .head__svg {
+      fill: currentColor;
     }
   }
 
   &__contact {
     @extend %cubic;
-    @media screen and (max-width: 1023px) {
-      display: none;
-    }
+    // @media screen and (max-width: 1023px) {
+    //   display: none;
+    // }
     font-size: 14px;
     line-height: 1.214;
     letter-spacing: 0.02em;
     color: $color-primary;
 
-    &:hover,
-    &:focus {
-      color: $color-tertiary;
-    }
+    // &:hover,
+    // &:focus {
+    //   color: $color-tertiary;
+    // }
   }
 }
 .social.header__social {
   @media screen and (max-width: 1279px) {
     display: none;
+  }
+}
+// .head__svg {
+//   fill: $color-main-header-footer;
+//   &:hover + .header__phone,
+//     &:focus + .header__phone {
+//       fill: currentColor;
+//     }
+  
+// }
+.contact-text {
+  display: none;
+  @include tablet {
+    display: block;
   }
 }
