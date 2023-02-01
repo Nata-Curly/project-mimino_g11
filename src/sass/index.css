@@ -1402,25 +1402,6 @@ p {
   }
 }
 
-.about-restaurant__logo {
-  display: block;
-  font-family: "FilmP3", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.08;
-  letter-spacing: 0.3em;
-  color: #494848;
-  margin-bottom: 12px;
-  font-size: 40px;
-  line-height: 43px;
-}
-@media screen and (min-width: 1024px) {
-  .about-restaurant__logo {
-    font-size: 40px;
-  }
-}
-
 .about-restaurant-main-container {
   display: flex;
   flex-direction: column;
@@ -1468,7 +1449,6 @@ p {
   position: relative;
   right: -185px;
   bottom: 0;
-  gap: 40px;
   margin-top: 32px;
 }
 @media screen and (min-width: 1024px) {
@@ -1488,18 +1468,22 @@ p {
   }
 }
 
-.slider__image {
-  width: 245px;
+.about-restaurant__logo {
+  display: block;
+  font-family: "FilmP3", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #494848;
+  margin-bottom: 12px;
+  font-size: 40px;
+  line-height: 43px;
 }
 @media screen and (min-width: 1024px) {
-  .slider__image {
-    margin-top: 0px;
-    width: 194px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .slider__image {
-    width: 254px;
+  .about-restaurant__logo {
+    font-size: 40px;
   }
 }
 
@@ -1548,6 +1532,18 @@ p {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
+@media screen and (min-width: 1024px) {
+  .about-restaurant__image--shadow {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-restaurant__image--shadow {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+}
 .about-restaurant__desc {
   max-width: 163px;
   margin-left: 32px;
@@ -1563,17 +1559,17 @@ p {
 }
 
 .about-restaurant-slick-container {
-  width: 515px;
+  width: 540px;
   position: relative;
 }
 @media screen and (min-width: 1024px) {
   .about-restaurant-slick-container {
-    width: 428px;
+    width: 468px;
   }
 }
 @media screen and (min-width: 1280px) {
   .about-restaurant-slick-container {
-    width: 548px;
+    width: 588px;
   }
 }
 
@@ -1594,12 +1590,6 @@ p {
   .about-restaurant-slick__item {
     margin-right: 40px;
   }
-}
-.about-restaurant-slick__box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0;
 }
 
 .about-restaurant-slick__list .my-slick-prev,
@@ -1633,6 +1623,9 @@ p {
   background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
   right: 267px;
 }
+.about-restaurant-slick__list .my-slick-prev:hover, .about-restaurant-slick__list .my-slick-prev:focus {
+  background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+}
 @media screen and (min-width: 1024px) {
   .about-restaurant-slick__list .my-slick-prev {
     right: 126px;
@@ -1647,6 +1640,9 @@ p {
 .about-restaurant-slick__list .my-slick-next {
   background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
   right: 203px;
+}
+.about-restaurant-slick__list .my-slick-next:hover, .about-restaurant-slick__list .my-slick-next:focus {
+  background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
 }
 @media screen and (min-width: 1024px) {
   .about-restaurant-slick__list .my-slick-next {
@@ -2054,7 +2050,6 @@ p {
     background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/homepage/pc/hp-rest-bkg-pc_2x.jpg");
   }
 }
-
 .details-restaurant__container {
   height: 100%;
   width: 100%;
@@ -2069,7 +2064,6 @@ p {
     padding-bottom: 40px;
   }
 }
-
 .details-restaurant__information {
   margin-left: 125px;
   display: flex;
@@ -2087,7 +2081,6 @@ p {
     margin-left: 318px;
   }
 }
-
 .details-restaurant__logo {
   font-size: 40px;
   line-height: 1.08;
@@ -2100,7 +2093,6 @@ p {
     margin-bottom: 16px;
   }
 }
-
 .details-restaurant__title {
   font-size: 20px;
   line-height: 1.2;
@@ -2114,7 +2106,6 @@ p {
     margin-bottom: 8px;
   }
 }
-
 .details-restaurant__text {
   max-width: 259px;
   max-height: 62px;
@@ -2133,7 +2124,6 @@ p {
     margin-bottom: 40px;
   }
 }
-
 .details-restaurant__combined-section {
   width: 100%;
 }
@@ -2151,105 +2141,6 @@ p {
     gap: 32px;
   }
 }
-
-.details-restaurant__swiper-wrapper {
-  display: flex;
-  gap: 19px;
-  margin-right: -193px;
-  margin-left: 25px;
-  margin-bottom: 23.6px;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant__swiper-wrapper {
-    gap: 34px;
-    margin-bottom: 32px;
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-restaurant__swiper-wrapper {
-    gap: 86px;
-  }
-}
-
-.details-restaurant__swiper-slide:first-child {
-  width: 274px;
-  height: 270px;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant__swiper-slide:first-child {
-    width: 270px;
-    height: 270px;
-  }
-}
-
-.details-restaurant__swiper-slide:nth-child(2) {
-  width: 162px;
-  height: 270px;
-}
-
-.details-restaurant__swiper-slide:last-child {
-  width: 162px;
-  height: 270px;
-}
-@media screen and (min-width: 1280px) {
-  .details-restaurant__swiper-slide:last-child {
-    width: 270px;
-    height: 270px;
-  }
-}
-
-.details-restaurant__swiper-slide > img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.details-restaurant__swiper-slide--hidden {
-  display: none;
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-@media screen and (min-width: 500px) {
-  .details-restaurant__swiper-slide--hidden {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    pointer-events: painted;
-  }
-}
-
-.details-restaurant__swiper-slide > picture {
-  display: block;
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.details-restaurant__swiper-btns {
-  margin-bottom: 40px;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant__swiper-btns {
-    margin-bottom: 0;
-  }
-}
-
-.swiper-button-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 34px;
-  margin-left: 15px;
-}
-
-.restaurant-img {
-  color: #C79002;
-  display: block;
-  background: #DADADA;
-  border-radius: 2px;
-}
-
 .details-restaurant__wrapper {
   width: 236px;
   margin-left: 75px;
@@ -2268,22 +2159,73 @@ p {
     margin-bottom: 60px;
   }
 }
-
 .details-restaurant__button {
   width: 236px;
   height: 48px;
   text-decoration: none;
 }
 
-.combined-buttons {
-  width: 100%;
-  height: 32px;
+/* Слайдер */
+.details-restaurant__slick-container {
+  min-width: 0;
 }
 
-.details-restaurant__svg {
-  fill: #fff;
-  width: 30px;
-  height: 17px;
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+.slick-slide.slick-current {
+  width: 274px;
+  height: 270px;
+}
+@media screen and (min-width: 1024px) {
+  .slick-slide.slick-current {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+/* Стрелка */
+.slider {
+  position: relative;
+  width: 1000px;
+  padding-left: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .slider {
+    width: 2000px;
+  }
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 90%;
+  z-index: 5;
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+}
+
+.slider .slick-arrow.my-slick-prev {
+  background-image: url(../images/slider_svg/slider-arrow-left.svg) no-repeat;
+}
+.slider .slick-arrow.my-slick-prev:hover, .slider .slick-arrow.my-slick-prev:focus {
+  background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg) no-repeat;
+}
+
+.slider .slick-arrow.my-slick-next {
+  background-image: url(../images/slider_svg/slider-arrow-right.svg) no-repeat;
+  left: 90px;
+}
+.slider .slick-arrow.my-slick-next:hover, .slider .slick-arrow.my-slick-next:focus {
+  background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg) no-repeat;
 }
 
 .logo {

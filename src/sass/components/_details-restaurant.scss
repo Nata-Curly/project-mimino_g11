@@ -43,73 +43,74 @@
         url('../images/homepage/pc/hp-rest-bkg-pc_2x.jpg');
     }
   }
-}
-.details-restaurant__container {
-  // position: relative;
-//   overflow-x: hidden;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  padding-top: 24px;
-  padding-bottom: 40px;
-  @include tablet {
-    padding-top: 48px;
+
+  &__container {
+    // position: relative;
+  //   overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-top: 24px;
     padding-bottom: 40px;
+    @include tablet {
+      padding-top: 48px;
+      padding-bottom: 40px;
+    }
   }
-}
-.details-restaurant__information {
-  // left: 140px;
-  margin-left: 125px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
-  @include tablet {
-    margin-left: 263px;
+
+  &__information {
+    // left: 140px;
+    margin-left: 125px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    @include tablet {
+      margin-left: 263px;
+    }
+    @include pc {
+      margin-left: 318px;
+    }
   }
-  @include pc {
-    margin-left: 318px;
+  &__logo {
+    font-size: 40px;
+    line-height: 1.08;
+    margin-bottom: 12px;
+    color: $color-primary;
+    @include tablet {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
   }
-}
-.details-restaurant__logo {
-  font-size: 40px;
-  line-height: 1.08;
-  margin-bottom: 12px;
-  color: $color-primary;
-  @include tablet {
-    font-size: 64px;
-    margin-bottom: 16px;
+  &__title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: 0.02em;
+    color: $color-primary;
+    @include tablet {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
   }
-}
-.details-restaurant__title {
-  font-size: 20px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  letter-spacing: 0.02em;
-  color: $color-primary;
-  @include tablet {
-    font-size: 24px;
-    margin-bottom: 8px;
+  &__text {
+    max-width: 259px;
+    max-height: 62px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    margin-bottom: 48px;
+    letter-spacing: 0.02em;
+    color: $color-text-tertiary;
+    @include tablet {
+      max-width: 610px;
+      max-height: 44px;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
   }
-}
-.details-restaurant__text {
-  max-width: 259px;
-  max-height: 62px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  margin-bottom: 48px;
-  letter-spacing: 0.02em;
-  color: $color-text-tertiary;
-  @include tablet {
-    max-width: 610px;
-    max-height: 44px;
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-}
-.details-restaurant__combined-section {
+  &__combined-section {
     width: 100%;
   @include tablet {
     display: flex;
@@ -120,113 +121,115 @@
   }
   @include pc {
     gap: 32px;
+    // min-width: 0;
   }
 }
-// .details-restaurant__swiper {
-//     position: relative;
-// }
-.details-restaurant__swiper-wrapper {
-  display: flex;
-  gap: 19px;
-  margin-right: -193px;
-  margin-left: 25px;
-  margin-bottom: 23.6px;
-  @include tablet {
-    gap: 34px;
-    margin-bottom: 32px;
-    margin-right: 0;
-    
+
+  &__wrapper {
+    width: 236px;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include tablet {
+      margin-bottom: 48px;
+      margin-left: 32px
+    }
+    @include pc{
+      margin-bottom: 60px;
+    }
   }
-  @include pc {
-    gap: 86px;
-  }
+  &__button {
+      width: 236px;
+      height: 48px;
+      text-decoration: none;
+    }  
 }
-.details-restaurant__swiper-slide:first-child {
+
+// SlICK-SlIDER
+
+/* Слайдер */
+.details-restaurant__slick-container {
+    min-width: 0;
+}
+// .slick-slider{}
+// /* Слайдер запущен */
+// .slick-slider.slick-initialized{}
+// /* Слайдер с точками */
+// .slick-slider.slick-dotted{}
+// /* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+// /* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+
+
+/* Слайд */
+// .slick-slide{}
+// /* Слайд активный (показывается) */
+// .slick-slide.slick-active{}
+// /* Слайд основной */
+.slick-slide.slick-current{
     width: 274px;
     height: 270px;
     @include tablet {
-            width: 270px;
-            height: 270px;
-          }
+        width: 270px;
+        height: 270px;
+    }
+   
 }
-.details-restaurant__swiper-slide:nth-child(2) {
-    width: 162px;
-    height: 270px;
+// /* Слайд по центру */
+// .slick-slide.slick-center{}
+// /* Клонированный слайд */
+// .slick-slide.slick-cloned{}
+/* Стрелка */
+// .slick-arrow{}
+// /* Стрелка влево */
+// .slick-arrow.slick-prev{}
+// /* Стрелка вправо */
+// .slick-arrow.slick-next{}
+// /* Стрелка не активная */
+// .slick-arrow.slick-disabled{}
+.slider {
+    position: relative;
+    width: 1000px;
+    padding-left: 25px;
+    @include tablet {
+        width: 2000px;
+    }
+    
 }
-.details-restaurant__swiper-slide:last-child {
-    width: 162px;
-    height: 270px;
-    @include pc {
-            width: 270px;
-            height: 270px;
-          }
-}
-.details-restaurant__swiper-slide > img {
-    object-fit: cover;
-}
+.slider .slick-arrow{
+position: absolute;
+top: 90%;
+z-index: 5;
+font-size: 0;
+width: 32px;
+height: 32px;
+cursor: pointer;
+border: none;
+// background-color: transparent;
 
-.details-restaurant__swiper-slide--hidden {
-    display: none;
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    @media screen and (min-width:500px) {
-        display: block;
-        visibility: visible;
-        opacity: 1;
-        pointer-events: painted;
+}
+.slider .slick-arrow.my-slick-prev {
+    background-image: url(../images/slider_svg/slider-arrow-left.svg) no-repeat;
+    // left: 0;
+    &:hover,
+    &:focus{
+        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg)  no-repeat;
     }
 }
-.details-restaurant__swiper-slide > picture {
-  display: block;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.slider .slick-arrow.my-slick-next {
+    background-image: url(../images/slider_svg/slider-arrow-right.svg) no-repeat;
+   left: 90px;
+    &:hover,
+    &:focus{
+        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg) no-repeat;
+    }
 }
-.details-restaurant__swiper-btns {
-  margin-bottom: 40px;
+// .slider__item {
 
-  @include tablet {
-    margin-bottom: 0;
-  }
-}
-.swiper-button-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 34px;
-  margin-left: 15px;
-}
-.restaurant-img {
-  color: $color-text-secondary;
-  display: block;
-  background: $color-background-tertiary;
-  border-radius: 2px;
-}
-.details-restaurant__wrapper {
-  width: 236px;
-  margin-left: 75px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  @include tablet {
-    margin-bottom: 48px;
-    margin-left: 32px
-  }
-  @include pc{
-    margin-bottom: 60px;
-  }
-}
-.details-restaurant__button {
-    width: 236px;
-    height: 48px;
-    text-decoration: none;
-  }  
-.combined-buttons {
-  width: 100%;
-  height: 32px;
-}
-.details-restaurant__svg {
-  fill: $color-primary;
-  width: 30px;
-  height: 17px;
-}
+// }
