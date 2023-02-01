@@ -316,15 +316,15 @@
         }
     }
     
-    .slider__image {
-        max-width: 194px;
+    // .slider__image { //!
+    //     max-width: 194px;
     
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    //     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     
-        @include pc {
-            max-width: 254px;
-        }
-    }
+    //     @include pc {
+    //         max-width: 254px;
+    //     }
+    // }
     
     
     
@@ -375,16 +375,7 @@
             //     margin-left: 40px;
             // }
         }
-    
-        &__box {
-            // width: 194px;
-            // margin-left: 8px;
-            // margin-right: 8px;
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
-            // margin: 0 0;
-        }
+
        
     }
     
@@ -448,14 +439,14 @@
                 left: 555px;
             }
         }
-.draggable {
-    height: 194px;
+// .draggable {  //! -
+//     height: 194px;
 
-    @include pc {
-    height: 254px;        
-}
+//     @include pc {
+//     height: 254px;        
+// }
     
-}
+// }
         // Спроби зробити фіксовані відступи між слайдами 
 
 
@@ -473,6 +464,6 @@
 //     max-width: 100%;
 // }
 
-.slick-track {
-max-height: 194px;
-}
+// .slick-track {         //! - 
+// max-height: 194px;
+// }
