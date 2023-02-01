@@ -1,27 +1,29 @@
 .popup {
-  visibility: hidden;
   position: fixed;
-  pointer-events: none;
-
   z-index: 100;
+
   width: 100%;
   height: 100%;
-
-  background-color: rgba(41, 48, 61, 0.2);
-  backdrop-filter: blur(2px);
 
   top: 0;
   left: 0;
 
+  visibility: hidden;
+  pointer-events: none;
   opacity: 0;
 
-  overflow: scroll;
+  overflow-y: scroll;
 
-  transition: all 0.8s ease 0s;
+  background-color: rgba(41, 48, 61, 0.2);
+  backdrop-filter: blur(2px);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   padding: 95px 15px;
 
-  @media screen and (min-width: 414px) {
+  @include mobile {
     padding: 0;
   }
 
@@ -38,42 +40,52 @@
 
 .popup__content {
   position: relative;
-  background: #fffdee;
+  background: $color-background-primary;
   box-shadow: 0px 0px 30px rgba(41, 48, 61, 0.15);
 
-  transition: all 0.8s ease 0s;
   opacity: 0;
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
 
-  @media screen and (min-width: 414px) {
+  @include mobile {
+    position: absolute;
     width: 414px;
+
     top: 50%;
     left: 50%;
-    position: absolute;
     transform: translate(-50%, -50%);
   }
 
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     width: 712px;
     padding: 0;
   }
 }
 
 .popup__close {
-  position: absolute;
-  right: 16px;
-  top: 16px;
-  width: 24px;
-  height: 24px;
-
+  fill: #000;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
-  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: absolute;
+
+  top: 16px;
+  right: 16px;
+
+  padding: 0;
+  @extend %cubic;
+
+  &:hover {
+    fill: $color-tertiary;
+  }
 }
 
 .modal-flex-box {
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -100,115 +112,17 @@
   overflow: hidden;
 }
 .modal-flex-column-second {
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     justify-content: space-between;
     flex-direction: column;
     display: flex;
   }
 }
-.modal-menu__title {
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 700;
 
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.05em;
-
-  color: #000000;
-
-  padding-top: 60px;
-  margin-bottom: 40px;
-  margin-top: 0;
-
-  text-align: center;
-
-  @media screen and (min-width: 1024px) {
-    font-size: 40px;
-    line-height: 46px;
-  }
-}
-.modal-discription {
-  margin-bottom: 20px;
-  @media screen and (min-width: 1024px) {
-    padding-left: 60px;
-  }
-}
-
-.modal-menu__second-title {
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.05em;
-
-  color: #808080;
-
-  margin: 0;
-  margin-bottom: 28px;
-}
-
-.modal-menu__input {
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 700;
-
-  width: 100%;
-  height: 54px;
-
-  border: 1px solid #c79002;
-  border-radius: 2px;
-
-  font-size: 24px;
-  line-height: 28px;
-
-  letter-spacing: 0.05em;
-
-  color: #808080;
-
-  background: #fffdee;
-
-  padding-left: 12px;
-  cursor: pointer;
-  &:hover {
-    outline: 1px solid #c79002;
-  }
-
-  @media screen and (min-width: 414px) {
-    width: 384px;
-    height: 54px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    width: 288px;
-    height: 64px;
-  }
-}
-.modal-menu__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-
-  letter-spacing: 0.02em;
-
-  color: #c79002;
-
-  margin: 0;
-  padding: 0;
-  padding-left: 12px;
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 28px;
-  }
-}
 .modal-margin-reset {
   margin-bottom: 20px;
 
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     margin-bottom: 0;
   }
 }
@@ -221,338 +135,4 @@
   @media screen and (max-width: 1023px) {
     margin-bottom: 0;
   }
-}
-
-.modal-menu__submit {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 24px;
-  color: #ffffff;
-
-  background: #000000;
-  border: 1px solid #f3c653;
-  border-radius: 2px;
-
-  display: block;
-  margin: 0 auto;
-
-  padding: 20px 43px 20px 43px;
-
-  cursor: pointer;
-
-  @media screen and (max-width: 413px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 414px) {
-    padding: 20px 43px 20px 43px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    padding: 18px 117px 18px 117px;
-    font-size: 24px;
-    line-height: 29px;
-  }
-}
-.modal-menu-box__submit {
-  padding-bottom: 60px;
-  margin-top: 40px;
-}
-
-.modal-menu-price__submit {
-  padding: 24px 64px 24px 64px;
-
-  @media screen and (min-width: 1024px) {
-    padding: 18px 142px 18px 142px;
-  }
-}
-
-//стилізуємо селект
-.nice-select {
-  font-family: 'Times New Roman';
-  font-weight: 700;
-
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.05em;
-
-  padding-left: 12px;
-  padding-top: 16px;
-
-  color: #808080;
-
-  border: 1px solid #c79002;
-  border-radius: 2px;
-
-  background: #fffdee;
-
-  width: 100%;
-  height: 54px;
-
-  @media screen and (min-width: 414px) {
-    width: 384px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    width: 288px;
-    height: 64px;
-
-    padding-top: 18px;
-  }
-
-  &-dropdown {
-    width: 100%;
-  }
-  &:hover {
-    border: 1px solid #c79002;
-  }
-  &:active,
-  &:focus {
-    border: 1px solid #c79002;
-  }
-}
-
-.nice-select:after {
-  height: 16px;
-  width: 16px;
-
-  border-bottom: 3.5px solid #c79002;
-  border-right: 3.5px solid #c79002;
-
-  margin-right: 25px;
-
-  border-radius: 2px;
-  top: 45%;
-}
-
-// приховуємо тег селекту
-select.js-select {
-  @extend .visually-hidden;
-}
-.modal-menu__title {
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 700;
-
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.05em;
-
-  color: #000000;
-
-  padding-top: 60px;
-  margin-bottom: 40px;
-  margin-top: 0;
-
-  text-align: center;
-
-  @media screen and (min-width: 1024px) {
-    font-size: 40px;
-    line-height: 46px;
-  }
-}
-.modal-discription {
-  margin-bottom: 20px;
-  @media screen and (min-width: 1024px) {
-    padding-left: 60px;
-  }
-}
-
-.modal-menu__second-title {
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.05em;
-
-  color: #808080;
-
-  margin: 0;
-  margin-bottom: 28px;
-}
-
-.modal-menu__input {
-  font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 700;
-
-  width: 100%;
-  height: 54px;
-
-  border: 1px solid #c79002;
-  border-radius: 2px;
-
-  font-size: 24px;
-  line-height: 28px;
-
-  letter-spacing: 0.05em;
-
-  color: #808080;
-
-  background: #fffdee;
-
-  padding-left: 12px;
-  cursor: pointer;
-  &:hover {
-    outline: 1px solid #c79002;
-  }
-
-  @media screen and (min-width: 414px) {
-    width: 384px;
-    height: 54px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    width: 288px;
-    height: 64px;
-  }
-}
-.modal-menu__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-
-  letter-spacing: 0.02em;
-
-  color: #c79002;
-
-  margin: 0;
-  padding: 0;
-  padding-left: 12px;
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 28px;
-  }
-}
-.modal-margin-reset {
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 0;
-  }
-}
-
-.modal-padding-reset {
-  padding: 0;
-}
-
-.modal-mobil-reset-margen {
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 0;
-  }
-}
-
-.modal-menu__submit {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 24px;
-  color: #ffffff;
-
-  background: #000000;
-  border: 1px solid #f3c653;
-  border-radius: 2px;
-
-  display: block;
-  margin: 0 auto;
-
-  padding: 20px 43px 20px 43px;
-
-  cursor: pointer;
-
-  @media screen and (max-width: 413px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 414px) {
-    padding: 20px 43px 20px 43px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    padding: 18px 117px 18px 117px;
-    font-size: 24px;
-    line-height: 29px;
-  }
-}
-.modal-menu-box__submit {
-  padding-bottom: 60px;
-  margin-top: 40px;
-}
-
-.modal-menu-price__submit {
-  padding: 24px 64px 24px 64px;
-
-  @media screen and (min-width: 1024px) {
-    padding: 18px 142px 18px 142px;
-  }
-}
-
-//стилізуємо селект
-.nice-select {
-  font-family: 'Times New Roman';
-  font-weight: 700;
-
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.05em;
-
-  padding-left: 12px;
-  padding-top: 16px;
-
-  color: #808080;
-
-  border: 1px solid #c79002;
-  border-radius: 2px;
-
-  background: #fffdee;
-
-  width: 100%;
-  height: 54px;
-
-  @media screen and (min-width: 414px) {
-    width: 384px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    width: 288px;
-    height: 64px;
-
-    padding-top: 18px;
-  }
-
-  &-dropdown {
-    width: 100%;
-  }
-  &:hover {
-    border: 1px solid #c79002;
-  }
-  &:active,
-  &:focus {
-    border: 1px solid #c79002;
-  }
-}
-
-.nice-select:after {
-  height: 16px;
-  width: 16px;
-
-  border-bottom: 3.5px solid #c79002;
-  border-right: 3.5px solid #c79002;
-
-  margin-right: 25px;
-
-  border-radius: 2px;
-  top: 45%;
-}
-
-// приховуємо тег селекту
-select.js-select {
-  @extend .visually-hidden;
 }
