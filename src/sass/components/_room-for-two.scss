@@ -410,6 +410,11 @@ align-items: flex-end;
 background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
     left: 135px;   // відступ -120 за межі контейнера + 15 позиція на сторінці
 
+    &:hover,
+    &:focus {
+        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+    }
+
     @include tablet {
         left: 330px;
     }
@@ -422,6 +427,11 @@ background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
 .room-4-2-slick__list .my-slick-next {
     background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
     left: 200px; // відступ -120 за межі контейнера + 80 позиція на сторінці
+
+    &:hover,
+    &:focus {
+        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
+    }
 
     @include tablet {
         left: 394px;

@@ -3169,6 +3169,9 @@ p {
   background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
   left: 135px;
 }
+.room-4-2-slick__list .my-slick-prev:hover, .room-4-2-slick__list .my-slick-prev:focus {
+  background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+}
 @media screen and (min-width: 1024px) {
   .room-4-2-slick__list .my-slick-prev {
     left: 330px;
@@ -3183,6 +3186,9 @@ p {
 .room-4-2-slick__list .my-slick-next {
   background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
   left: 200px;
+}
+.room-4-2-slick__list .my-slick-next:hover, .room-4-2-slick__list .my-slick-next:focus {
+  background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
 }
 @media screen and (min-width: 1024px) {
   .room-4-2-slick__list .my-slick-next {
