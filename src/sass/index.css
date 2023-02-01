@@ -4028,7 +4028,7 @@ background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
 @media screen and (min-width: 1024px) {
   .container-room-for-two {
     max-width: 1024px;
-    padding-top: 64px;
+    padding-top: 72px;
     padding-bottom: 145px;
     padding-left: 47px;
     padding-right: 47px;
@@ -4211,48 +4211,51 @@ background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
 @media screen and (min-width: 1024px) {
   .room-4-2-slider-container {
     top: 540px;
-    left: 7px;
+    left: 47px;
   }
 }
 @media screen and (min-width: 1280px) {
   .room-4-2-slider-container {
     top: 590px;
-    left: 65px;
+    left: 85px;
   }
 }
 
 .room-4-2-slick-container {
   max-width: 420px;
   position: absolute;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  margin: 0 -16px;
+  max-height: 194px;
 }
 @media screen and (min-width: 1024px) {
   .room-4-2-slick-container {
-    max-width: 473px;
+    max-width: 468px;
   }
 }
 @media screen and (min-width: 1280px) {
   .room-4-2-slick-container {
-    max-width: 590px;
+    max-width: 588px;
+    max-height: 254px;
   }
 }
 
-.room-4-2-slick {
-  overflow: hidden;
-  margin: 0 auto;
-}
 .room-4-2-slick__list {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
+  max-height: 194px;
+}
+@media screen and (min-width: 1280px) {
+  .room-4-2-slick__list {
+    max-height: 254px;
+  }
 }
 .room-4-2-slick__item {
-  margin: 0 16px;
+  margin-left: 16px;
 }
 @media screen and (min-width: 1024px) {
   .room-4-2-slick__item {
-    margin: 0 40px;
+    margin-left: 0;
+    margin-right: 40px;
   }
 }
 
@@ -4279,43 +4282,43 @@ background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
 @media screen and (min-width: 1280px) {
   .room-4-2-slick__list .my-slick-prev,
 .room-4-2-slick__list .my-slick-next {
-    bottom: -68px;
+    bottom: -64px;
   }
 }
 
 .room-4-2-slick__list .my-slick-prev {
   background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
-  left: 150px;
+  left: 135px;
 }
 .room-4-2-slick__list .my-slick-prev:hover, .room-4-2-slick__list .my-slick-prev:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
 }
 @media screen and (min-width: 1024px) {
   .room-4-2-slick__list .my-slick-prev {
-    left: 370px;
+    left: 330px;
   }
 }
 @media screen and (min-width: 1280px) {
   .room-4-2-slick__list .my-slick-prev {
-    left: 490px;
+    left: 450px;
   }
 }
 
 .room-4-2-slick__list .my-slick-next {
   background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
-  left: 215px;
+  left: 200px;
 }
 .room-4-2-slick__list .my-slick-next:hover, .room-4-2-slick__list .my-slick-next:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
 }
 @media screen and (min-width: 1024px) {
   .room-4-2-slick__list .my-slick-next {
-    left: 434px;
+    left: 394px;
   }
 }
 @media screen and (min-width: 1280px) {
   .room-4-2-slick__list .my-slick-next {
-    left: 555px;
+    left: 515px;
   }
 }
 
