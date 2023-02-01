@@ -22,6 +22,7 @@
   }
 
   &__logo {
+    @extend %cubic;
     @media screen and (max-width: 1279px) {
       margin-right: auto;
     }
@@ -67,6 +68,7 @@
     letter-spacing: 0.02em;
     color: $color-main-header-footer;
     fill: $color-main-header-footer;
+    @extend %cubic;
 
     &:hover,
     &:focus {
@@ -81,6 +83,7 @@
   }
 
   &__phone {
+    @extend %cubic;
     @include tablet {
       display: flex;
       align-items: center;
@@ -97,6 +100,7 @@
   }
 
   &__contact {
+    @extend %cubic;
     @media screen and (max-width: 1023px) {
       display: none;
     }
