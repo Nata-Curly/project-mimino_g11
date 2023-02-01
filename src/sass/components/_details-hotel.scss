@@ -451,64 +451,64 @@ transition-property: background-color, color;
     
 }
 
-// .details-hotel-slick__list .my-slick-prev,
-// .details-hotel-slick__list .my-slick-next {
-//     position: absolute;
-//     bottom: -52px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     padding: 0;
-//     width: 32px;
-//     height: 32px;
-//     cursor: pointer;
-//     border: none;
-//     background-color: transparent;
+.details-hotel-slick__list .my-slick-prev,
+.details-hotel-slick__list .my-slick-next {
+    position: absolute;
+    bottom: -52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
 
-//     @include tablet{
-//        bottom: -64px;
-//     }
+    @include tablet{
+       bottom: -64px;
+    }
 
-//     @include pc{
-//         bottom: -68px;
-//     }
-// }
+    @include pc{
+        bottom: -68px;
+    }
+}
 
-// .details-hotel-slick__list .my-slick-prev {
-// background-image: url(../images/slider_svg/slider-arrow-left.svg);
+.details-hotel-slick__list .my-slick-prev {
+background-image: url(../images/slider_svg/slider-arrow-left.svg);
 
-//     right: 89px;
+    right: 89px;
 
-//         &:hover,
-//     &:focus{
-//         background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
-//     }
+        &:hover,
+    &:focus{
+        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+    }
 
-//     @include tablet {
-//         right: 96px;
-//     }
+    @include tablet {
+        right: 96px;
+    }
 
-//     @include pc {
-//         right: 100pxpx;
-//     }
-// }
+    @include pc {
+        right: 100pxpx;
+    }
+}
 
-// .details-hotel-slick__list .my-slick-next {
-//     background-image: url(../images/slider_svg/slider-arrow-right.svg);
+.details-hotel-slick__list .my-slick-next {
+    background-image: url(../images/slider_svg/slider-arrow-right.svg);
 
-//         &:hover,
-//     &:focus{
-//         background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
-//     }
+        &:hover,
+    &:focus{
+        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
+    }
 
-//     right: 25px;
+    right: 25px;
 
-//     @include tablet {
-//         right: 40px;
-//     }
+    @include tablet {
+        right: 40px;
+    }
 
-//     @include pc {
-//         right: 36px;
-//     }
-// }
+    @include pc {
+        right: 36px;
+    }
+}
 
