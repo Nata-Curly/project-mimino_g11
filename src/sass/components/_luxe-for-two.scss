@@ -141,28 +141,6 @@
   text-transform: lowercase;
 }
 
-/*.content__lux-paragraph {
-  width: 258px;
-  font-size: 12px;
-  line-height: 1.22;
-  margin-bottom: 32px;
-
-  @include tablet {
-    width: 439px;
-    font-size: 16px;
-    line-height: 1.25;
-  }
-
-  @include pc {
-    width: 400px;
-  }
-
-  font-weight: 700;
-  letter-spacing: 0.02em;
-
-  color: $color-text-primary;
-}*/
-
 .img_backgroung-lux {
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -198,15 +176,6 @@
 		padding-bottom: 0;
 		left: 125px;
 	}
-
-	/*@include tablet {
-     margin-top: 89px;
-	 margin-bottom: 145px;
-    }
-
-	@include tablet {
-     margin-top: 103px;
-    }*/
 }
 
 .button--lux {
