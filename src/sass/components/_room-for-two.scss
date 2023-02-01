@@ -33,7 +33,7 @@
     @include tablet {
         max-width: 1024px;
         padding-top: 64px;
-        padding-bottom: 104px;
+        padding-bottom: 145px;
         padding-left: 47px;
         padding-right: 47px;
     }
@@ -41,7 +41,7 @@
     @include pc {
         max-width: 1280px;
         padding-top: 72px;
-        padding-bottom: 40px;
+        padding-bottom: 182px;
         padding-left: 85px;
         padding-right: 85px;
     }
@@ -53,8 +53,8 @@
 
     &__thumb {
         @include tablet {
-                display: flex;
-            }
+            display: flex;
+        }
     }
 }
 
@@ -77,12 +77,12 @@
         @include tablet {
             font-size: 32px;
             margin-bottom: 4px;
-            }
+        }
     }
 
     &__logo {
         display: block;
-        font-family: FilmP3, sans-serif; 
+        font-family: FilmP3, sans-serif;
         font-weight: 700;
         font-size: 40px;
         line-height: 1.07;
@@ -96,6 +96,7 @@
             font-size: 64px;
             margin-bottom: 62px;
         }
+
         @include pc {
             margin-bottom: 72px;
         }
@@ -116,10 +117,11 @@
         @include tablet {
             font-size: 30px;
             margin-bottom: 16px;
-            }
-                @include pc {
+        }
+
+        @include pc {
             font-size: 36px;
-                }
+        }
     }
 
     &__text {
@@ -129,18 +131,19 @@
         line-height: 1.25;
         letter-spacing: 0.02em;
 
-        color:$color-text-primary;
+        color: $color-text-primary;
 
-        margin-bottom: 386px;
+        margin-bottom: 652px;
 
         @include tablet {
             max-width: 440px;
             font-size: 16px;
-            margin-bottom: 174px;
-            }
+            margin-bottom: 217px;
+        }
+
         @include pc {
             max-width: 400px;
-            margin-bottom: 188px;
+            margin-bottom: 260px;
         }
     }
 
@@ -153,9 +156,7 @@
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
 
-        // margin-left: auto;
 
-        // margin-bottom: 32px;
 
         @include tablet {
             top: -32px;
@@ -164,7 +165,8 @@
             // margin-bottom: 48px;
             // margin-top: -96px;
             // margin-left: 25px;
-            }
+        }
+
         @include pc {
             max-width: 460px;
             right: 180px;
@@ -173,23 +175,18 @@
     }
 }
 
-.slider-and-buttons-thumb {
-    @include tablet {
-                display: flex;
-                justify-content: space-between;
-                // height: 194px;
-                // align-items: center;
-            }
-        @include pc {
-            // height: 254px;
-        }
-}
-
-// .slider-r42-tumb {
-//     // @include tablet {
-//     //         display: flex;
-//     //     }
+// .slider-and-buttons-thumb {
+//     @include tablet {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 // height: 194px;
+//                 // align-items: center;
+//             }
+//         @include pc {
+//             // height: 254px;
+//         }
 // }
+
 
 
 
@@ -198,99 +195,255 @@
     flex-direction: column;
     align-items: center;
 
+
     @include tablet {
-    padding-top: 41px;
-        } 
-                @include pc {
-                    padding-top: 72px;
-                }
+        // padding-top: 41px;
+        align-items: flex-end;
+
+    }
+
+    @include pc {
+        // padding-top: 72px;
+    }
 }
 
 
 .button-r42-hotel {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    width: 236px;
-    height: 48px;
-
-    color: $color-tertiary;
-    background: $color-secondary;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-
-    border: 2px solid $color-primary;
-    border-radius: 25px;
-
-    @extend %cubic;
-
-    &:hover,
-    &:focus {
-        background: $color-primary;
-        border: 2px solid $color-tertiary;
-    }
-
-         &:not(:last-child) {
-             margin-bottom: 12px;
-         }
-}
-
-.arrows-r42 {
-    display: flex;
-    justify-content: space-between;
-    width: 98px;
-    margin-bottom: 20px;
-
-    @include tablet {
-            margin-bottom: 0;
-            margin-left: auto;
-            margin-right: 16px;
+        justify-content: center;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        width: 236px;
+        height: 48px;
+    
+        color: $color-tertiary;
+        background: $color-secondary;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+    
+        border: 2px solid $color-primary;
+        border-radius: 25px;
+    
+    
+        @extend %cubic;
+    
+        &:hover,
+        &:focus {
+            background: $color-primary;
+            border: 2px solid $color-tertiary;
         }
-
-    &__icon {
-        fill: $color-secondary;
+    
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+    
+    // .arrows-r42 {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     width: 98px;
+    //     margin-bottom: 20px;
+    
+    //     @include tablet {
+    //             margin-bottom: 0;
+    //             margin-left: auto;
+    //             margin-right: 16px;
+    //         }
+    
+    //     &__icon {
+    //         fill: $color-secondary;
+    //         width: 32px;
+    //         height: 32px;
+    //     }
+    // }
+    
+    
+    
+    // Стилі для картикнок заглушок для слайдів
+    // .slide-r42 {
+    //     width: 194px;
+    //     height: 194px;
+    
+    //     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    //     border-radius: 2px;
+    //     background: $color-background-tertiary;
+    
+    //     margin-bottom: 20px;
+    //     margin-right: 16px;
+    
+    //     @include tablet {
+    //     margin-bottom: 32px;
+    // }
+    //     @include pc {
+    //         width: 254px;
+    //         height: 254px;
+    //     margin-bottom: 40px;
+    // }
+    // }
+    
+    // .swiper-wrapper-r42 {
+    //     display: flex;
+    //         margin-left: -120px;
+    
+    //         @include tablet {
+    //         margin-left: 0;
+    // }
+    // }
+    
+    // стилі для слайдера
+    
+    .room-4-2-slider-container {
+        display: flex;
+        padding-left: 0;
+        justify-content: flex-start;
+        position: absolute;
+        top: 640px;
+        left: -120px; // відступ за межі контейнера вліво для мобілки
+    
+    
+        @include tablet {
+            top: 540px;
+            left: 47px;
+        }
+    
+        @include pc {
+            top: 590px;
+            left: 85px;
+        }
+    }
+    
+    .slider__image {
+        max-width: 194px;
+    
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    
+        @include pc {
+            max-width: 254px;
+        }
+    }
+    
+    
+    
+    .room-4-2-slick-container {
+        //
+        max-width: 420px; // вирішує висоту і відступ між слайдами 0_о. В моєму випадку 420w робить висоту 194 (яка мені потрібна)
+    
+        // display: inline; // не допомагає
+        // gap: 16px;
+        position: absolute;
+    
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    
+        @include tablet {
+            max-width: 420px;
+        }
+    
+        @include pc {
+            max-width: 548px;
+        }
+    }
+    
+    .room-4-2-slick {
+    
+        &__list {
+            // width: 254px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            gap: 16px;
+    
+    
+        }
+    
+        &__item {
+            margin-left: 16px; // відступ між слайдами?
+            gap: 0 16px;
+            // &:not(:last-child) {
+            //         margin-left: 0px;
+            //     }
+    
+            @include tablet {
+                margin-left: 40px;
+                gap: 40px;
+            }
+    
+            // @include pc {
+            //     margin-left: 40px;
+            // }
+        }
+    
+        &__box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0;
+        }
+    
+    
+    }
+    
+    .room-4-2-slick__list .my-slick-prev,
+    .room-4-2-slick__list .my-slick-next {
+        position: absolute;
+        bottom: -52px; //32 висота іконки + 20 відступ від слайдера знизу до іконки
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
         width: 32px;
         height: 32px;
-    }
-}
-
-
-
-// Стилі для картикнок заглушок для слайдів
-.slide-r42 {
-    width: 194px;
-    height: 194px;
-
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    background: $color-background-tertiary;
-
-    margin-bottom: 20px;
-    margin-right: 16px;
-
-    @include tablet {
-    margin-bottom: 32px;
-}
-    @include pc {
-        width: 254px;
-        height: 254px;
-    margin-bottom: 40px;
-}
-}
-
-.swiper-wrapper-r42 {
-    display: flex;
-        margin-left: -120px;
-
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+    
+    
+    
         @include tablet {
-        margin-left: 0;
-}
-}
+            bottom: -64px;
+        }
+    
+        @include pc {
+            bottom: -68px;
+        }
+    }
+    
+    .room-4-2-slick__list .my-slick-prev {
+        background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
+        left: 135px; // відступ -120 за межі контейнера + 15 позиція на сторінці
+    
+        &:hover,
+            &:focus {
+                background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+            }
+        
+        @include tablet {
+            left: 330px;
+        }
+    
+        @include pc {
+            left: 450px;
+        }
+    }
+    
+    .room-4-2-slick__list .my-slick-next {
+        background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
+            left: 200px; // відступ -120 за межі контейнера + 80 позиція на сторінці
+        
+&:hover,
+    &:focus {
+        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
+    }
 
-// комент за ради коміту
+            @include tablet {
+                left: 394px;
+            }
+        
+            @include pc {
+                left: 515px;
+            }
+        }
