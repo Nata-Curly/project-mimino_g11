@@ -305,15 +305,14 @@
         top: 640px;
         left: -120px; // відступ за межі контейнера вліво для мобілки
     
-    
         @include tablet {
             top: 540px;
-            left: 47px;
+            left: 7px;
         }
     
         @include pc {
             top: 590px;
-            left: 85px;
+            left: 65px;
         }
     }
     
@@ -330,46 +329,46 @@
     
     
     .room-4-2-slick-container {
-        //
+        
         max-width: 420px; // вирішує висоту і відступ між слайдами 0_о. В моєму випадку 420w робить висоту 194 (яка мені потрібна)
     
-        // display: inline; // не допомагає
-        // gap: 16px;
         position: absolute;
     
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    
+        
+        margin: 0 -16px; // !!!
+
         @include tablet {
-            max-width: 420px;
+            max-width: 473px;
         }
     
         @include pc {
-            max-width: 548px;
+            max-width: 590px;
         }
     }
     
     .room-4-2-slick {
-    
+        overflow: hidden;
+        margin: 0 auto;
+
         &__list {
-            // width: 254px;
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
-            gap: 16px;
-    
-    
+
+            // padding-left: -16px;
+            // padding-right: -16px;
         }
+
+        // &__slide {
+        //     margin: 0 16px;
+        // }
     
         &__item {
-            margin-left: 16px; // відступ між слайдами?
-            gap: 0 16px;
-            // &:not(:last-child) {
-            //         margin-left: 0px;
-            //     }
+            margin: 0 16px; // !!!
     
             @include tablet {
-                margin-left: 40px;
-                gap: 40px;
+                margin: 0 40px;
             }
     
             // @include pc {
@@ -378,13 +377,15 @@
         }
     
         &__box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 0;
+            // width: 194px;
+            // margin-left: 8px;
+            // margin-right: 8px;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // margin: 0 0;
         }
-    
-    
+       
     }
     
     .room-4-2-slick__list .my-slick-prev,
@@ -414,7 +415,7 @@
     
     .room-4-2-slick__list .my-slick-prev {
         background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
-        left: 135px; // відступ -120 за межі контейнера + 15 позиція на сторінці
+        left: 150px; // відступ -120 за межі контейнера + 15 позиція на сторінці
     
         &:hover,
             &:focus {
@@ -422,28 +423,56 @@
             }
         
         @include tablet {
-            left: 330px;
+            left: 370px;
         }
     
         @include pc {
-            left: 450px;
+            left: 490px;
         }
     }
     
     .room-4-2-slick__list .my-slick-next {
         background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
-            left: 200px; // відступ -120 за межі контейнера + 80 позиція на сторінці
+            left: 215px; // відступ -120 за межі контейнера + 80 позиція на сторінці
         
-&:hover,
+    &:hover,
     &:focus {
         background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
     }
 
             @include tablet {
-                left: 394px;
+                left: 434px;
             }
         
             @include pc {
-                left: 515px;
+                left: 555px;
             }
         }
+.draggable {
+    height: 194px;
+
+    @include pc {
+    height: 254px;        
+}
+    
+}
+        // Спроби зробити фіксовані відступи між слайдами 
+
+
+// .slider_wrap * {
+//     box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     -webkit-box-sizing: border-box;
+// }
+
+// .slick-slide {
+//     margin: 0 10px;
+// }
+
+// .slider-item img {
+//     max-width: 100%;
+// }
+
+.slick-track {
+max-height: 194px;
+}
