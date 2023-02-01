@@ -4283,7 +4283,7 @@ background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
 .room-4-2-slick-container {
   max-width: 420px;
   position: absolute;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  max-height: 194px;
   margin: 0 -16px;
 }
 @media screen and (min-width: 1024px) {
@@ -4294,20 +4294,23 @@ background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
 @media screen and (min-width: 1280px) {
   .room-4-2-slick-container {
     max-width: 590px;
+    max-height: 254px;
   }
 }
 
-.room-4-2-slick {
-  overflow: hidden;
-  margin: 0 auto;
-}
 .room-4-2-slick__list {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
+  max-height: 194px;
+}
+@media screen and (min-width: 1280px) {
+  .room-4-2-slick__list {
+    max-height: 254px;
+  }
 }
 .room-4-2-slick__item {
-  margin: 0 16px;
+  margin: 0 8px;
 }
 @media screen and (min-width: 1024px) {
   .room-4-2-slick__item {

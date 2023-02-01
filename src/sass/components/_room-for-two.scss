@@ -1,21 +1,5 @@
-// .container {
-//     max-width: 414px;
-//     margin: 0 auto;
-//     padding: 0 15px;
-//     outline: solid 2px tomato;
 
-//     @include mobile  {
-//         max-width: 414px;
-//     }
 
-//     @include tablet {
-//         max-width: 1024px;
-//     }
-
-//     @include pc {
-//         max-width: 1280px;
-//     }
-// }
 .container-room-for-two {
     position: relative;
     max-width: 414px;
@@ -175,17 +159,6 @@
     }
 }
 
-// .slider-and-buttons-thumb {
-//     @include tablet {
-//                 display: flex;
-//                 justify-content: space-between;
-//                 // height: 194px;
-//                 // align-items: center;
-//             }
-//         @include pc {
-//             // height: 254px;
-//         }
-// }
 
 
 
@@ -243,57 +216,8 @@
         }
     }
     
-    // .arrows-r42 {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     width: 98px;
-    //     margin-bottom: 20px;
-    
-    //     @include tablet {
-    //             margin-bottom: 0;
-    //             margin-left: auto;
-    //             margin-right: 16px;
-    //         }
-    
-    //     &__icon {
-    //         fill: $color-secondary;
-    //         width: 32px;
-    //         height: 32px;
-    //     }
-    // }
     
     
-    
-    // Стилі для картикнок заглушок для слайдів
-    // .slide-r42 {
-    //     width: 194px;
-    //     height: 194px;
-    
-    //     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    //     border-radius: 2px;
-    //     background: $color-background-tertiary;
-    
-    //     margin-bottom: 20px;
-    //     margin-right: 16px;
-    
-    //     @include tablet {
-    //     margin-bottom: 32px;
-    // }
-    //     @include pc {
-    //         width: 254px;
-    //         height: 254px;
-    //     margin-bottom: 40px;
-    // }
-    // }
-    
-    // .swiper-wrapper-r42 {
-    //     display: flex;
-    //         margin-left: -120px;
-    
-    //         @include tablet {
-    //         margin-left: 0;
-    // }
-    // }
     
     // стилі для слайдера
     
@@ -331,11 +255,9 @@
     .room-4-2-slick-container {
         
         max-width: 420px; // вирішує висоту і відступ між слайдами 0_о. В моєму випадку 420w робить висоту 194 (яка мені потрібна)
-    
         position: absolute;
+        max-height: 194px;
     
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-        
         margin: 0 -16px; // !!!
 
         @include tablet {
@@ -344,20 +266,20 @@
     
         @include pc {
             max-width: 590px;
+            max-height: 254px;
         }
     }
     
     .room-4-2-slick {
-        overflow: hidden;
-        margin: 0 auto;
+ 
 
         &__list {
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
-
-            // padding-left: -16px;
-            // padding-right: -16px;
+        max-height: 194px;
+            
+        @include pc {max-height: 254px;}
         }
 
         // &__slide {
@@ -365,15 +287,13 @@
         // }
     
         &__item {
-            margin: 0 16px; // !!!
-    
+            margin: 0 8px; // !!!
+            
             @include tablet {
                 margin: 0 40px;
             }
     
-            // @include pc {
-            //     margin-left: 40px;
-            // }
+           
         }
 
        
@@ -394,7 +314,6 @@
         background-color: transparent;
     
     
-    
         @include tablet {
             bottom: -64px;
         }
@@ -404,6 +323,7 @@
         }
     }
     
+    // slider-buttons
     .room-4-2-slick__list .my-slick-prev {
         background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
         left: 150px; // відступ -120 за межі контейнера + 15 позиція на сторінці
@@ -450,19 +370,7 @@
         // Спроби зробити фіксовані відступи між слайдами 
 
 
-// .slider_wrap * {
-//     box-sizing: border-box;
-//     -moz-box-sizing: border-box;
-//     -webkit-box-sizing: border-box;
-// }
 
-// .slick-slide {
-//     margin: 0 10px;
-// }
-
-// .slider-item img {
-//     max-width: 100%;
-// }
 
 // .slick-track {         //! - 
 // max-height: 194px;
