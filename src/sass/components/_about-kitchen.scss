@@ -30,11 +30,13 @@
       // transform: translateY(-32px);
       // padding: 0 0 0 32px;
       align-items: center;
+		padding-bottom: 134px;
       gap: 20px;
 		
     }
 
     @include pc {
+		padding-bottom: 104px;
       // padding: 0 165px 0 73px;
     }
   
@@ -344,12 +346,12 @@
   }
 
   @include tablet {
-	top:251px;
+	top:225px;
     right: 136px;
   }
 
   @include pc {
-    right: 158px;
+    right: 100px;
   }
 }
 
@@ -364,12 +366,13 @@
   }
 
   @include tablet {
-	top:251px;
+	top:225px;
     right: 83px;
   }
 
   @include pc {
-    right: 94px;
+	top:300px;
+    right: 45px;
   }
 }
 .slider-position {
@@ -377,16 +380,16 @@
 	position: relative;
 
   @include tablet {
-    position: relative;
+    position: absolute;
   }
 
   @include pc {
-    position: relative;
+    position: absolute;
   }
 }
 .test2{
 	background-color: transparent;
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	
 
 	@include tablet {
@@ -395,6 +398,7 @@
 
 	 @include pc {
 		height: auto;
+		
 	 }
 	// overflow-x: hidden;
 	
