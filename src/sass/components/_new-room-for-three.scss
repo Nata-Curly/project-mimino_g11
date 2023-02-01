@@ -165,17 +165,18 @@
      justify-content: flex-start;
      position: absolute;
      top: 640px;
-     right: -120px; // відступ за межі контейнера вліво для мобілки
+     left: 120px; // відступ за межі контейнера вліво для мобілки
 
 
      @include tablet {
+        flex-direction: row;
          top: 540px;
-         right: 47px;
+         left: 560px;
      }
 
      @include pc {
          top: 590px;
-         right: 85px;
+         left: 650px;
      }
  }
 
