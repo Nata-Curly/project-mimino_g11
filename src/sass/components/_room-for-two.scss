@@ -307,7 +307,7 @@
     
         @include tablet {
             top: 540px;
-            left: 47px;
+            left: 7px;
         }
     
         @include pc {
@@ -336,14 +336,14 @@
     
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         
-        margin: 0 -15px; // !!!
+        margin: 0 -16px; // !!!
 
         @include tablet {
-            max-width: 420px;
+            max-width: 473px;
         }
     
         @include pc {
-            max-width: 588px;
+            max-width: 590px;
         }
     }
     
@@ -365,11 +365,10 @@
         // }
     
         &__item {
-            margin: 0 15px; // !!!
+            margin: 0 16px; // !!!
     
             @include tablet {
-                // margin-left: 40px;
-                // gap: 40px;
+                margin: 0 40px;
             }
     
             // @include pc {
@@ -416,7 +415,7 @@
     
     .room-4-2-slick__list .my-slick-prev {
         background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
-        left: 135px; // відступ -120 за межі контейнера + 15 позиція на сторінці
+        left: 150px; // відступ -120 за межі контейнера + 15 позиція на сторінці
     
         &:hover,
             &:focus {
@@ -424,17 +423,17 @@
             }
         
         @include tablet {
-            left: 330px;
+            left: 370px;
         }
     
         @include pc {
-            left: 450px;
+            left: 490px;
         }
     }
     
     .room-4-2-slick__list .my-slick-next {
         background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
-            left: 200px; // відступ -120 за межі контейнера + 80 позиція на сторінці
+            left: 215px; // відступ -120 за межі контейнера + 80 позиція на сторінці
         
     &:hover,
     &:focus {
@@ -442,15 +441,20 @@
     }
 
             @include tablet {
-                left: 394px;
+                left: 434px;
             }
         
             @include pc {
-                left: 515px;
+                left: 555px;
             }
         }
 .draggable {
     height: 194px;
+
+    @include pc {
+    height: 254px;        
+}
+    
 }
         // Спроби зробити фіксовані відступи між слайдами 
 
