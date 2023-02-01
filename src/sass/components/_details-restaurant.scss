@@ -152,6 +152,7 @@
 /* Слайдер */
 .details-restaurant__slick-container {
     min-width: 0;
+    margin-bottom: 100px;
 }
 // .slick-slider{}
 // /* Слайдер запущен */
@@ -211,7 +212,7 @@
 // .slick-arrow.slick-disabled{}
 .slider {
     position: relative;
-    width: 1000px;
+    width: 500px;
     padding-left: 25px;
     @include tablet {
         width: 2000px;
@@ -220,13 +221,15 @@
 }
 .slider .slick-arrow{
 position: absolute;
-top: 90%;
+top: 115%;
 z-index: 5;
 font-size: 0;
 width: 32px;
 height: 32px;
 cursor: pointer;
 border: none;
+justify-content: center;
+align-items: center;
 // background-color: transparent;
 
 }
