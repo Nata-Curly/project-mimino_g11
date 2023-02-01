@@ -1,6 +1,6 @@
 .details-hotel {
 
-    min-height: 735px;
+    height: 735px;
 
   background-image: linear-gradient(
       to right,
@@ -61,7 +61,7 @@
     height: 620px;
     // ТИМЧАСОВО
 
-      padding-bottom: 100px;
+      padding-bottom: 48px;
   padding-top: 48px;
   }
 
@@ -193,7 +193,7 @@ transition-property: background-color, color;
 
       width: 236px;
       position: relative;
-      bottom: 262px;
+      bottom: 152px;
       left: 324px;
     }
 
@@ -219,10 +219,12 @@ transition-property: background-color, color;
     @include tablet {
       display: flex;
       align-items: center;
-      padding: 0 48px;
+      padding: 0 48px;  
+
+      min-height: 620px;
     }
     // ТИМЧАСОВО
-    min-height: 735px;
+    // min-height: 735px;
     // ТИМЧАСОВО
   }
 
@@ -277,11 +279,11 @@ transition-property: background-color, color;
     justify-content: flex-end;
     position: absolute;
     left: -480px;
-    bottom: 230px;
+    bottom: 200px;
 
     @include tablet {
-        bottom: 262px;
-        left: -200px;
+        bottom: 151px;
+        left: -220px;
     }
 
     @include pc {
@@ -304,6 +306,8 @@ transition-property: background-color, color;
     cursor: pointer;
     border: none;
     background-color: transparent;
+
+      
 
     @include tablet{
        bottom: -64px;
@@ -475,6 +479,11 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
 
     right: 89px;
 
+        &:hover,
+    &:focus{
+        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+    }
+
     @include tablet {
         right: 96px;
     }
@@ -486,6 +495,11 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
 
 .details-hotel-slick__list .my-slick-next {
     background-image: url(../images/slider_svg/slider-arrow-right.svg);
+
+        &:hover,
+    &:focus{
+        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
+    }
 
     right: 25px;
 
