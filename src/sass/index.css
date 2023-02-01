@@ -2498,69 +2498,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin: 0 0;
 }
 
-.details-hotel-slick__list .my-slick-prev,
-.details-hotel-slick__list .my-slick-next {
-  position: absolute;
-  bottom: -52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-@media screen and (min-width: 1024px) {
-  .details-hotel-slick__list .my-slick-prev,
-.details-hotel-slick__list .my-slick-next {
-    bottom: -64px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-hotel-slick__list .my-slick-prev,
-.details-hotel-slick__list .my-slick-next {
-    bottom: -68px;
-  }
-}
-
-.details-hotel-slick__list .my-slick-prev {
-  background-image: url(../images/slider_svg/slider-arrow-left.svg);
-  right: 89px;
-}
-.details-hotel-slick__list .my-slick-prev:hover, .details-hotel-slick__list .my-slick-prev:focus {
-  background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
-}
-@media screen and (min-width: 1024px) {
-  .details-hotel-slick__list .my-slick-prev {
-    right: 96px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-hotel-slick__list .my-slick-prev {
-    right: 100pxpx;
-  }
-}
-
-.details-hotel-slick__list .my-slick-next {
-  background-image: url(../images/slider_svg/slider-arrow-right.svg);
-  right: 25px;
-}
-.details-hotel-slick__list .my-slick-next:hover, .details-hotel-slick__list .my-slick-next:focus {
-  background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
-}
-@media screen and (min-width: 1024px) {
-  .details-hotel-slick__list .my-slick-next {
-    right: 40px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-hotel-slick__list .my-slick-next {
-    right: 36px;
-  }
-}
-
 .details-restaurant {
   display: block;
   text-align: center;
@@ -2712,91 +2649,32 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 /* Слайдер */
-.details-restaurant__slick-container {
-  min-width: 0;
-  margin-bottom: 100px;
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
-.slick-track {
-  display: flex;
-}
-
 /* Слайд */
-.slick-track.slick-slide.slick-active {
-  margin-right: 20px;
-  width: 274px;
-  height: 270px;
-  overflow-y: hidden;
-}
-@media screen and (min-width: 1024px) {
-  .slick-track.slick-slide.slick-active {
-    margin-right: 34px;
-  }
-}
-
-.slick-slide.slick-current {
-  width: 274px;
-  height: 270px;
-}
-@media screen and (min-width: 1024px) {
-  .slick-slide.slick-current {
-    width: 270px;
-    height: 270px;
-  }
-}
-
 /* Стрелка */
-.slider {
-  position: relative;
-  width: 500px;
-  padding-left: 25px;
-}
-@media screen and (min-width: 1024px) {
-  .slider {
-    width: 2000px;
-  }
-}
-
-.slider .slick-arrow {
+.details-hotel-slick__list .my-slick-prev,
+.details-hotel-slick__list .my-slick-next {
   position: absolute;
-  top: 115%;
-  z-index: 5;
-  font-size: 0;
+  bottom: -52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   width: 32px;
   height: 32px;
   cursor: pointer;
   border: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.slider .slick-arrow.my-slick-prev {
-  background-image: url(../images/slider_svg/slider-arrow-left.svg) no-repeat;
-}
-.slider .slick-arrow.my-slick-prev:hover, .slider .slick-arrow.my-slick-prev:focus {
-  background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg) no-repeat;
-}
-
-.slider .slick-arrow.my-slick-next {
-  background-image: url(../images/slider_svg/slider-arrow-right.svg) no-repeat;
-  left: 90px;
-}
-.slider .slick-arrow.my-slick-next:hover, .slider .slick-arrow.my-slick-next:focus {
-  background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg) no-repeat;
-}
-
-.slider__item {
-  margin-right: 20px;
-  max-width: 274px;
-  max-height: 270px;
+  background-color: transparent;
 }
 @media screen and (min-width: 1024px) {
-  .slider__item {
-    margin-right: 34px;
+  .details-hotel-slick__list .my-slick-prev,
+.details-hotel-slick__list .my-slick-next {
+    bottom: -64px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-hotel-slick__list .my-slick-prev,
+.details-hotel-slick__list .my-slick-next {
+    bottom: -68px;
   }
 }
 
