@@ -1,6 +1,10 @@
 <div data-popup-target="modal-book-table" class="popup">
   <div class="popup__content">
-    <button type="button" class="popup__close close-popup">X</button>
+    <button type="button" class="popup__close close-popup">
+      <svg width="24" height="24">
+        <use href="./images/icons/icons.svg#icon-close"></use>
+      </svg>
+    </button>
 
     <h2 class="modal-menu__title">ЗАБРОНЮВАТИ СТОЛИК</h2>
 
@@ -43,11 +47,15 @@
         </div>
 
         <div class="modal-flex-column">
-          <select id="date" name="testselect" class="js-select">
-            <option value="1">Сьогодні</option>
-            <option value="11">Завтра</option>
-            <option value="111">Післязавтра</option>
-          </select>
+          <input
+            class="modal-menu__input input-date"
+            type="date"
+            name="date"
+            id="date"
+            placeholder="Сьогодні"
+            required
+            pattern="\d{2}-\d{2}-\d{4}"
+          />
 
           <label
             for="date"
