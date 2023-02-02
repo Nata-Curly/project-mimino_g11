@@ -142,6 +142,8 @@ padding-top: 48px;
 &__container {
   display: block;
 
+  
+
   width: 259px;
   margin-right: auto;
   margin-left: auto;
@@ -163,15 +165,18 @@ padding-top: 48px;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+
+  @include tablet {
+    margin: 0;
+  }
+
 }
 
 &__button {
 
   text-decoration: none;
 
-transition-property: background-color, color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %cubic;
 
 &:hover,
 &:focus {
@@ -197,18 +202,18 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 236px;
     position: relative;
     bottom: 152px;
-    left: 324px;
+    right: 324px;
   }
 
   @include pc {
       bottom: 154px;
-      left: 436px;
+      right: 436px;
   }
 }
 
 &__wrapper {
 
-
+  overflow-x: hidden;
   @Media (max-width: 414px) {
       overflow: hidden;
   }
@@ -281,17 +286,17 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  left: -480px;
+  right: -480px;
   bottom: 200px;
 
   @include tablet {
       bottom: 151px;
-      left: -220px;
+      right: -220px;
   }
 
   @include pc {
       bottom: 156px;
-      left: -35px;
+      right: -35px;
   }
 }
 
@@ -480,7 +485,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .details-restaurant-slick__list .my-slick-next {
 background-image: url(../images/slider_svg/slider-arrow-left.svg);
 
-  right: 89px;
+  
+  left: 25px;
 
       &:hover,
   &:focus{
@@ -488,11 +494,13 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
   }
 
   @include tablet {
-      right: 96px;
+      
+      left: 40px;
   }
 
   @include pc {
-      right: 100pxpx;
+     
+     left: 36px;
   }
 }
 
@@ -504,14 +512,14 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
       background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
   }
 
-  right: 25px;
+  left: 89px;
 
   @include tablet {
-      right: 40px;
+    left: 96px;
   }
 
   @include pc {
-      right: 36px;
+    left: 100px;
   }
 }
 
