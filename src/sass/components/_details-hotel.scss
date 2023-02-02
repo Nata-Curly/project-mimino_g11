@@ -290,6 +290,10 @@ transition-property: background-color, color;
         bottom: 156px;
         left: -35px;
     }
+
+    @media (max-width: 414px) {
+          left: calc(100vw - 900px);
+    }
  }
 
 
