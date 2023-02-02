@@ -2856,7 +2856,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 236px;
   margin-left: 75px;
   display: flex;
-  margin-bottom: 56pxpx;
+  margin-bottom: 56px;
   flex-direction: column;
   gap: 16px;
 }
