@@ -1,313 +1,521 @@
 .details-restaurant {
-  display: block;
-  text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.76)),
-    url('../images/homepage/mob/hp-rest-bkg-mob_1x.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
+
+  height: 735px;
+
+background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)
+  ),
+  url(../images/homepage/mob/hp-room-bkg-mob_1x.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  & {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/homepage/mob/hp-room-bkg-mob_2x.jpg);
+  }
+}
+
+padding-bottom: 40px;
+padding-top: 24px;
+
+
+
+@include tablet {
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/homepage/tablet/hp-room-bkg-tab_1x.jpg);
   background-size: cover;
-  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
-      url('../images/homepage/mob/hp-rest-bkg-mob_2x.jpg');
-  }
-
-  @media screen and (min-width: 1025px) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
-      url('../images/homepage/tablet/hp-rest-bkg-tab_1x.jpg');
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    & {
       background-image: linear-gradient(
-          rgba(0, 0, 0, 0.76),
-          rgba(0, 0, 0, 0.76)
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
         ),
-        url('../images/homepage/tablet/hp-rest-bkg-tab_2x.jpg');
+        url(../images/homepage/tablet/hp-room-bkg-tab_2x.jpg);
     }
   }
 
-  @media screen and (min-width: 1281px) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
-      url('../images/homepage/pc/hp-rest-bkg-pc_1x.jpg');
+  // ТИМЧАСОВО
+  height: 620px;
+  // ТИМЧАСОВО
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    padding-bottom: 48px;
+padding-top: 48px;
+}
+
+@include pc {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/homepage/pc/hp-room-bkg-pc_1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
       background-image: linear-gradient(
-          rgba(0, 0, 0, 0.76),
-          rgba(0, 0, 0, 0.76)
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
         ),
-        url('../images/homepage/pc/hp-rest-bkg-pc_2x.jpg');
+        url(../images/homepage/pc/hp-room-bkg-pc_2x.jpg);
     }
-  }
 
-  &__container {
-    // position: relative;
-  //   overflow-x: hidden;
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    padding-top: 24px;
-    padding-bottom: 40px;
-    @include tablet {
-      padding-top: 48px;
-      padding-bottom: 40px;
-    }
+          padding-bottom: 48px;
+padding-top: 48px;
   }
+}
 
-  &__information {
-    // left: 140px;
-    margin-left: 125px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
-    @include tablet {
-      margin-left: 263px;
-    }
-    @include pc {
-      margin-left: 318px;
-    }
+&__logo {
+  color: $color-primary;
+  font-size: 40px;
+  margin-bottom: 12px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+
+  @include tablet {
+    margin-right: -0.3em;
+    font-size: 64px;
+    line-height: 1.078;
+    margin-bottom: 16px;
   }
-  &__logo {
-    font-size: 40px;
-    line-height: 1.08;
-    margin-bottom: 12px;
-    color: $color-primary;
-    @include tablet {
-      font-size: 64px;
-      margin-bottom: 16px;
-    }
-  }
-  &__title {
-    font-size: 20px;
+}
+
+&__title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: $color-primary;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+
+  @include tablet {
+    font-size: 24px;
     line-height: 1.2;
-    margin-bottom: 20px;
-    letter-spacing: 0.02em;
-    color: $color-primary;
-    @include tablet {
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
+    margin-bottom: 8px;
   }
-  &__text {
-    max-width: 259px;
-    max-height: 62px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    margin-bottom: 48px;
-    letter-spacing: 0.02em;
-    color: $color-text-tertiary;
-    @include tablet {
-      max-width: 610px;
-      max-height: 44px;
-      font-size: 16px;
-      margin-bottom: 40px;
-    }
+}
+
+&__caption {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $color-text-tertiary;
+  margin-bottom: 48px;
+
+  @include tablet {
+    margin-bottom: 40px;
+    font-size: 16px;
   }
-  &__combined-section {
-    width: 100%;
+}
+
+&__container {
+  display: block;
+
+  
+
+  width: 259px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet {
+    // margin-right: 0px;
+    width: 549px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include pc {
+    width: 595px;
+  }
+}
+
+&__titles {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    margin: 0;
+  }
+
+}
+
+&__button {
+
+  text-decoration: none;
+
+@extend %cubic;
+
+&:hover,
+&:focus {
+  background-color: $color-primary;
+  color: $color-tertiary
+}
+}
+
+&__buttons {
+
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+
   @include tablet {
     display: flex;
-    gap: 30px;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-  }
-  @include pc {
-    gap: 32px;
-    // min-width: 0;
-  }
-}
-
-  &__wrapper {
-    width: 236px;
-    margin-left: 75px;
-    display: flex;
-    margin-bottom: 56pxpx;
     flex-direction: column;
-    gap: 16px;
-    @include tablet {
-      margin-bottom: 32px;
-      margin-left: 32px
-    }
-    @include pc{
-      margin-bottom: 60px;
-    }
+    justify-content: flex-end;
+
+    width: 236px;
+    position: relative;
+    bottom: 152px;
+    right: 324px;
   }
-  &__button {
-      width: 236px;
-      height: 48px;
-      text-decoration: none;
-    }  
+
+  @include pc {
+      bottom: 154px;
+      right: 436px;
+  }
 }
 
-// SlICK-SlIDER
+&__wrapper {
 
-/* Слайдер */
-// .details-restaurant__slick-container {
-//     min-width: 0;
-//     margin-bottom: 100px;
-// }
-// .slick-slider{}
-// /* Слайдер запущен */
-// .slick-slider.slick-initialized{}
-// /* Слайдер с точками */
-// .slick-slider.slick-dotted{}
-// /* Ограничивающая оболочка */
-// .slick-list {
-//     overflow: hidden;
-// }
-// /* Лента слайдов */
-// .slick-track{
-//     display: flex;
-//     align-items: stretch;
-// }
+  overflow-x: hidden;
+  @Media (max-width: 414px) {
+      overflow: hidden;
+  }
 
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-/* Слайд */
-// .slick-slide{   margin-right: 20px;
-//     width: 274px;
-//     height: 270px;
-//     @include tablet {
-//         margin-right: 34px;
-
-// }}
-// /* Слайд активный (показывается) */
-// .slick-track.slick-slide.slick-active{ 
-//     margin-right: 20px;
-//     width: 274px;
-//     height: 270px;
-//     overflow-y: hidden;
-//     @include tablet {
-//         margin-right: 34px;
-
-// }
-// }
-// /* Слайд основной */
-// .slick-slide.slick-current{
-//     width: 274px;
-//     height: 270px;
-//     @include tablet {
-//         width: 270px;
-//         height: 270px;
-//     }
-   
-// }
-// /* Слайд по центру */
-// .slick-slide.slick-center{}
-// /* Клонированный слайд */
-// .slick-slide.slick-cloned{}
-/* Стрелка */
-// .slick-arrow{}
-// /* Стрелка влево */
-// .slick-arrow.slick-prev{}
-// /* Стрелка вправо */
-// .slick-arrow.slick-next{}
-// /* Стрелка не активная */
-// .slick-arrow.slick-disabled{}
-// .slider {
-//     position: relative;
-//     width: 500px;
-//     padding-left: 25px;
-//     @include tablet {
-//         width: 2000px;
-//     }
-    
-// }
-// .slider .slick-arrow{
-// position: absolute;
-// top: 115%;
-// z-index: 5;
-// font-size: 0;
-// width: 32px;
-// height: 32px;
-// cursor: pointer;
-// border: none;
-// justify-content: center;
-// align-items: center;
-// // background-color: transparent;
-
-// }
-
-.details-hotel-slick__list .my-slick-prev,
-.details-hotel-slick__list .my-slick-next {
-    position: absolute;
-    bottom: -52px;
+  @include tablet {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
+    padding: 0 48px;  
 
-    @include tablet{
-       bottom: -64px;
-    }
-
-    @include pc{
-        bottom: -68px;
-    }
+    min-height: 620px;
+  }
+  // ТИМЧАСОВО
+  // min-height: 735px;
+  // ТИМЧАСОВО
 }
-// .slider .slick-arrow.my-slick-prev {
-//     background-image: url(../images/slider_svg/slider-arrow-left.svg) no-repeat;
-//     // left: 0;
-//     &:hover,
-//     &:focus{
-//         background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg)  no-repeat;
-//     }
+
+&__image {
+
+  width: 274px;
+
+  @include tablet {
+      width: 270px;
+  }
+
+}
+
+&__swiperf {
+  width: 414px;
+
+  gap: 20px;
+  transform: translatex(-108%);
+  display: flex;
+
+  margin-bottom: 16px;
+
+  @include tablet {
+      width: 1024px;
+  }
+}
+
+&__arrows {
+  border: none;
+  background-color: transparent;
+  fill: white;
+  padding: 0;
+
+  &:first-child {
+      padding-right: 30px;
+  }
+}
+
+&__controls {
+
+  margin-bottom: 32px;
+  
+  width: 414px;
+  display: flex;
+  justify-content: flex-end;
+}
+}
 
 
-// width: 32px;
-// height: 32px;
-// cursor: pointer;
-// background-color: #0000;
-// border: none;
-// justify-content: center;
-// align-items: center;
-// padding: 0;
-// display: flex;
-// position: absolute;
-// bottom: -52px;
-// }
+.details-restaurant-slider-container {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: -480px;
+  bottom: 200px;
 
-// .slider .slick-arrow.my-slick-next {
-//     background-image: url(../images/slider_svg/slider-arrow-right.svg) no-repeat;
-//    left: 90px;
-//     &:hover,
-//     &:focus{
-//         background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg) no-repeat;
+  @include tablet {
+      bottom: 151px;
+      right: -220px;
+  }
 
-//     }
+  @include pc {
+      bottom: 156px;
+      right: -35px;
+  }
+}
 
 
-// width: 32px;
-// height: 32px;
-// cursor: pointer;
-// background-color: #0000;
-// border: none;
-// justify-content: center;
-// align-items: center;
-// padding: 0;
-// display: flex;
-// position: absolute;
-// bottom: -52px;
-// }
-// .slider__item {
-//     margin-right: 20px;
-//     max-width: 274px;
-//     max-height: 270px;
-//     @include tablet {
-//         margin-right: 34px;
-//         // margin-left: 50px;
+  .details-restaurant-slick__list .my-slick-prev,
+.details-restaurant-slick__list .my-slick-next {
+  position: absolute;
+  bottom: -52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 
-// }
-// }
+    
+
+  @include tablet{
+     bottom: -64px;
+  }
+
+  @include pc{
+      bottom: -68px;
+  }
+}
+
+
+
+
+
+.details-restaurant {
+  background-color: $color-background-primary;
+
+  &__subtitle {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 1.15;
+      color: $color-text-subtitle;
+  }
+
+  &__text {
+      max-width: 258px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.25;
+      color: $color-text-primary;
+
+      @include tablet {
+          max-width: 439px;
+      }
+
+      @include pc {
+          max-width: 518px;
+      }
+  }
+
+  &__first-image {
+      margin-top: 28px;
+      width: 244px;
+
+      @include tablet {
+          margin-top: 0px;
+          width: 400px;
+      }
+
+      @include pc {
+          width: 460px;
+      }
+  }
+
+  &__image--shadow{
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+  }
+
+  // &__second-image {
+  //     margin-top: 32px;
+  //     width: 200px;
+
+  //     @include tablet {
+  //         margin-top: -16px;
+  //         width: 350px;
+  //     }
+
+  //     @include pc {
+  //         margin-top: -65px;
+  //         width: 460px;
+  //     }
+  // }
+
+  &__desc {
+      max-width: 163px;
+      margin-left: 32px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.25;
+      color: $color-text-secondary;
+
+      @include tablet {
+          max-width: 312px;
+      }
+  }
+
+  // &__image--first {
+  //     background-color: $bgc-image;
+  //     margin-left: auto;
+  //     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  //     border-radius: 2px;
+  // }
+}
+
+
+.details-restaurant-slick-container{
+  width: 868px;
+  height: 270px;
+  position: relative;
+  
+
+  @include tablet {
+      width: 910px;
+
+  }
+  
+}
+
+.details-restaurant-slick {
+  
+  &__list {
+          // width: 254px;
+          max-width: 1000px;
+          margin: 0 auto;
+          display: flex;
+      }
+
+  &__item {
+      margin-right: 20px;
+
+      @include tablet {
+          margin-right: 34px;
+      
+
+      // &.slick-active {
+      //     width: 162px !important;
+      //     height: 270px !important; 
+      // }
+      // &.slick-current { width: 270px !important;
+      // } 
+      
+  }
+  }
+
+  &__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0;
+  }
+
+  
+}
+
+.details-restaurant-slick__list .my-slick-prev,
+.details-restaurant-slick__list .my-slick-next {
+  position: absolute;
+  bottom: -52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  @include tablet{
+     bottom: -64px;
+  }
+
+  @include pc{
+      bottom: -68px;
+  }
+}
+
+.details-restaurant-slick__list .my-slick-next {
+background-image: url(../images/slider_svg/slider-arrow-right.svg);
+
+  
+  left: 64px;
+
+      &:hover,
+  &:focus{
+      background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
+  }
+
+  @include tablet {
+      
+      left: 64px;
+  }
+
+  @include pc {
+     
+     left: 64px;
+  }
+}
+
+.details-restaurant-slick__list .my-slick-prev {
+  background-image: url(../images/slider_svg/slider-arrow-left.svg);
+
+      &:hover,
+  &:focus{
+      background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+  }
+
+  left: 0px;
+
+  
+}
+
