@@ -414,11 +414,13 @@ padding-top: 48px;
 
 .details-restaurant-slick-container{
   width: 868px;
+  height: 270px;
   position: relative;
   
 
   @include tablet {
       width: 910px;
+
   }
   
 }
