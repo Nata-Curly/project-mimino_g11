@@ -405,12 +405,12 @@ transition-property: background-color, color;
 
 
 .details-hotel-slick-container{
-    width: 885px;
+    width: 868px;
     position: relative;
     
 
     @include tablet {
-        width: 928px;
+        width: 910px;
     }
     
 }
@@ -474,7 +474,7 @@ transition-property: background-color, color;
     }
 }
 
-.details-hotel-slick__list .my-slick-prev {
+.details-hotel-slick__list .my-slick-next {
 background-image: url(../images/slider_svg/slider-arrow-left.svg);
 
     right: 89px;
@@ -493,7 +493,7 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
     }
 }
 
-.details-hotel-slick__list .my-slick-next {
+.details-hotel-slick__list .my-slick-prev {
     background-image: url(../images/slider_svg/slider-arrow-right.svg);
 
         &:hover,
