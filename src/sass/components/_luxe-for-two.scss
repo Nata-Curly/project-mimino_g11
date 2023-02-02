@@ -24,12 +24,12 @@
   	padding-bottom: 32px;
 
   	@include tablet {
-		padding-bottom: 40px;
+		padding-bottom: 35px;
 	}
 
-	/*@include pc {
-		padding-bottom: 35px;
-	}*/
+	@include pc {
+		padding-bottom: 40px;
+	}
 }
 
 .content {
