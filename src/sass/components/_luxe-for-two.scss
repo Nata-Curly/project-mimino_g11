@@ -24,7 +24,11 @@
   	padding-bottom: 32px;
 
   	@include tablet {
-		padding-bottom: 105px;
+		padding-bottom: 35px;
+	}
+
+	@include pc {
+		padding-bottom: 40px;
 	}
 }
 
@@ -159,17 +163,17 @@
 	}
 }
 
-.buttons {
+.buttons-lux-for-two {
 	padding-bottom: 40px;
 	position: relative;
-    left: 35px;
+    //left: 35px;
 
 	@media (max-width: 1023px) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 0;
-		left: 125px;
+		//left: 125px;
 	}
 }
 
@@ -198,148 +202,140 @@
   text-decoration: none;
 }
 
-	.lux-for-two-slider-container {
-		position: relative;
+.lux-for-two-content-down {
+	@include tablet {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-top: 45px;
-
-		@media (max-width: 1023px) {
-			left: -120px;
-			display: block;
-		}
-
-		@include tablet {
-            left: -30px;
-        }
 	}
-    
-    // .slider__image {
-    //     max-width: 194px;
-    
-    //     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    
-    //     @include pc {
-    //         max-width: 254px;
-    //     }
-    // }
-    
-    .lux-for-two-slick-container {
-        
-        max-width: 420px; // вирішує висоту і відступ між слайдами 0_о. В моєму випадку 420w робить висоту 194 (яка мені потрібна)
-    
-        position: relative;
-    
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-        
-        margin: 0 -16px; // !!!
+}
 
-		margin-bottom: 72px;
 
-        @include tablet {
-            max-width: 473px;
-			margin-bottom: 0;
-        }
-    
-        @include pc {
-            max-width: 590px;
-        }
+// стилі для слайдера
+
+.lux-for-two-slider-container {
+    //padding-left: 0;
+    //justify-content: flex-start;
+    position: relative;
+    //top: 640px;
+    //left: -120px; // відступ за межі контейнера вліво для мобілки
+	
+	@media (max-width: 1023px) {
+		left: -120px;
+		margin-top: 45px;
+		width: 420px;
+	}
+
+	@include tablet {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+    @include pc {
+        //top: 590px;
+        //left: 85px;
     }
-    
-    .lux-for-two-slick {
-        overflow: hidden;
+}
+
+.lux-for-two-slick-container {
+
+    max-width: 420px; // вирішує висоту і відступ між слайдами 0_о. В моєму випадку 420w робить висоту 194 (яка мені потрібна)
+    position: relative;
+    max-height: 194px;
+
+	margin-bottom: 72px;
+
+    @include tablet {
+        max-width: 470px;
+    }
+
+    @include pc {
+        max-width: 587px;
+        max-height: 254px;
+    }
+}
+
+.lux-for-two-slick {
+
+    &__list {
+        max-width: 1000px;
         margin: 0 auto;
-
-        &__list {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-        }
-
-        &__item {
-            margin: 0 16px; // !!!
-    
-            @include tablet {
-                margin: 0 40px;
-            }
-        }
-       
-    }
-    
-    .lux-for-two-slick__list .my-slick-prev,
-    .lux-for-two-slick__list .my-slick-next {
-        position: absolute;
-        bottom: -52px; //32 висота іконки + 20 відступ від слайдера знизу до іконки
         display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        width: 32px;
-        height: 32px;
-        cursor: pointer;
-        border: none;
-        background-color: transparent;
-    
-    
-    
-        @include tablet {
-            bottom: -64px;
-        }
-    
+        max-height: 194px;
+
         @include pc {
-            bottom: -68px;
+            max-height: 254px;
         }
     }
-    
-    .lux-for-two-slick__list .my-slick-prev {
-        background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
-        left: 150px; // відступ -120 за межі контейнера + 15 позиція на сторінці
-    
-        &:hover,
-            &:focus {
-                background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
-            }
-        
+
+    &__item {
+        margin-left: 16px; // !!!
+
         @include tablet {
-            left: 370px;
-        }
-    
-        @include pc {
-            left: 490px;
+            margin-left: 0;
+            margin-right: 40px;
         }
     }
-    
-    .lux-for-two-slick__list .my-slick-next {
-        background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
-            left: 215px; // відступ -120 за межі контейнера + 80 позиція на сторінці
-        
+}
+
+.lux-for-two-slick__list .my-slick-prev,
+.lux-for-two-slick__list .my-slick-next {
+    position: absolute;
+    bottom: -53px; //32 висота іконки + 20 відступ від слайдера знизу до іконки
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+
+    @include tablet {
+        bottom: -65px;
+    }
+
+    @include pc {
+        bottom: -73px; //!
+    }
+}
+
+// slider-buttons
+.lux-for-two-slick__list .my-slick-prev {
+    background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
+    left: 135px; // відступ -120 за межі контейнера + 15 позиція на сторінці
+
+    &:hover,
+    &:focus {
+        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+    }
+
+    @include tablet {
+        left: 330px;
+    }
+
+    @include pc {
+        left: 450px;
+    }
+}
+
+.lux-for-two-slick__list .my-slick-next {
+    background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
+    left: 200px; // відступ -120 за межі контейнера + 80 позиція на сторінці
+
     &:hover,
     &:focus {
         background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
     }
 
-            @include tablet {
-                left: 434px;
-            }
-        
-            @include pc {
-                left: 555px;
-            }
-        }
-// .draggable {
-//     height: 194px;
+    @include tablet {
+        left: 394px;
+    }
 
-// 	@media (max-width: 1023px) {
-// 		width: 420px;
-// 	}
-
-//     @include pc {
-//     height: 254px;        
-// }
-    
-// }
-
-// .slick-track {
-// max-height: 194px;
-// }
+    @include pc {
+        left: 515px;
+    }
+}
