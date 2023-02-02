@@ -738,25 +738,6 @@ p {
   }
 }
 
-.modal-margin-reset {
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 1024px) {
-  .modal-margin-reset {
-    margin-bottom: 0;
-  }
-}
-
-.modal-padding-reset {
-  padding: 0;
-}
-
-@media screen and (max-width: 1023px) {
-  .modal-mobil-reset-margen {
-    margin-bottom: 0;
-  }
-}
-
 .modal-menu {
   padding-bottom: 60px;
   padding-top: 60px;
@@ -776,6 +757,9 @@ p {
   }
 }
 
+.modal-discription {
+  margin-bottom: 20px;
+}
 @media screen and (min-width: 1024px) {
   .modal-discription {
     padding-left: 60px;
@@ -824,7 +808,7 @@ p {
   border-bottom: 3.5px solid #C79002;
   border-right: 3.5px solid #C79002;
   border-radius: 2px;
-  top: 45%;
+  top: 40%;
   margin-right: 25px;
   margin-top: -4px;
   pointer-events: none;
@@ -915,7 +899,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .nice-select {
   color: #808080;
   padding-left: 12px;
-  padding-top: 16px;
+  padding-top: 13px;
   border: 1px solid #C79002;
   border-radius: 2px;
   background: #FFFDEE;
@@ -950,6 +934,25 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border-radius: 2px;
   top: 45%;
   margin-right: 25px;
+}
+
+.modal-margin-reset {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .modal-margin-reset {
+    margin-bottom: 0;
+  }
+}
+
+.modal-padding-reset {
+  padding: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .modal-mobil-reset-margen {
+    margin-bottom: 0;
+  }
 }
 
 .section {

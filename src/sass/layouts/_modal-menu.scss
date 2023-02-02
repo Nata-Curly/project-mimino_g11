@@ -22,6 +22,7 @@
 }
 
 .modal-discription {
+  margin-bottom: 20px;
   @include tablet {
     padding-left: 60px;
   }
@@ -80,7 +81,7 @@
   border-right: 3.5px solid $color-text-secondary;
 
   border-radius: 2px;
-  top: 45%;
+  top: 40%;
 
   margin-right: 25px;
 
@@ -186,7 +187,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   color: #808080;
 
   padding-left: 12px;
-  padding-top: 16px;
+  padding-top: 13px;
 
   border: 1px solid $color-text-secondary;
   border-radius: 2px;
