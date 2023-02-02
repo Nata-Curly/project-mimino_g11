@@ -26,6 +26,10 @@
   	@include tablet {
 		padding-bottom: 40px;
 	}
+
+	/*@include pc {
+		padding-bottom: 35px;
+	}*/
 }
 
 .content {
@@ -278,7 +282,7 @@
 .lux-for-two-slick__list .my-slick-prev,
 .lux-for-two-slick__list .my-slick-next {
     position: absolute;
-    bottom: -52px; //32 висота іконки + 20 відступ від слайдера знизу до іконки
+    bottom: -53px; //32 висота іконки + 20 відступ від слайдера знизу до іконки
     display: flex;
     align-items: center;
     justify-content: center;
@@ -291,11 +295,11 @@
 
 
     @include tablet {
-        bottom: -64px;
+        bottom: -65px;
     }
 
     @include pc {
-        bottom: -64px; //!
+        bottom: -73px; //!
     }
 }
 
