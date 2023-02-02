@@ -1,4 +1,6 @@
 .bg-image {
+  max-width: 1280px;
+  margin: 0 auto;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
@@ -77,6 +79,8 @@
 }
 
 .bg-image__rest {
+  max-width: 1280px;
+  margin: 0 auto;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
@@ -155,6 +159,8 @@
 }
 
 .bg-image__hotel {
+  max-width: 1280px;
+  margin: 0 auto;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
@@ -233,6 +239,8 @@
 }
 
 .bg-image__room {
+  max-width: 1280px;
+  margin: 0 auto;
   background-image: url(../images/hero_images/mobile/hotel-hero-mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
