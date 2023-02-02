@@ -19,7 +19,7 @@
       padding-bottom: 127px;
     }
 
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
   }
 
   &__numbers {
@@ -176,6 +176,7 @@
 // ------------------------------------
 // ------------------------------------
 // swiper styles
+
 .about-hotel-slider__position {
   position: relative;
 }
@@ -184,7 +185,8 @@
   position: relative;
   // outline: 1px solid tomato;
 
-  height: 306px;
+  height: 245px;
+  width: 330px;
   left: -15px;
   top: 32px;
   overflow: hidden;
@@ -208,9 +210,10 @@
 
   position: absolute;
   top: 0px;
-  right: 34px;
+  left: -90px;
 
   @include tablet {
+    left: 0;
     right: 0px;
     width: 468px;
   }
@@ -268,7 +271,7 @@
 .about-hotel-slick__list .my-slick-prev {
   background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
 
-  left: 200px;
+  left: 105px;
 
   &:hover,
   &:focus {
@@ -287,7 +290,7 @@
 .about-hotel-slick__list .my-slick-next {
   background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
 
-  left: 264px;
+  left: 169px;
 
   &:hover,
   &:focus {
