@@ -1008,7 +1008,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 350px;
-  outline: 1px solid tomato;
 }
 @media screen and (min-width: 1024px) {
   .about-hotel__container {
