@@ -301,6 +301,95 @@ margin-right: 20px;
       margin-right: 40px;
     }
 
+
+.details-restaurant__item {
+    width: 270px;
+    margin-right: 20px;
+    @include tablet {
+        margin-right: 32px;
+      }
+    @include pc {
+        margin-right: 86px;
+      }
+
+    //     &--base {
+    //     max-width: 274px !important;
+    //     @include tablet {
+    //         max-width: 270px !important;
+    //       }
+    //     @include pc {
+    //         max-width: 270px !important;
+    //       }
+    //   }
+
+    //     &--central {
+    //     max-width: 270px !important;
+    //     @include tablet {
+    //         max-width: 162px !important;
+    //       }
+    //     }
+  
+    //     &--right {
+    //     max-width: 270px !important;
+    //     @include tablet {
+    //         max-width: 162px !important;
+    //       }
+      
+    //     }
+  }
+.details-restaurant-item-box {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+}
+
+.restaurant-img {
+width: 274px;
+// max-width: 100%;
+height: 270px;
+margin-right: 20px;
+@include tablet {
+    margin-right: 34px;
+  }
+
+  @include pc {
+    margin-right: 86px;
+  }
+}
+
+.details-restaurant-slick-container .slick-list {
+    // max-width: 600px;
+    position: relative;
+    // display: flex;
+    left: 25px;
+  
+    @include tablet {
+    //   width: 600px;
+      top: 48px;
+  
+    }
+  
+    @include pc {
+    //   width: 600px;
+      top: 23px;
+  
+    }
+  }
+//   .details-restaurant-slick-container .slick-list .slick-track {
+//     height: 300px;
+//   }
+  .details-restaurant-slick__list{
+    max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+    margin-bottom: 80px;
+
+    @include tablet {
+      margin-right: 40px;
+    }
+
+
     @include pc {
       margin-right: 40px;
     }
@@ -381,4 +470,4 @@ margin-right: 20px;
     // @include pc {
     //   right: 451px;
     // }
-  }
+  }}

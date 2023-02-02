@@ -2920,28 +2920,86 @@ input[type=date]::-webkit-calendar-picker-indicator {
     margin-right: 40px;
   }
 }
+.details-restaurant-slick__list .details-restaurant__item {
+  width: 270px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant-slick__list .details-restaurant__item {
+    margin-right: 32px;
+  }
+}
 @media screen and (min-width: 1280px) {
-  .details-restaurant-slick__list {
+  .details-restaurant-slick__list .details-restaurant__item {
+    margin-right: 86px;
+  }
+}
+.details-restaurant-slick__list .details-restaurant-item-box {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  display: flex;
+}
+.details-restaurant-slick__list .restaurant-img {
+  width: 274px;
+  height: 270px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant-slick__list .restaurant-img {
+    margin-right: 34px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant-slick__list .restaurant-img {
+    margin-right: 86px;
+  }
+}
+.details-restaurant-slick__list .details-restaurant-slick-container .slick-list {
+  position: relative;
+  left: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant-slick__list .details-restaurant-slick-container .slick-list {
+    top: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant-slick__list .details-restaurant-slick-container .slick-list {
+    top: 23px;
+  }
+}
+.details-restaurant-slick__list .details-restaurant-slick__list {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 80px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant-slick__list .details-restaurant-slick__list {
     margin-right: 40px;
   }
 }
-
-.details-restaurant-slick__item {
+@media screen and (min-width: 1280px) {
+  .details-restaurant-slick__list .details-restaurant-slick__list {
+    margin-right: 40px;
+  }
+}
+.details-restaurant-slick__list .details-restaurant-slick__item {
   margin-right: 25px;
 }
 @media screen and (min-width: 1024px) {
-  .details-restaurant-slick__item {
+  .details-restaurant-slick__list .details-restaurant-slick__item {
     margin-right: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .details-restaurant-slick__item {
+  .details-restaurant-slick__list .details-restaurant-slick__item {
     margin-right: 40px;
   }
 }
-
-.details-restaurant-slick__list .my-slick-prev,
-.details-restaurant-slick__list .my-slick-next {
+.details-restaurant-slick__list .details-restaurant-slick__list .my-slick-prev,
+.details-restaurant-slick__list .details-restaurant-slick__list .my-slick-next {
   position: absolute;
   bottom: -42px;
   display: flex;
@@ -2955,34 +3013,32 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-color: transparent;
 }
 @media screen and (min-width: 1024px) {
-  .details-restaurant-slick__list .my-slick-prev,
-.details-restaurant-slick__list .my-slick-next {
+  .details-restaurant-slick__list .details-restaurant-slick__list .my-slick-prev,
+.details-restaurant-slick__list .details-restaurant-slick__list .my-slick-next {
     bottom: -89px;
   }
 }
-
-.details-restaurant-slick__list .my-slick-prev {
+.details-restaurant-slick__list .details-restaurant-slick__list .my-slick-prev {
   background-image: url(../images/slider_svg/slider-arrow-left.svg);
   left: 25px;
 }
-.details-restaurant-slick__list .my-slick-prev:hover, .details-restaurant-slick__list .my-slick-prev:focus {
+.details-restaurant-slick__list .details-restaurant-slick__list .my-slick-prev:hover, .details-restaurant-slick__list .details-restaurant-slick__list .my-slick-prev:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
 }
 @media screen and (min-width: 1024px) {
-  .details-restaurant-slick__list .my-slick-prev {
+  .details-restaurant-slick__list .details-restaurant-slick__list .my-slick-prev {
     right: 940px;
   }
 }
-
-.details-restaurant-slick__list .my-slick-next {
+.details-restaurant-slick__list .details-restaurant-slick__list .my-slick-next {
   background-image: url(../images/slider_svg/slider-arrow-right.svg);
   left: 91px;
 }
-.details-restaurant-slick__list .my-slick-next:hover, .details-restaurant-slick__list .my-slick-next:focus {
+.details-restaurant-slick__list .details-restaurant-slick__list .my-slick-next:hover, .details-restaurant-slick__list .details-restaurant-slick__list .my-slick-next:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
 }
 @media screen and (min-width: 1024px) {
-  .details-restaurant-slick__list .my-slick-next {
+  .details-restaurant-slick__list .details-restaurant-slick__list .my-slick-next {
     right: 874px;
   }
 }
