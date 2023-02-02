@@ -302,41 +302,7 @@ margin-right: 20px;
     }
 
 
-.details-restaurant__item {
-    width: 270px;
-    margin-right: 20px;
-    @include tablet {
-        margin-right: 32px;
-      }
-    @include pc {
-        margin-right: 86px;
-      }
 
-    //     &--base {
-    //     max-width: 274px !important;
-    //     @include tablet {
-    //         max-width: 270px !important;
-    //       }
-    //     @include pc {
-    //         max-width: 270px !important;
-    //       }
-    //   }
-
-    //     &--central {
-    //     max-width: 270px !important;
-    //     @include tablet {
-    //         max-width: 162px !important;
-    //       }
-    //     }
-  
-    //     &--right {
-    //     max-width: 270px !important;
-    //     @include tablet {
-    //         max-width: 162px !important;
-    //       }
-      
-    //     }
-  }
 .details-restaurant-item-box {
     justify-content: center;
     align-items: center;

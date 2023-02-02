@@ -2920,20 +2920,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
     margin-right: 40px;
   }
 }
-.details-restaurant-slick__list .details-restaurant__item {
-  width: 270px;
-  margin-right: 20px;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant-slick__list .details-restaurant__item {
-    margin-right: 32px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-restaurant-slick__list .details-restaurant__item {
-    margin-right: 86px;
-  }
-}
 .details-restaurant-slick__list .details-restaurant-item-box {
   justify-content: center;
   align-items: center;
