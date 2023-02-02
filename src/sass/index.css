@@ -2723,15 +2723,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .details-restaurant-slick-container {
   width: 540px;
   position: relative;
+  left: 25px;
 }
 @media screen and (min-width: 1024px) {
   .details-restaurant-slick-container {
     width: 468px;
+    top: 48px;
+    gap: 86px;
   }
 }
 @media screen and (min-width: 1280px) {
   .details-restaurant-slick-container {
     width: 588px;
+    top: 23px;
+    gap: 86px;
   }
 }
 
@@ -2771,7 +2776,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .details-restaurant-slick__list .my-slick-prev,
 .details-restaurant-slick__list .my-slick-next {
   position: absolute;
-  bottom: -52px;
+  bottom: -42px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2785,13 +2790,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media screen and (min-width: 1024px) {
   .details-restaurant-slick__list .my-slick-prev,
 .details-restaurant-slick__list .my-slick-next {
-    bottom: -64px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-restaurant-slick__list .my-slick-prev,
-.details-restaurant-slick__list .my-slick-next {
-    bottom: -68px;
+    bottom: -50px;
   }
 }
 
@@ -2804,30 +2803,30 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 @media screen and (min-width: 1024px) {
   .details-restaurant-slick__list .my-slick-prev {
-    right: 126px;
+    right: 393px;
   }
 }
 @media screen and (min-width: 1280px) {
   .details-restaurant-slick__list .my-slick-prev {
-    right: 158px;
+    right: 515px;
   }
 }
 
 .details-restaurant-slick__list .my-slick-next {
   background-image: url(../images/slider_svg/slider-arrow-right.svg);
-  right: 203px;
+  right: 443px;
 }
 .details-restaurant-slick__list .my-slick-next:hover, .details-restaurant-slick__list .my-slick-next:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
 }
 @media screen and (min-width: 1024px) {
   .details-restaurant-slick__list .my-slick-next {
-    right: 63px;
+    right: 329px;
   }
 }
 @media screen and (min-width: 1280px) {
   .details-restaurant-slick__list .my-slick-next {
-    right: 94px;
+    right: 451px;
   }
 }
 
