@@ -49,10 +49,6 @@
         align-items: flex-start;
     }
 
-    // &__room-item {    
-    //     margin-bottom: 32px;
-    // }
-
     &__room-title {
         font-family: 'Times New Roman';
         font-size: 24px;
@@ -81,4 +77,44 @@
         }
     }
 
+}
+
+.back-rooms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $color-text-secondary;
+
+    &__icon {
+        fill: currentColor;
+
+        &:hover,
+        &:focus {
+            color: $color-tertiary;
+            fill: $color-tertiary;
+        }
+    }
+
+    @include tablet {
+        font-size: 20px;
+        line-height: 1.2;
+        position: absolute;
+        right: 50px;
+        bottom: 40px;
+    }
+
+    @include pc {
+        right: 200px;
+        bottom: 48px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $color-tertiary;
+        fill: $color-tertiary;
+    }
 }
