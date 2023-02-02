@@ -1,152 +1,155 @@
-// .details-restaurant {
-//   display: block;
-//   text-align: center;
-//   background-image: linear-gradient(rgba(0, 0, 0, 0.76)),
-//     url('../images/homepage/mob/hp-rest-bkg-mob_1x.jpg');
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   margin: 0 auto;
+.details-restaurant {
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.76)),
+    url('../images/homepage/mob/hp-rest-bkg-mob_1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
-//       url('../images/homepage/mob/hp-rest-bkg-mob_2x.jpg');
-//   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+      url('../images/homepage/mob/hp-rest-bkg-mob_2x.jpg');
+  }
 
-//   @media screen and (min-width: 1025px) {
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
-//       url('../images/homepage/tablet/hp-rest-bkg-tab_1x.jpg');
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//           rgba(0, 0, 0, 0.76),
-//           rgba(0, 0, 0, 0.76)
-//         ),
-//         url('../images/homepage/tablet/hp-rest-bkg-tab_2x.jpg');
-//     }
-//   }
+  @media screen and (min-width: 1025px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+      url('../images/homepage/tablet/hp-rest-bkg-tab_1x.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.76),
+          rgba(0, 0, 0, 0.76)
+        ),
+        url('../images/homepage/tablet/hp-rest-bkg-tab_2x.jpg');
+    }
+  }
 
-//   @media screen and (min-width: 1281px) {
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
-//       url('../images/homepage/pc/hp-rest-bkg-pc_1x.jpg');
+  @media screen and (min-width: 1281px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+      url('../images/homepage/pc/hp-rest-bkg-pc_1x.jpg');
 
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//           rgba(0, 0, 0, 0.76),
-//           rgba(0, 0, 0, 0.76)
-//         ),
-//         url('../images/homepage/pc/hp-rest-bkg-pc_2x.jpg');
-//     }
-//   }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.76),
+          rgba(0, 0, 0, 0.76)
+        ),
+        url('../images/homepage/pc/hp-rest-bkg-pc_2x.jpg');
+    }
+  }
 
-//   &__container {
-//     // position: relative;
-//   //   overflow-x: hidden;
-//     height: 100%;
-//     width: 100%;
-//     max-width: 100%;
-//     overflow-x: hidden;
-//     overflow-y: hidden;
-//     padding-top: 24px;
-//     padding-bottom: 40px;
-//     @include tablet {
-//       padding-top: 48px;
-//       padding-bottom: 48px;
-//     }
-//   }
+  &__container {
+    // position: relative;
+  //   overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    @include tablet {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+  }
 
-//   &__information {
-//     // left: 140px;
-//     margin-left: 125px;
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     text-align: left;
-//     @include tablet {
-//       margin-left: 263px;
-//     }
-//     @include pc {
-//       margin-left: 318px;
-//     }
-//   }
-//   &__logo {
-//     font-size: 40px;
-//     line-height: 1.08;
-//     margin-bottom: 12px;
-//     color: $color-primary;
-//     @include tablet {
-//       font-size: 64px;
-//       margin-bottom: 16px;
-//     }
-//   }
-//   &__title {
-//     font-size: 20px;
-//     line-height: 1.2;
-//     margin-bottom: 20px;
-//     letter-spacing: 0.02em;
-//     color: $color-primary;
-//     @include tablet {
-//       font-size: 24px;
-//       margin-bottom: 8px;
-//     }
-//   }
-//   &__text {
-//     max-width: 259px;
-//     max-height: 62px;
-//     font-weight: 600;
-//     font-size: 12px;
-//     line-height: 1.25;
-//     margin-bottom: 48px;
-//     letter-spacing: 0.02em;
-//     color: $color-text-tertiary;
-//     @include tablet {
-//       max-width: 610px;
-//       max-height: 44px;
-//       font-size: 16px;
-//       margin-bottom: 40px;
-//     }
-//   }
-//   &__combined-section {
-//     width: 100%;
-//   @include tablet {
-//     display: flex;
-//     gap: 30px;
-//     align-items: flex-end;
-//     justify-content: flex-end;
-//     flex-direction: row-reverse;
-//   }
-//   @include pc {
-//     gap: 32px;
-//     // min-width: 0;
-//   }
-// }
+  &__information {
+    // left: 140px;
+    margin-left: 125px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    @include tablet {
+      margin-left: 263px;
+    }
+    @include pc {
+      margin-left: 318px;
+    }
+  }
+  &__logo {
+    font-size: 40px;
+    line-height: 1.08;
+    margin-bottom: 12px;
+    color: $color-primary;
+    @include tablet {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: 0.02em;
+    color: $color-primary;
+    @include tablet {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+  }
+  &__text {
+    max-width: 259px;
+    max-height: 62px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    margin-bottom: 48px;
+    letter-spacing: 0.02em;
+    color: $color-text-tertiary;
+    @include tablet {
+      max-width: 610px;
+      max-height: 44px;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+  }
+  &__combined-section {
+    width: 100%;
+  @include tablet {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+  @include pc {
+    gap: 32px;
+    // min-width: 0;
+  }
+}
 
-//   &__wrapper {
-//     width: 236px;
-//     margin-left: 75px;
-//     display: flex;
-//     margin-bottom: 56pxpx;
-//     flex-direction: column;
-//     gap: 16px;
-//     @include tablet {
-//       margin-bottom: 32px;
-//       margin-left: 32px
-//     }
-//     @include pc{
-//       margin-bottom: 60px;
-//     }
-//   }
-//   &__button {
-//       width: 236px;
-//       height: 48px;
-//       text-decoration: none;
-//     }  
-// }
+  &__wrapper {
+    width: 236px;
+    margin-left: 75px;
+    display: flex;
+    margin-bottom: 56pxpx;
+    flex-direction: column;
+    gap: 16px;
+    @include tablet {
+      margin-bottom: 32px;
+      margin-left: 32px
+    }
+    @include pc{
+      margin-bottom: 60px;
+    }
+  }
+  &__button {
+      width: 236px;
+      height: 48px;
+      text-decoration: none;
+    }  
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 // SlICK-SlIDER
 
@@ -212,15 +215,7 @@
 //     overflow-x: hidden;
 
 // }
-// .details-restaurant__item {
-//     width: 270px;
-//     margin-right: 20px;
-//     @include tablet {
-//         margin-right: 32px;
-//       }
-//     @include pc {
-//         margin-right: 86px;
-//       }
+//
 
 //     //     &--base {
 //     //     max-width: 274px !important;
@@ -247,12 +242,6 @@
       
 //     //     }
 //   }
-// .details-restaurant-item-box {
-//     justify-content: center;
-//     align-items: center;
-//     margin: 0;
-//     display: flex;
-// }
 
 // .restaurant-img {
 // width: 274px;
@@ -300,15 +289,39 @@
 //     @include tablet {
 //       margin-right: 40px;
 //     }
+.details-restaurant-slick {
+    
+  &__list {
+          max-width: 1000px;
+          // position: relative;
+          margin: 0 auto;
+          display: flex;
+      }
 
+  &__item {
+      margin-right: 20px;
 
+      @include tablet {
+          margin-right: 34px;
+  }
+  // width: 270px;
+  //     margin-right: 20px;
+  //     @include tablet {
+  //         margin-right: 32px;
+  //       }
+  //     @include pc {
+  //         margin-right: 86px;
+  }
 
-// .details-restaurant-item-box {
-//     justify-content: center;
-//     align-items: center;
-//     margin: 0;
-//     display: flex;
-// }
+  &__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0;
+  }
+
+  
+}
 
 // .restaurant-img {
 // width: 274px;
@@ -439,130 +452,130 @@
 //   }}
 .details-hotel {
 
-    height: 735px;
+  //   height: 735px;
 
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url(../images/homepage/mob/hp-room-bkg-mob_1x.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  // background-image: linear-gradient(
+  //     to right,
+  //     rgba(0, 0, 0, 0.65),
+  //     rgba(0, 0, 0, 0.65)
+  //   ),
+  //   url(../images/homepage/mob/hp-room-bkg-mob_1x.jpg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center center;
 
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    & {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/homepage/mob/hp-room-bkg-mob_2x.jpg);
-    }
-  }
+  // @media (min-device-pixel-ratio: 2),
+  //   (-webkit-min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   & {
+  //     background-image: linear-gradient(
+  //         to right,
+  //         rgba(0, 0, 0, 0.65),
+  //         rgba(0, 0, 0, 0.65)
+  //       ),
+  //       url(../images/homepage/mob/hp-room-bkg-mob_2x.jpg);
+  //   }
+  // }
 
-  padding-bottom: 40px;
-  padding-top: 24px;
+  // padding-bottom: 40px;
+  // padding-top: 24px;
 
 
 
-  @include tablet {
+  // @include tablet {
 
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/homepage/tablet/hp-room-bkg-tab_1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  //   background-image: linear-gradient(
+  //       to right,
+  //       rgba(0, 0, 0, 0.65),
+  //       rgba(0, 0, 0, 0.65)
+  //     ),
+  //     url(../images/homepage/tablet/hp-room-bkg-tab_1x.jpg);
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
 
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      & {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/homepage/tablet/hp-room-bkg-tab_2x.jpg);
-      }
-    }
+  //   @media (min-device-pixel-ratio: 2),
+  //     (-webkit-min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: linear-gradient(
+  //           to right,
+  //           rgba(0, 0, 0, 0.65),
+  //           rgba(0, 0, 0, 0.65)
+  //         ),
+  //         url(../images/homepage/tablet/hp-room-bkg-tab_2x.jpg);
+  //     }
+  //   }
 
-    // ТИМЧАСОВО
-    height: 620px;
-    // ТИМЧАСОВО
+  //   // ТИМЧАСОВО
+  //   height: 620px;
+  //   // ТИМЧАСОВО
 
-      padding-bottom: 48px;
-  padding-top: 48px;
-  }
+  //     padding-bottom: 48px;
+  // padding-top: 48px;
+  // }
 
-  @include pc {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/homepage/pc/hp-room-bkg-pc_1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  // @include pc {
+  //   background-image: linear-gradient(
+  //       to right,
+  //       rgba(0, 0, 0, 0.65),
+  //       rgba(0, 0, 0, 0.65)
+  //     ),
+  //     url(../images/homepage/pc/hp-room-bkg-pc_1x.jpg);
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
 
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      & {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/homepage/pc/hp-room-bkg-pc_2x.jpg);
-      }
+  //   @media (min-device-pixel-ratio: 2),
+  //     (-webkit-min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: linear-gradient(
+  //           to right,
+  //           rgba(0, 0, 0, 0.65),
+  //           rgba(0, 0, 0, 0.65)
+  //         ),
+  //         url(../images/homepage/pc/hp-room-bkg-pc_2x.jpg);
+  //     }
 
-            padding-bottom: 48px;
-  padding-top: 48px;
-    }
-  }
+  //           padding-bottom: 48px;
+  // padding-top: 48px;
+  //   }
+  // }
 
-  &__logo {
-    color: $color-primary;
-    font-size: 40px;
-    margin-bottom: 12px;
-    line-height: 1.075;
-    letter-spacing: 0.3em;
+  // &__logo {
+  //   color: $color-primary;
+  //   font-size: 40px;
+  //   margin-bottom: 12px;
+  //   line-height: 1.075;
+  //   letter-spacing: 0.3em;
 
-    @include tablet {
-      margin-right: -0.3em;
-      font-size: 64px;
-      line-height: 1.078;
-      margin-bottom: 16px;
-    }
-  }
+  //   @include tablet {
+  //     margin-right: -0.3em;
+  //     font-size: 64px;
+  //     line-height: 1.078;
+  //     margin-bottom: 16px;
+  //   }
+  // }
 
-  &__title {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    color: $color-primary;
-    margin-bottom: 20px;
-    letter-spacing: 0.02em;
+  // &__title {
+  //   font-family: 'Montserrat';
+  //   font-weight: 700;
+  //   font-size: 20px;
+  //   line-height: 1.2;
+  //   color: $color-primary;
+  //   margin-bottom: 20px;
+  //   letter-spacing: 0.02em;
 
-    @include tablet {
-      font-size: 24px;
-      line-height: 1.2;
-      margin-bottom: 8px;
-    }
-  }
+  //   @include tablet {
+  //     font-size: 24px;
+  //     line-height: 1.2;
+  //     margin-bottom: 8px;
+  //   }
+  // }
 
   &__caption {
     font-weight: 600;
@@ -854,41 +867,6 @@ transition-property: background-color, color;
     
 }
 
-.details-hotel-slick {
-    
-    &__list {
-            // width: 254px;
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-        }
-
-    &__item {
-        margin-right: 20px;
-
-        @include tablet {
-            margin-right: 34px;
-        
-
-        // &.slick-active {
-        //     width: 162px !important;
-        //     height: 270px !important; 
-        // }
-        // &.slick-current { width: 270px !important;
-        // } 
-        
-    }
-    }
-
-    &__box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 0;
-    }
-
-    
-}
 
 .details-hotel-slick__list .my-slick-prev,
 .details-hotel-slick__list .my-slick-next {
