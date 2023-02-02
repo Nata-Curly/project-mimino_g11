@@ -14,14 +14,14 @@
       padding-top: 120px;
       padding-left: 47px;
       padding-right: 47px;
-      padding-bottom: 214px;
+      padding-bottom: 191px;
       max-width: 1024px;
     }
 
     @include pc {
       padding-left: 85px;
       padding-right: 85px;
-      padding-bottom: 127px;
+      padding-bottom: 145px;
       max-width: 1280px;
     }
 
@@ -304,7 +304,7 @@
   }
 
   @include pc {
-    bottom: -68px;
+    bottom: -62px;
   }
 }
 
