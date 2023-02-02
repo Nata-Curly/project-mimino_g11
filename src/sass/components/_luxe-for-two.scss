@@ -162,7 +162,7 @@
 .buttons {
 	padding-bottom: 40px;
 	position: relative;
-    left: 35px;
+    //left: 35px;
 
 	@media (max-width: 1023px) {
 		display: flex;
@@ -198,7 +198,7 @@
   text-decoration: none;
 }
 
-	.lux-for-two-slider-container {
+	/*.lux-for-two-slider-container {
 		position: relative;
 		display: flex;
 		align-items: center;
@@ -343,3 +343,156 @@
 // .slick-track {
 // max-height: 194px;
 // }
+*/
+
+
+
+
+/*.lux-for-two-slider-container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 45px;
+
+		@media (max-width: 1023px) {
+			left: -120px;
+			display: block;
+		}
+
+		@include tablet {
+            left: -30px;
+        }
+	}
+*/
+
+// стилі для слайдера
+
+.lux-for-two-slider-container {
+    position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 45px;
+    //top: 640px;
+    //left: -120px; // відступ за межі контейнера вліво для мобілки
+
+    @media (max-width: 1023px) {
+		left: -120px;
+		display: block;
+	}
+
+    @include pc {
+        //top: 590px;
+        //left: 85px;
+    }
+}
+
+.lux-for-two-slick-container {
+
+    max-width: 420px; // вирішує висоту і відступ між слайдами 0_о. В моєму випадку 420w робить висоту 194 (яка мені потрібна)
+    position: relative;
+    max-height: 194px;
+
+	margin-bottom: 72px;
+
+    @include tablet {
+        max-width: 440px;
+		margin-bottom: 0;
+    }
+
+    @include pc {
+        max-width: 585px;
+        max-height: 254px;
+    }
+}
+
+
+    
+    .lux-for-two-slick {
+        overflow: hidden;
+        margin: 0 auto;
+
+        &__list {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        &__item {
+            margin: 0 16px; // !!!
+    
+            @include tablet {
+                margin: 0 40px;
+            }
+        }
+       
+    }
+
+.lux-for-two-slick__box {
+	/*width: 194px;
+	@include tablet {
+		width: 254px;
+	}*/
+}
+
+.lux-for-two-slick__list .my-slick-prev,
+.lux-for-two-slick__list .my-slick-next {
+    position: absolute;
+    bottom: -52px; //32 висота іконки + 20 відступ від слайдера знизу до іконки
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+
+    @include tablet {
+        bottom: -64px;
+    }
+
+    @include pc {
+        bottom: -64px; //!
+    }
+}
+
+// slider-buttons
+.lux-for-two-slick__list .my-slick-prev {
+    background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
+    left: 135px; // відступ -120 за межі контейнера + 15 позиція на сторінці
+
+    &:hover,
+    &:focus {
+        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+    }
+
+    @include tablet {
+        left: 321px;
+    }
+
+    @include pc {
+        left: 450px;
+    }
+}
+
+.lux-for-two-slick__list .my-slick-next {
+    background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
+    left: 200px; // відступ -120 за межі контейнера + 80 позиція на сторінці
+
+    &:hover,
+    &:focus {
+        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
+    }
+
+    @include tablet {
+        left: 385px;
+    }
+
+    @include pc {
+        left: 515px;
+    }
+}
