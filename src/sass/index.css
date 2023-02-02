@@ -2855,6 +2855,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 /* Слайд */
 /* Стрелка */
 .restaurant-img {
+  max-width: 100%;
   height: 270px;
   margin-right: 20px;
 }
@@ -2888,7 +2889,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
+  margin-bottom: 80px;
 }
+@media screen and (min-width: 1024px) {
+  .details-restaurant-slick__list {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant-slick__list {
+    margin-right: 40px;
+  }
+}
+
 .details-restaurant-slick__item {
   margin-right: 25px;
 }
@@ -2899,21 +2912,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 @media screen and (min-width: 1280px) {
   .details-restaurant-slick__item {
-    margin-right: 40px;
-  }
-}
-
-.details-restaurant-slick__list {
-  margin-bottom: 80px;
-  display: flex;
-}
-@media screen and (min-width: 1024px) {
-  .details-restaurant-slick__list {
-    margin-right: 40px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-restaurant-slick__list {
     margin-right: 40px;
   }
 }
@@ -2935,43 +2933,37 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media screen and (min-width: 1024px) {
   .details-restaurant-slick__list .my-slick-prev,
 .details-restaurant-slick__list .my-slick-next {
-    bottom: -50px;
+    bottom: -89px;
   }
 }
 
 .details-restaurant-slick__list .my-slick-prev {
   background-image: url(../images/slider_svg/slider-arrow-left.svg);
-  right: 507px;
+  left: 25px;
 }
 .details-restaurant-slick__list .my-slick-prev:hover, .details-restaurant-slick__list .my-slick-prev:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
 }
 @media screen and (min-width: 1024px) {
   .details-restaurant-slick__list .my-slick-prev {
-    right: 393px;
+    right: 940px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .details-restaurant-slick__list .my-slick-prev {
-    right: 515px;
-  }
+
+.details-restaurant__item {
+  margin-right: 20px;
 }
 
 .details-restaurant-slick__list .my-slick-next {
   background-image: url(../images/slider_svg/slider-arrow-right.svg);
-  right: 443px;
+  left: 91px;
 }
 .details-restaurant-slick__list .my-slick-next:hover, .details-restaurant-slick__list .my-slick-next:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
 }
 @media screen and (min-width: 1024px) {
   .details-restaurant-slick__list .my-slick-next {
-    right: 329px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .details-restaurant-slick__list .my-slick-next {
-    right: 451px;
+    right: 874px;
   }
 }
 
