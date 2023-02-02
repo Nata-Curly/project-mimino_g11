@@ -257,30 +257,30 @@ flex-direction: column;
 }
 
 
-  .details-restaurant-slick__list .my-slick-prev,
-.details-restaurant-slick__list .my-slick-next {
-  position: absolute;
-  bottom: -52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
+//   .details-restaurant-slick__list .my-slick-prev,
+// .details-restaurant-slick__list .my-slick-next {
+//   position: absolute;
+//   bottom: -52px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 0;
+//   width: 32px;
+//   height: 32px;
+//   cursor: pointer;
+//   border: none;
+//   background-color: transparent;
 
     
 
-  @include tablet{
-     bottom: -64px;
-  }
+//   @include tablet{
+//      bottom: -64px;
+//   }
 
-  @include pc{
-      bottom: -68px;
-  }
-}
+//   @include pc{
+//       bottom: -68px;
+//   }
+// }
 
 
 
@@ -321,11 +321,11 @@ flex-direction: column;
 }
 
 .details-restaurant-slick__list .my-slick-next {
-background-image: url(../images/slider_svg/slider-arrow-left.svg);
+background-image: url(../images/slider_svg/slider-arrow-right.svg);
 
   // right: 89px;
-  left: 91px;
-
+  left: 57px;
+  bottom: 152px;
   &:hover,
   &:focus{
       background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
@@ -335,7 +335,9 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
 }
 
 .detailsrestaurantl-slick__list .my-slick-prev {
-  background-image: url(../images/slider_svg/slider-arrow-right.svg);
+  background-image: url(../images/slider_svg/slider-arrow-left.svg);
+
+  right: 89px;
 
   &:hover,
   &:focus{
@@ -511,16 +513,6 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
     }
 }
 
-.details-restaurant-slick__list .my-slick-next {
-background-image: url(../images/slider_svg/slider-arrow-left.svg);
-
-    // right: 89px;
-    left: 91px;
-
-    &:hover,
-    &:focus{
-        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
-    }
 
     // @include tablet {
     //     right: 96px;
@@ -529,15 +521,8 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
     // @include pc {
     //     right: 100pxpx;
     // }
-}
 
-.detailsrestaurantl-slick__list .my-slick-prev {
-    background-image: url(../images/slider_svg/slider-arrow-right.svg);
 
-    &:hover,
-    &:focus{
-        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
-    }
 
     // right: 25px;
 
@@ -548,4 +533,4 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
     // @include pc {
     //     right: 36px;
     // }
-}
+

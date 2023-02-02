@@ -278,18 +278,19 @@ transition-property: background-color, color;
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    left: -480px;
-    bottom: 200px;
+    top: 232px;
+    // left: -480px;
+    // bottom: 200px;
 
-    @include tablet {
-        bottom: 151px;
-        left: -220px;
-    }
+    // @include tablet {
+    //     bottom: 151px;
+    //     left: -220px;
+    // }
 
-    @include pc {
-        bottom: 156px;
-        left: -35px;
-    }
+    // @include pc {
+    //     bottom: 156px;
+    //     left: -35px;
+    // }
  }
 
 
