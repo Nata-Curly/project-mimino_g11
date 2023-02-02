@@ -2036,6 +2036,43 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 
+.back-rooms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #C79002;
+}
+.back-rooms__icon {
+  fill: currentColor;
+}
+.back-rooms__icon:hover, .back-rooms__icon:focus {
+  color: #F3C653;
+  fill: #F3C653;
+}
+@media screen and (min-width: 1024px) {
+  .back-rooms {
+    font-size: 20px;
+    line-height: 1.2;
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .back-rooms {
+    right: 200px;
+    bottom: 48px;
+  }
+}
+.back-rooms:hover, .back-rooms:focus {
+  color: #F3C653;
+  fill: #F3C653;
+}
+
 .button {
   display: block;
   font-family: inherit;
@@ -2089,43 +2126,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .button-amenities:hover, .button-amenities:focus {
   color: #000;
   background-color: #F3C653;
-}
-
-.button-back-rooms {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: #C79002;
-  border: none;
-  background-color: transparent;
-  padding: 0 15px;
-}
-.button-back-rooms__icon {
-  position: absolute;
-  fill: #C79002;
-  margin-left: 12px;
-}
-.button-back-rooms__icon:hover, .button-back-rooms__icon:focus {
-  fill: #F3C653;
-}
-@media screen and (min-width: 1024px) {
-  .button-back-rooms {
-    font-size: 20px;
-    line-height: 1.2;
-    position: absolute;
-    right: 60px;
-    bottom: 40px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .button-back-rooms {
-    right: 215px;
-    bottom: 48px;
-  }
-}
-.button-back-rooms:hover, .button-back-rooms:focus {
-  color: #F3C653;
-  fill: #F3C653;
 }
 
 .contacts__section {
