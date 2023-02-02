@@ -164,8 +164,8 @@
     // text-decoration: none;
     // text-align: center;
     // cursor: pointer;
-    // width: 236px;
-    // height: 48px;
+    width: 236px;
+    height: 48px;
 @media screen and (max-width: 1023px) {
     margin-right: auto;
     margin-left: auto;
@@ -186,6 +186,7 @@
     &:focus {
         background: $color-primary;
         border: 2px solid $color-tertiary;
+        color: $color-tertiary;
     }
 
     &:not(:last-child) {
