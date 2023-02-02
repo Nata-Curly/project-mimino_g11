@@ -236,35 +236,35 @@
 // }
 
 .restaurant-img {
-width: 274px;
+// width: 274px;
 height: 270px;
-// margin-right: 20px;
-// @include tablet {
-//     margin-right: 34px;
-//   }
+margin-right: 20px;
+@include tablet {
+    margin-right: 34px;
+  }
 
-//   @include pc {
-//     margin-right: 86px;
-//   }
+  @include pc {
+    margin-right: 86px;
+  }
 }
 
-.details-restaurant-slick-container {
-    width: 540px;
+.details-restaurant-slick-container .slick-list {
+    // max-width: 600px;
     position: relative;
     // display: flex;
     left: 25px;
     // gap: 20px;
   
     @include tablet {
-      width: 468px;
+    //   width: 600px;
       top: 48px;
-      gap: 86px;
+    //   gap: 86px;
     }
   
     @include pc {
-      width: 588px;
+    //   width: 600px;
       top: 23px;
-      gap: 86px;
+    //   gap: 86px;
     }
   }
   
@@ -291,6 +291,7 @@ height: 270px;
   }
   .details-restaurant-slick__list {
     margin-bottom: 80px;
+    display: flex;
 
     @include tablet {
         margin-right: 40px;
