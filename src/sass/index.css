@@ -1665,7 +1665,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .about-restaurant__container {
   margin-left: auto;
   margin-right: auto;
-  padding: 16px 0 72px 15px;
+  padding: 16px 0 74px 15px;
   overflow-x: hidden;
 }
 @media screen and (min-width: 1024px) {
@@ -2854,8 +2854,30 @@ input[type=date]::-webkit-calendar-picker-indicator {
 /* Слайдер */
 /* Слайд */
 /* Стрелка */
+.details-restaurant__item {
+  width: 270px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant__item {
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .details-restaurant__item {
+    margin-right: 86px;
+  }
+}
+
+.details-restaurant-item-box {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  display: flex;
+}
+
 .restaurant-img {
-  max-width: 100%;
+  width: 274px;
   height: 270px;
   margin-right: 20px;
 }
@@ -2890,6 +2912,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin: 0 auto;
   display: flex;
   margin-bottom: 80px;
+  margin-right: -100px;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 1024px) {
   .details-restaurant-slick__list {
@@ -2948,10 +2972,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .details-restaurant-slick__list .my-slick-prev {
     right: 940px;
   }
-}
-
-.details-restaurant__item {
-  margin-right: 20px;
 }
 
 .details-restaurant-slick__list .my-slick-next {
@@ -3405,7 +3425,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 @media screen and (min-width: 1024px) {
   .section__lux-for-two {
-    padding-bottom: 140px;
+    padding-bottom: 105px;
   }
 }
 
@@ -3586,16 +3606,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 
-.slider__image {
-  max-width: 194px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-}
-@media screen and (min-width: 1280px) {
-  .slider__image {
-    max-width: 254px;
-  }
-}
-
 .lux-for-two-slick-container {
   max-width: 420px;
   position: relative;
@@ -3694,24 +3704,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .lux-for-two-slick__list .my-slick-next {
     left: 555px;
   }
-}
-
-.draggable {
-  height: 194px;
-}
-@media (max-width: 1023px) {
-  .draggable {
-    width: 420px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .draggable {
-    height: 254px;
-  }
-}
-
-.slick-track {
-  max-height: 194px;
 }
 
 .menu {
@@ -3899,7 +3891,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .container-room-4-3 {
     max-width: 1024px;
     padding-top: 64px;
-    padding-bottom: 145px;
+    padding-bottom: 115px;
     padding-left: 47px;
     padding-right: 47px;
     overflow-x: visible;
@@ -3909,7 +3901,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .container-room-4-3 {
     max-width: 1280px;
     padding-top: 72px;
-    padding-bottom: 182px;
+    padding-bottom: 193px;
     padding-left: 85px;
     padding-right: 85px;
     margin-bottom: -32px;
@@ -3994,7 +3986,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #7A7A7A;
-  margin-bottom: 652px;
+  margin-bottom: 636px;
 }
 @media screen and (min-width: 1024px) {
   .description-r43__text {
@@ -4194,7 +4186,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .container-room-for-two {
     max-width: 1024px;
     padding-top: 72px;
-    padding-bottom: 145px;
+    padding-bottom: 140px;
     padding-left: 47px;
     padding-right: 47px;
   }
@@ -4203,7 +4195,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .container-room-for-two {
     max-width: 1280px;
     padding-top: 72px;
-    padding-bottom: 182px;
+    padding-bottom: 190px;
     padding-left: 85px;
     padding-right: 85px;
   }
