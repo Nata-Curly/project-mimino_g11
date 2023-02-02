@@ -287,10 +287,16 @@ transition-property: background-color, color;
     //     left: -220px;
     // }
 
-    // @include pc {
-    //     bottom: 156px;
-    //     left: -35px;
-    // }
+
+    @include pc {
+        bottom: 156px;
+        left: -35px;
+    }
+
+        @media (max-width: 414px) {
+          left: calc(100vw - 900px);
+    }
+
  }
 
 
