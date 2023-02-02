@@ -1,12 +1,14 @@
 .details-restaurant {
-  background-size: auto;
+  max-width: 1280px;
+  margin: 0 auto;
   height: 735px;
+  
 
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.65)
-    ),
+      ),
     url(../images/homepage/mob/hp-rest-bkg-mob_1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
