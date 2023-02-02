@@ -1002,24 +1002,29 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-color: #FFFDEE;
 }
 .about-hotel__container {
+  position: relative;
+  max-width: 414px;
   padding-top: 18px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 350px;
+  outline: 1px solid tomato;
 }
 @media screen and (min-width: 1024px) {
   .about-hotel__container {
-    padding-top: 0px;
+    padding-top: 120px;
     padding-left: 47px;
     padding-right: 47px;
-    padding-bottom: 32px;
+    padding-bottom: 214px;
+    max-width: 1024px;
   }
 }
 @media screen and (min-width: 1280px) {
   .about-hotel__container {
     padding-left: 85px;
     padding-right: 85px;
-    padding-bottom: 122px;
+    padding-bottom: 127px;
+    max-width: 1280px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1037,23 +1042,27 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 @media screen and (min-width: 1024px) {
   .about-hotel__double-room-img {
-    margin-left: 65px;
+    position: absolute;
     max-width: 400px;
-    margin-top: 0px;
-    position: relative;
+    margin-top: 0;
     top: -24px;
+    left: 112px;
   }
 }
 @media screen and (min-width: 1280px) {
   .about-hotel__double-room-img {
-    margin-left: 95px;
+    left: 180px;
     max-width: 460px;
   }
 }
 @media screen and (min-width: 1024px) {
   .about-hotel__declaration {
-    margin-left: 46px;
-    margin-top: 120px;
+    list-style: none;
+    padding-left: 0;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1104,11 +1113,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media screen and (min-width: 1024px) {
   .about-hotel__title-description {
     margin-left: 0;
-    width: 100%;
+    width: 420px;
     text-align: right;
     text-align: justify;
     font-size: 16px;
     line-height: 1.25;
+    margin-bottom: 214px;
   }
 }
 .about-hotel__hall {
@@ -1161,7 +1171,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     max-width: 350px;
     height: 500px;
     position: relative;
-    top: -48px;
+    top: -72px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1177,22 +1187,38 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .about-hotel-slider-container {
-  position: relative;
+  display: flex;
+  padding-left: 0;
+  justify-content: flex-start;
+  position: absolute;
+  top: 874px;
+  left: -200px;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel-slider-container {
+    top: 948px;
+    left: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel-slider-container {
+    top: 900px;
+    left: 85px;
+  }
 }
 
 .about-hotel-slick-container {
-  width: 540px;
+  max-width: 530px;
   position: absolute;
-  top: -254px;
 }
 @media screen and (min-width: 1024px) {
   .about-hotel-slick-container {
-    width: 468px;
+    max-width: 468px;
   }
 }
 @media screen and (min-width: 1280px) {
   .about-hotel-slick-container {
-    width: 588px;
+    max-width: 588px;
   }
 }
 
@@ -1202,10 +1228,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
 }
 .about-hotel-slick__item {
-  margin-right: 25px;
+  margin-left: 20px;
 }
 @media screen and (min-width: 1024px) {
   .about-hotel-slick__item {
+    margin-left: 0;
     margin-right: 40px;
   }
 }
@@ -1219,6 +1246,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .about-hotel-slick__list .my-slick-next {
   position: absolute;
   bottom: -52px;
+  left: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1244,14 +1272,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .about-hotel-slick__list .my-slick-prev {
   background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
-  right: 267px;
+  left: 215px;
 }
 .about-hotel-slick__list .my-slick-prev:hover, .about-hotel-slick__list .my-slick-prev:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
 }
 @media screen and (min-width: 1024px) {
   .about-hotel-slick__list .my-slick-prev {
-    right: 126px;
+    left: 0;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1262,14 +1290,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .about-hotel-slick__list .my-slick-next {
   background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
-  right: 203px;
+  left: 280px;
 }
 .about-hotel-slick__list .my-slick-next:hover, .about-hotel-slick__list .my-slick-next:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
 }
 @media screen and (min-width: 1024px) {
   .about-hotel-slick__list .my-slick-next {
-    right: 63px;
+    left: 64px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -2608,12 +2636,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .details-hotel-slick-container {
-  width: 885px;
+  width: 868px;
   position: relative;
 }
 @media screen and (min-width: 1024px) {
   .details-hotel-slick-container {
-    width: 928px;
+    width: 910px;
   }
 }
 
@@ -2664,38 +2692,38 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 
-.details-hotel-slick__list .my-slick-prev {
+.details-hotel-slick__list .my-slick-next {
   background-image: url(../images/slider_svg/slider-arrow-left.svg);
   right: 89px;
 }
-.details-hotel-slick__list .my-slick-prev:hover, .details-hotel-slick__list .my-slick-prev:focus {
+.details-hotel-slick__list .my-slick-next:hover, .details-hotel-slick__list .my-slick-next:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
 }
 @media screen and (min-width: 1024px) {
-  .details-hotel-slick__list .my-slick-prev {
+  .details-hotel-slick__list .my-slick-next {
     right: 96px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .details-hotel-slick__list .my-slick-prev {
+  .details-hotel-slick__list .my-slick-next {
     right: 100pxpx;
   }
 }
 
-.details-hotel-slick__list .my-slick-next {
+.details-hotel-slick__list .my-slick-prev {
   background-image: url(../images/slider_svg/slider-arrow-right.svg);
   right: 25px;
 }
-.details-hotel-slick__list .my-slick-next:hover, .details-hotel-slick__list .my-slick-next:focus {
+.details-hotel-slick__list .my-slick-prev:hover, .details-hotel-slick__list .my-slick-prev:focus {
   background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
 }
 @media screen and (min-width: 1024px) {
-  .details-hotel-slick__list .my-slick-next {
+  .details-hotel-slick__list .my-slick-prev {
     right: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .details-hotel-slick__list .my-slick-next {
+  .details-hotel-slick__list .my-slick-prev {
     right: 36px;
   }
 }
