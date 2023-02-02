@@ -62,47 +62,4 @@
         
 }
 
-.button-back-rooms {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: $color-text-secondary;
-  border: none;
-  background-color: transparent;
-  padding: 0 15px;
-  // margin-right: auto;
-  // margin-left: auto;
-
-    &__icon {
-        position: absolute;
-        fill: $color-text-secondary;
-        margin-left: 12px;
-    
-        &:hover,
-        &:focus {
-          fill: $color-tertiary;
-        }
-    }
-
-  @include tablet {    
-    font-size: 20px;
-    line-height: 1.2;
-    // max-width: 434px;
-    // width: 434px;
-    position: absolute;
-    right: 60px;
-    bottom: 40px;
-    }
-  
-  @include pc {
-    right: 215px;
-    bottom: 48px;
-    }
-
-    &:hover,
-    &:focus {
-      color: $color-tertiary;
-      fill: $color-tertiary;
-    }
-}
 

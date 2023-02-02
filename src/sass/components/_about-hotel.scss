@@ -2,22 +2,27 @@
   background-color: $color-background-primary;
 
   &__container {
+    position: relative;
+    max-width: 414px;
+
     padding-top: 18px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 350px;
 
     @include tablet {
-      padding-top: 0px;
+      padding-top: 120px;
       padding-left: 47px;
       padding-right: 47px;
-      padding-bottom: 32px;
+      padding-bottom: 191px;
+      max-width: 1024px;
     }
+
     @include pc {
       padding-left: 85px;
       padding-right: 85px;
-      // padding-bottom: 50px;
-      padding-bottom: 122px;
+      padding-bottom: 145px;
+      max-width: 1280px;
     }
 
     // outline: 1px solid tomato;
@@ -39,25 +44,35 @@
     max-width: 244px;
 
     @include tablet {
-      margin-left: 65px;
+      position: absolute;
       max-width: 400px;
-      margin-top: 0px;
-      position: relative;
+      margin-top: 0;
       top: -24px;
+      left: 112px;
+      // margin-left: 65px;
+      // max-width: 400px;
+      // margin-top: 0px;
+      // position: relative;
+      // top: -24px;
     }
+
     @include pc {
-      margin-left: 95px;
+      left: 180px;
       max-width: 460px;
     }
   }
 
   &__declaration {
-    // margin-top: 18px;
-
     @include tablet {
-      margin-left: 46px;
-      margin-top: 120px;
+      list-style: none;
+      padding-left: 0;
+      margin-block-start: 0;
+      margin-block-end: 0;
+
+      // margin-left: 46px;
+      // margin-top: 120px;
     }
+
     @include pc {
       margin-left: 67px;
     }
@@ -109,11 +124,12 @@
 
     @include tablet {
       margin-left: 0;
-      width: 100%;
+      width: 420px;
       text-align: right;
       text-align: justify;
       font-size: 16px;
       line-height: calc(20 / 16);
+      margin-bottom: 214px;
     }
   }
 
@@ -121,6 +137,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
+
     @include tablet {
       justify-content: flex-end;
       margin-top: 0;
@@ -148,13 +165,13 @@
       font-size: 16px;
       line-height: calc(20 / 16);
     }
+
     @include pc {
       margin-top: 123px;
     }
   }
 
   &__hall-img {
-    // margin-top: -46px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
     max-width: 200px;
@@ -164,11 +181,11 @@
     @include tablet {
       max-width: 350px;
       height: 500px;
-      // margin-top: -46px;
       position: relative;
-      top: -48px;
+      top: -72px;
       object-fit: cover;
     }
+
     @include pc {
       max-width: 460px;
       height: 574px;
@@ -178,81 +195,70 @@
   }
 }
 
-// // slider
-// .slider-about-hotel {
-//   margin-top: 32px;
+// ------------------------------------
+// ------------------------------------
+// swiper styles
 
-//   @include tablet {
-//     // margin-top: -28px;
-//     margin-top: 0px;
-//     position: relative;
-//     top: -28px;
-//   }
-//   @include pc {
-//     // margin-top: -179px;
-//     margin-top: 0px;
-//     position: relative;
-//     top: -179px;
-//   }
-
-//   &__container {
-//     display: flex;
-//     // margin-bottom: 20px;
-//     // margin-left: -180px;
-//     @include tablet {
-//       margin-bottom: 40px;
-//       margin-left: 0;
-//     }
-//   }
-
-//   &__img {
-//     // width: 245px;
-//     // height: 245px;
-
-//     @include tablet {
-//       width: 194px;
-//       height: 194px;
-//     }
-//     @include pc {
-//       width: 254px;
-//       height: 254px;
-//     }
-
-//     background: #dadada;
-//     border: 1px solid rgba(186, 186, 186, 0.4);
-//     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-//   }
-
-//   &__img--mr {
-//     // margin-right: 20px;
-//     @include tablet {
-//       margin-right: 40px;
-//     }
-//   }
-
-//   &__svg-left {
-//     margin-right: 32px;
-//   }
+// .about-hotel-slider__position {
+//   position: relative;
 // }
 
-// swiper styles
 .about-hotel-slider-container {
-  position: relative;
-  // margin-bottom: 122px;
-  // outline: 1px solid tomato;
-}
-
-.about-hotel-slick-container {
-  width: 540px;
+  display: flex;
+  padding-left: 0;
+  justify-content: flex-start;
   position: absolute;
-  top: -254px;
+  top: 874px;
+  left: -200px; // відступ за межі контейнера вліво для мобілки
 
   @include tablet {
-    width: 468px;
+    top: 948px;
+    left: 47px;
   }
 
   @include pc {
-    width: 588px;
+    top: 900px;
+    left: 85px;
+  }
+
+  // position: relative;
+  // // outline: 1px solid tomato;
+
+  // height: 245px;
+  // width: 330px;
+  // left: -15px;
+  // top: 32px;
+  // overflow: hidden;
+
+  // @include tablet {
+  //   position: absolute;
+  //   top: -76px;
+  //   height: 258px;
+  //   width: 468px;
+  // }
+
+  // @include pc {
+  //   top: -249px;
+  //   height: 326px;
+  //   width: 588px;
+  // }
+}
+
+.about-hotel-slick-container {
+  max-width: 530px;
+
+  position: absolute;
+  // top: 0px;
+  // left: -90px;
+
+  @include tablet {
+    // left: 0;
+    // right: 0px;
+    max-width: 468px;
+  }
+
+  @include pc {
+    max-width: 588px;
   }
 }
 
@@ -264,9 +270,10 @@
   }
 
   &__item {
-    margin-right: 25px;
+    margin-left: 20px;
 
     @include tablet {
+      margin-left: 0;
       margin-right: 40px;
     }
 
@@ -276,11 +283,12 @@
   }
 }
 
+// стрелочьки
 .about-hotel-slick__list .my-slick-prev,
 .about-hotel-slick__list .my-slick-next {
   position: absolute;
   bottom: -52px;
-  // left: 0px;
+  left: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,14 +304,15 @@
   }
 
   @include pc {
-    bottom: -68px;
+    bottom: -62px;
   }
 }
+
 
 .about-hotel-slick__list .my-slick-prev {
   background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
 
-  right: 267px;
+  left: 215px;
 
   &:hover,
   &:focus {
@@ -311,7 +320,7 @@
   }
 
   @include tablet {
-    right: 126px;
+    left: 0;
   }
 
   @include pc {
@@ -322,7 +331,7 @@
 .about-hotel-slick__list .my-slick-next {
   background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
 
-  right: 203px;
+  left: 280px;
 
   &:hover,
   &:focus {
@@ -330,7 +339,7 @@
   }
 
   @include tablet {
-    right: 63px;
+    left: 64px;
   }
 
   @include pc {

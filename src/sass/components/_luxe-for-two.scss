@@ -10,7 +10,7 @@
   padding: 0 15px 0 15px;
 
   @include tablet {
-    padding: 0 47px 0 47px;
+    padding: 64px 47px 0 47px;
   }
 
   @include pc {
@@ -24,6 +24,10 @@
   	padding-bottom: 32px;
 
   	@include tablet {
+		padding-bottom: 35px;
+	}
+
+	@include pc {
 		padding-bottom: 40px;
 	}
 }
@@ -141,28 +145,6 @@
   text-transform: lowercase;
 }
 
-/*.content__lux-paragraph {
-  width: 258px;
-  font-size: 12px;
-  line-height: 1.22;
-  margin-bottom: 32px;
-
-  @include tablet {
-    width: 439px;
-    font-size: 16px;
-    line-height: 1.25;
-  }
-
-  @include pc {
-    width: 400px;
-  }
-
-  font-weight: 700;
-  letter-spacing: 0.02em;
-
-  color: $color-text-primary;
-}*/
-
 .img_backgroung-lux {
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -181,29 +163,18 @@
 	}
 }
 
-.buttons {
-	/*display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	margin-top: 20px;*/
-
+.buttons-lux-for-two {
 	padding-bottom: 40px;
+	position: relative;
+    //left: 35px;
 
 	@media (max-width: 1023px) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 0;
+		//left: 125px;
 	}
-
-	/*@include tablet {
-     margin-top: 89px;
-	 margin-bottom: 145px;
-    }
-
-	@include tablet {
-     margin-top: 103px;
-    }*/
 }
 
 .button--lux {
@@ -231,195 +202,87 @@
   text-decoration: none;
 }
 
-.content-slider {
-  @include tablet {
-    display: flex;
-    align-items: center;
-	justify-content:space-between;
-    //margin-top: 49px;
-	//margin-bottom: 72px;
-  }
-}
-
-.slider-img {
-  	margin-top: 32px;
-	display: flex;
-    //flex-direction: column;
-    margin-top: 32px;
-    gap: 16px;
-  	//margin-bottom: 72px;
-	margin-left: -120px;
-
-  @include tablet {
-    display: flex;
-	flex-direction: row;
-	//justify-content: space-between;
-    gap: 40px;
-    //margin-right: 326px;
-    margin-top: 0;
-    margin-bottom: 40px;
-	margin-left: 0;
-  }
-}
-
-.slider-lux__img {
-	box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-	border-radius: 2px;
-}
-
-.slider-lux {
-	position: relative;
-}
-
-/*@media (max-width: 1023px) {
-  .slider-lux__img:not(:last-child) {
-    margin-bottom: 16px;
-  }
-}*/
-
-.arrow-button {
-	margin-left: 310px;
-	@media (max-width: 1023px) {
-		position: static;
-		margin-left: 0;
-	}
-	/*position: absolute;
-	right: -5px;*/
-	@include pc {
-		margin-left: 430px;
-  	}
-
-
-}
-
-.arrow-button {
-	@media (max-width: 1023px) {
-		margin-top: 20px;
-		margin-bottom: 20px;
+.lux-for-two-content-down {
+	@include tablet {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 }
 
-.arrow-lux-button {
-	background-color: transparent;
-	border: none;
-}
 
-.arrow-lux-button:not(:last-child) {
-	margin-right: 32px;
-}
+// стилі для слайдера
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.about-restaurant-slider-container {
-    display: flex;
-    justify-content: flex-end;
+.lux-for-two-slider-container {
+    //padding-left: 0;
+    //justify-content: flex-start;
     position: relative;
-    right: -185px;
-    bottom: 0;
-    gap: 40px;
-    margin-top: 32px;
+    //top: 640px;
+    //left: -120px; // відступ за межі контейнера вліво для мобілки
+	
+	@media (max-width: 1023px) {
+		left: -120px;
+		margin-top: 45px;
+		width: 420px;
+	}
 
-    @include tablet {
-        position: relative;
-        right: -40px;
-        bottom: 0;
-        margin-top: -28px;
-    }
+	@include tablet {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
     @include pc {
-        position: relative;
-        right: -40px;
-        bottom: 0;
-        margin-top: -107px;
+        //top: 590px;
+        //left: 85px;
     }
 }
 
-.slider__image{
-    width: 245px;
+.lux-for-two-slick-container {
 
-    @include tablet {
-        margin-top: 0px;
-        width: 194px;
-    }
-
-    @include pc {
-        width: 254px;
-    }
-}
-
-
-
-
-.about-restaurant-slick-container{
-    width: 515px;
+    max-width: 420px; // вирішує висоту і відступ між слайдами 0_о. В моєму випадку 420w робить висоту 194 (яка мені потрібна)
     position: relative;
-    
+    max-height: 194px;
+
+	margin-bottom: 72px;
 
     @include tablet {
-        width: 428px;
+        max-width: 470px;
     }
-    
+
     @include pc {
-        width: 548px;
+        max-width: 587px;
+        max-height: 254px;
     }
 }
 
-.about-restaurant-slick {
-    
+.lux-for-two-slick {
+
     &__list {
-            // width: 254px;
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-        }
-
-    &__item {
-        margin-right: 25px;
-
-        @include tablet {
-            margin-right: 40px;
-        }
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        max-height: 194px;
 
         @include pc {
-            margin-right: 40px;
+            max-height: 254px;
         }
     }
 
-    &__box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 0;
+    &__item {
+        margin-left: 16px; // !!!
+
+        @include tablet {
+            margin-left: 0;
+            margin-right: 40px;
+        }
     }
-
-    
-}*/
-
-/*.lux-for-two-slider-container {
-	width: 530px;
 }
 
 .lux-for-two-slick__list .my-slick-prev,
 .lux-for-two-slick__list .my-slick-next {
     position: absolute;
-    bottom: -52px;
+    bottom: -53px; //32 висота іконки + 20 відступ від слайдера знизу до іконки
     display: flex;
     align-items: center;
     justify-content: center;
@@ -430,39 +293,49 @@
     border: none;
     background-color: transparent;
 
-    @include tablet{
-       bottom: -64px;
-    }
-
-    @include pc{
-        bottom: -68px;
-    }
-}
-
-.lux-for-two-slick__list .my-slick-prev {
-background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
-
-    right: 267px;
 
     @include tablet {
-        right: 126px;
+        bottom: -65px;
     }
 
     @include pc {
-        right: 158px;
+        bottom: -73px; //!
+    }
+}
+
+// slider-buttons
+.lux-for-two-slick__list .my-slick-prev {
+    background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
+    left: 135px; // відступ -120 за межі контейнера + 15 позиція на сторінці
+
+    &:hover,
+    &:focus {
+        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+    }
+
+    @include tablet {
+        left: 330px;
+    }
+
+    @include pc {
+        left: 450px;
     }
 }
 
 .lux-for-two-slick__list .my-slick-next {
     background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
+    left: 200px; // відступ -120 за межі контейнера + 80 позиція на сторінці
 
-    right: 203px;
+    &:hover,
+    &:focus {
+        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
+    }
 
     @include tablet {
-        right: 63px;
+        left: 394px;
     }
 
     @include pc {
-        right: 94px;
+        left: 515px;
     }
-}*/
+}
