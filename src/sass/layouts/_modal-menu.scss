@@ -54,7 +54,10 @@
   cursor: pointer;
   position: relative;
 
-  &:focus {
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
     outline: 1px solid $color-text-secondary;
   }
 
@@ -145,8 +148,8 @@ input[type='date']::-webkit-calendar-picker-indicator {
   display: block;
 
   margin: 0 auto;
-  padding: 20px 43px 20px 43px;
   margin-top: 40px;
+  padding: 20px 43px 20px 43px;
 
   cursor: pointer;
   @extend %cubic;
@@ -193,10 +196,11 @@ input[type='date']::-webkit-calendar-picker-indicator {
   border-radius: 2px;
 
   background: $color-background-primary;
-  outline: $color-text-secondary;
 
   width: 100%;
   height: 54px;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @include mobile {
     width: 384px;
@@ -214,8 +218,10 @@ input[type='date']::-webkit-calendar-picker-indicator {
   }
 
   &:active,
-  &:focus {
+  &:focus,
+  &:hover {
     outline: 1px solid $color-text-secondary;
+    border: 1px solid $color-text-secondary;
   }
 }
 
