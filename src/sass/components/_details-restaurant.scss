@@ -485,43 +485,37 @@ padding-top: 48px;
 }
 
 .details-restaurant-slick__list .my-slick-next {
-background-image: url(../images/slider_svg/slider-arrow-left.svg);
+background-image: url(../images/slider_svg/slider-arrow-right.svg);
 
   
-  left: 25px;
-
-      &:hover,
-  &:focus{
-      background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
-  }
-
-  @include tablet {
-      
-      left: 40px;
-  }
-
-  @include pc {
-     
-     left: 36px;
-  }
-}
-
-.details-restaurant-slick__list .my-slick-prev {
-  background-image: url(../images/slider_svg/slider-arrow-right.svg);
+  left: 64px;
 
       &:hover,
   &:focus{
       background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
   }
 
-  left: 89px;
-
   @include tablet {
-    left: 96px;
+      
+      left: 64px;
   }
 
   @include pc {
-    left: 100px;
+     
+     left: 64px;
   }
+}
+
+.details-restaurant-slick__list .my-slick-prev {
+  background-image: url(../images/slider_svg/slider-arrow-left.svg);
+
+      &:hover,
+  &:focus{
+      background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+  }
+
+  left: 0px;
+
+  
 }
 
