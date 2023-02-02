@@ -7,7 +7,10 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  height: 800px;
+  height: 735px;
+  @include tablet {
+    height:620px;
+  }
  //тимчасово
 
   @media (min-device-pixel-ratio: 2),
@@ -52,6 +55,7 @@
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
  
@@ -65,6 +69,7 @@
   &__combined-section{
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   &__information {
@@ -283,16 +288,14 @@ flex-direction: column;
 
 .details-restaurant-slick-container{
   width: 868px;
+  height: 270px;
   position: relative;
   
-
   @include tablet {
       width: 910px;
   }
   
 }
-
-
 .details-restaurant-slick__list .my-slick-prev,
 .details-restaurant-slick__list .my-slick-next {
   position: absolute;
@@ -328,13 +331,7 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
       background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
   }
 
-  // @include tablet {
-  //     right: 96px;
-  // }
 
-  // @include pc {
-  //     right: 100pxpx;
-  // }
 }
 
 .detailsrestaurantl-slick__list .my-slick-prev {
@@ -345,15 +342,7 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
       background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
   }
 
-  // right: 25px;
 
-  // @include tablet {
-  //     right: 40px;
-  // }
-
-  // @include pc {
-  //     right: 36px;
-  // }
 }
 
 
@@ -454,42 +443,6 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
 
   
 
-//   &__swiperf {
-//     width: 414px;
-
-//     gap: 20px;
-//     transform: translatex(-108%);
-//     display: flex;
-
-//     margin-bottom: 16px;
-
-//     @include tablet {
-//         width: 1024px;
-//     }
-//   }
-
-//   &__arrows {
-//     border: none;
-//     background-color: transparent;
-//     fill: white;
-//     padding: 0;
-
-//     &:first-child {
-//         padding-right: 30px;
-//     }
-//   }
-
-//   &__controls {
-
-//     margin-bottom: 32px;
-    
-//     width: 414px;
-//     display: flex;
-//     justify-content: flex-end;
-//   }
-// }
-
-
 .details-restaurant-slider-container {
     display: flex;
     // justify-content: flex-end;
@@ -534,23 +487,6 @@ background-image: url(../images/slider_svg/slider-arrow-left.svg);
         bottom: -68px;
     }
 }
-
-
-
-
-
-.details-restaurant-slick-container{
-    width: 868px;
-    position: relative;
-    
-
-    @include tablet {
-        width: 910px;
-    }
-    
-}
-
-
 .details-restaurant-slick__list .my-slick-prev,
 .details-restaurant-slick__list .my-slick-next {
     position: absolute;
