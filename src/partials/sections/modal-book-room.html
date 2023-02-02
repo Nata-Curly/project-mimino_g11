@@ -1,16 +1,14 @@
 <div data-popup-target="modal-book-room" class="popup">
-  <div class="popup__content">
+  <div class="modal-menu popup__content">
     <button type="button" class="popup__close close-popup">
       <svg width="24" height="24">
         <use href="./images/icons/icons.svg#icon-close"></use>
       </svg>
     </button>
-
-    <h2 class="modal-menu__title">ЗАБРОНЮВАТИ НОМЕР</h2>
-
+    <h2 class="modal-menu__title">забронювати номер</h2>
     <form class="modal-flex-box">
       <div class="modal-flex-column-second">
-        <div class="modal-menu__item modal-flex-column">
+        <div class="modal-flex-column">
           <input
             class="modal-menu__input"
             type="text"
@@ -24,7 +22,7 @@
           >
         </div>
 
-        <div class="modal-menu__item modal-flex-column">
+        <div class="modal-flex-column">
           <input
             class="modal-menu__input input-date"
             type="date"
@@ -45,12 +43,12 @@
         <div class="modal-flex-column">
           <input
             class="js-inputmask modal-menu__input"
-            type="text"
+            type="tel"
             name="tel"
             id="tel"
             pattern="[0-9]"
           />
-          <label id="tel" class="modal-menu__text">Номер телефону </label>
+          <label for="tel" class="modal-menu__text">Номер телефону </label>
         </div>
 
         <div class="modal-flex-column">
@@ -74,16 +72,15 @@
             pattern="\d{2}-\d{2}-\d{4}"
           />
           <label
+            for="date"
             class="modal-menu__text modal-margin-reset modal-mobil-reset-margen"
             >Дата виїзду</label
           >
         </div>
       </div>
     </form>
-    <div class="modal-menu-box__submit">
-      <button class="modal-menu__submit close-popup" type="submit">
-        ОФОРМИТИ БРОНЮВАННЯ
-      </button>
-    </div>
+    <button class="modal-menu__submit close-popup" type="submit">
+      оформити бронювання
+    </button>
   </div>
 </div>
