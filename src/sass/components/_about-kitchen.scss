@@ -6,7 +6,7 @@
   line-height: 1.08;
   /* identical to box height */
   text-align: left;
-  padding-bottom: 40px;
+  padding-bottom: 28px;
   // transform: translateY(-32px);
   // background-color: transparent;
 
@@ -384,10 +384,13 @@
 .test2 {
   background-color: transparent;
   overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 46px;
 
   @include tablet {
     transform: translateY(-32px);
     overflow-x: visible;
+    overflow-y: visible;
   }
 
   @include pc {

@@ -1,275 +1,271 @@
 // Container`s
 
 .about-restaurant__container {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 16px 0 74px 15px;
-    overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 0 74px 15px;
+  overflow-x: hidden;
 
-    @include tablet {
-        position: relative;
-        transform: translateY(-32px);
-        // margin-bottom: -32px;
-        padding: 0 60px 64px 47px;
-    }
+  @include tablet {
+    position: relative;
+    transform: translateY(-32px);
+    // margin-bottom: -32px;
+    padding: 0 60px 64px 47px;
+  }
 
-    @include pc {
-        position: relative;
-        transform: translateY(-33px);
-        // margin-bottom: -33px;
-        padding: 0 85px 85px 85px;
-    }
-
+  @include pc {
+    position: relative;
+    transform: translateY(-33px);
+    // margin-bottom: -33px;
+    padding: 0 85px 85px 85px;
+  }
 }
 
 .about-restaurant-main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 15px;
 
-    @include tablet {
-        flex-direction: row;
-        align-items: center;
-        margin-right: 0;
-    }
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+  }
 }
 
 .about-restaurant-h2-container {
-    margin-right: auto;
+  margin-right: auto;
 
-    @include tablet {
-        margin-right: 37px;
-    }
+  @include tablet {
+    margin-right: 37px;
+  }
 }
 
 .about-restaurant-secondary-container {
-    display: flex;
-    align-items: center;
-    margin-top: 32px;
-    margin-right: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-right: 15px;
 
-    @include tablet {
-        margin-top: -16px;
-        margin-right: 0;
-    }
+  @include tablet {
+    margin-top: -16px;
+    margin-right: 0;
+  }
 
-    @include pc {
-        margin-top: -65px;
-    }
+  @include pc {
+    margin-top: -65px;
+  }
 }
 
-
 .about-restaurant-slider-container {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: -185px;
+  bottom: 0;
+  margin-top: 32px;
+
+  @include tablet {
     position: relative;
-    right: -185px;
+    right: -40px;
     bottom: 0;
-    margin-top: 32px;
+    margin-top: -28px;
+  }
 
-    @include tablet {
-        position: relative;
-        right: -40px;
-        bottom: 0;
-        margin-top: -28px;
-    }
-
-    @include pc {
-        position: relative;
-        right: -40px;
-        bottom: 0;
-        margin-top: -107px;
-    }
+  @include pc {
+    position: relative;
+    right: -40px;
+    bottom: 0;
+    margin-top: -107px;
+  }
 }
 
 // Logo
 
 .about-restaurant__logo {
-    display: block;
-    font-family: 'FilmP3', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.08;
-    letter-spacing: 0.3em;
-    color: $color-logo-secondary;
-    margin-bottom: 12px;
-    font-size: 40px;
-    line-height: 43px;
+  display: block;
+  font-family: 'FilmP3', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: $color-logo-secondary;
+  margin-bottom: 12px;
+  font-size: 40px;
+  line-height: 43px;
 
-    @include tablet {
-        font-size: 40px;
-    }
+  @include tablet {
+    font-size: 40px;
+  }
 }
 
 // main styles
 
 .about-restaurant {
-    background-color: $color-background-primary;
+  background-color: $color-background-primary;
 
-    &__subtitle {
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 1.15;
-        color: $color-text-subtitle;
+  &__subtitle {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15;
+    color: $color-text-subtitle;
+  }
+
+  &__text {
+    max-width: 258px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $color-text-primary;
+
+    @include tablet {
+      max-width: 439px;
     }
 
-    &__text {
-        max-width: 258px;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.25;
-        color: $color-text-primary;
+    @include pc {
+      max-width: 518px;
+    }
+  }
 
-        @include tablet {
-            max-width: 439px;
-        }
+  &__first-image {
+    margin-top: 28px;
+    width: 244px;
 
-        @include pc {
-            max-width: 518px;
-        }
+    @include tablet {
+      margin-top: 0px;
+      width: 400px;
     }
 
-    &__first-image {
-        margin-top: 28px;
-        width: 244px;
+    @include pc {
+      width: 460px;
+    }
+  }
 
-        @include tablet {
-            margin-top: 0px;
-            width: 400px;
-        }
+  &__image--shadow {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
 
-        @include pc {
-            width: 460px;
-        }
+    @include tablet {
+      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+      border-radius: 0px;
     }
 
-    &__image--shadow{
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-        border-radius: 2px;
-
-        @include tablet{
-            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-            border-radius: 0px;
-        }
-
-        @include pc{
-            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-            border-radius: 2px;
-        }
+    @include pc {
+      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
     }
+  }
 
-    &__desc {
-        max-width: 163px;
-        margin-left: 32px;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.25;
-        color: $color-text-secondary;
+  &__desc {
+    max-width: 163px;
+    margin-left: 32px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $color-text-secondary;
 
-        @include tablet {
-            max-width: 312px;
-        }
+    @include tablet {
+      max-width: 312px;
     }
-
+  }
 }
 
 // swiper styles
 
-.about-restaurant-slick-container{
-    width: 540px;
-    position: relative;
-    
+.about-restaurant-slick-container {
+  width: 540px;
+  position: relative;
 
-    @include tablet {
-        width: 468px;
-    }
-    
-    @include pc {
-        width: 588px;
-    }
+  @include tablet {
+    width: 468px;
+  }
+
+  @include pc {
+    width: 588px;
+  }
 }
 
 .about-restaurant-slick {
-    
-    &__list {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-        }
+  &__list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+  }
 
-    &__item {
-            margin-right: 25px;
+  &__item {
+    margin-right: 25px;
 
-        @include tablet {
-            margin-right: 40px;
-        }
-
-        @include pc {
-            margin-right: 40px;
-        }
+    @include tablet {
+      margin-right: 40px;
     }
-    
+
+    @include pc {
+      margin-right: 40px;
+    }
+  }
 }
 
 .about-restaurant-slick__list .my-slick-prev,
 .about-restaurant-slick__list .my-slick-next {
-    position: absolute;
-    bottom: -52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
+  position: absolute;
+  bottom: -52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 
-    @include tablet{
-       bottom: -64px;
-    }
+  @include tablet {
+    bottom: -64px;
+  }
 
-    @include pc{
-        bottom: -68px;
-    }
+  @include pc {
+    bottom: -68px;
+  }
 }
 
 .about-restaurant-slick__list .my-slick-prev {
-background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
+  background-image: url(../images/slider_svg/slider-arrow-black-left.svg);
 
-    right: 267px;
+  right: 267px;
 
-    &:hover,
-    &:focus{
-        background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
-    }
+  &:hover,
+  &:focus {
+    background-image: url(../images/slider_svg/slider-arrow-yellow-left.svg);
+  }
 
-    @include tablet {
-        right: 126px;
-    }
+  @include tablet {
+    right: 126px;
+  }
 
-    @include pc {
-        right: 158px;
-    }
+  @include pc {
+    right: 158px;
+  }
 }
 
 .about-restaurant-slick__list .my-slick-next {
-    background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
+  background-image: url(../images/slider_svg/slider-arrow-black-right.svg);
 
-    right: 203px;
+  right: 203px;
 
-    &:hover,
-    &:focus{
-        background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
-    }
+  &:hover,
+  &:focus {
+    background-image: url(../images/slider_svg/slider-arrow-yellow-right.svg);
+  }
 
-    @include tablet {
-        right: 63px;
-    }
+  @include tablet {
+    right: 63px;
+  }
 
-    @include pc {
-        right: 94px;
-    }
+  @include pc {
+    right: 94px;
+  }
 }
