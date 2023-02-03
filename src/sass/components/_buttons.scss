@@ -49,12 +49,12 @@
     max-width: 434px;
     width: 434px;
     position: absolute;
-    right: 47px;
+    right: 0;
     bottom: 96px;
   }
 
   @include pc {
-    right: 198px;
+    right: 0;
     bottom: 104px;
   }
 

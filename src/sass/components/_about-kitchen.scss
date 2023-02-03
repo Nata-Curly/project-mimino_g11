@@ -187,6 +187,10 @@
     color: $color-text-subtitle;
     &-marg {
       margin-right: -10px;
+      font-size: 40px;
+      @include tablet {
+        font-size: 64px;
+      }
     }
 
     @include tablet {
