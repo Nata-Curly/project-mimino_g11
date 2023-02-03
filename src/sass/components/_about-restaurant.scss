@@ -39,6 +39,7 @@
 
   @include tablet {
     margin-right: 37px;
+   margin-bottom: 142px;
   }
 }
 
@@ -97,8 +98,10 @@
   line-height: 43px;
 
   @include tablet {
-    font-size: 40px;
+    font-size: 64px;
+    margin-bottom: 24px;
   }
+ 
 }
 
 // main styles
@@ -113,6 +116,11 @@
     font-size: 32px;
     line-height: 1.15;
     color: $color-text-subtitle;
+    margin-bottom: 12px;
+
+    @include tablet {
+        margin-bottom: 10px;
+      }
   }
 
   &__text {

@@ -21,6 +21,7 @@
     }
 
     &__room {
+        position: relative;
         padding-top: 32px;
                 
             @include tablet {
@@ -103,12 +104,12 @@
         font-size: 20px;
         line-height: 1.2;
         position: absolute;
-        right: 50px;
+        right: 0;
         bottom: 40px;
     }
 
     @include pc {
-        right: 200px;
+        right: 0;
         bottom: 48px;
     }
 
