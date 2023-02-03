@@ -6,7 +6,7 @@
   line-height: 1.08;
   /* identical to box height */
   text-align: left;
-  padding-bottom: 40px;
+//   padding-bottom: 40px;
   // transform: translateY(-32px);
   // background-color: transparent;
 
@@ -372,13 +372,17 @@
 }
 .slider-position {
   position: relative;
+  padding-bottom: 50px;
 
   @include tablet {
     position: absolute;
+	 
+  padding-bottom: 0;
   }
 
   @include pc {
     position: absolute;
+  padding-bottom: 0;
   }
 }
 .test2 {
